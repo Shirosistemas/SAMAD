@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TextBox62.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.des_nrestnatural</value>
+  </data>
+  <data name="TextBox1.Value" xml:space="preserve">
+    <value>GTF y/o LT</value>
+  </data>
+  <data name="TextBox106.Value" xml:space="preserve">
+    <value>Canon Reforestación / Recibo N°:</value>
+  </data>
+  <data name="TextBox14.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.pro_ruc</value>
+  </data>
+  <data name="TextBox55.Value" xml:space="preserve">
+    <value>Propietario del Producto</value>
+  </data>
+  <data name="TextBox60.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.des_tipotransporte</value>
+  </data>
+  <data name="TextBox92.Value" xml:space="preserve">
+    <value>Tipo de transporte:</value>
+  </data>
+  <data name="TextBox18.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.departamento</value>
+  </data>
+  <data name="TextBox59.Value" xml:space="preserve">
+    <value>Departamento</value>
+  </data>
+  <data name="TextBox84.Value" xml:space="preserve">
+    <value>Tipo de Transporte :</value>
+  </data>
+  <data name="TextBox72.Value" xml:space="preserve">
+    <value>=Fields.Detalle.Desd_Cantidad</value>
+  </data>
+  <data name="TextBox61.Value" xml:space="preserve">
+    <value>Provincia</value>
+  </data>
+  <data name="TextBox88.Value" xml:space="preserve">
+    <value>L.E./D.N.I. N°:</value>
+  </data>
+  <data name="TextBox86.Value" xml:space="preserve">
+    <value>Distrito :</value>
+  </data>
+  <data name="TextBox22.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.distrito</value>
+  </data>
+  <data name="TextBox53.Value" xml:space="preserve">
+    <value>RUC/RUS N°:</value>
+  </data>
+  <data name="TextBox24.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.des_propietario_nombre</value>
+  </data>
+  <data name="TextBox91.Value" xml:space="preserve">
+    <value>Vehículo Placa N°:</value>
+  </data>
+  <data name="TextBox42.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.des_dni</value>
+  </data>
+  <data name="TextBox17.Value" xml:space="preserve">
+    <value>RUC/RUS N°:</value>
+  </data>
+  <data name="TextBox93.Value" xml:space="preserve">
+    <value>Datos del Transportista</value>
+  </data>
+  <data name="TextBox19.Value" xml:space="preserve">
+    <value>Datos del Propietario</value>
+  </data>
+  <data name="TextBox8.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.des_fecha</value>
+  </data>
+  <data name="TextBox85.Value" xml:space="preserve">
+    <value>Provincia :</value>
+  </data>
+  <data name="TextBox9.Value" xml:space="preserve">
+    <value>L.E./D.N.I. N°:</value>
+  </data>
+  <data name="TextBox64.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.des_canonref</value>
+  </data>
+  <data name="TextBox87.Value" xml:space="preserve">
+    <value>N° Guia y/o Listra de Trozas :</value>
+  </data>
+  <data name="TextBox21.Value" xml:space="preserve">
+    <value>Propietario del Producto</value>
+  </data>
+  <data name="TextBox28.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.prop_dni</value>
+  </data>
+  <data name="TextBox40.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.des_ruc</value>
+  </data>
+  <data name="TextBox68.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.des_montosolcanref</value>
+  </data>
+  <data name="TextBox66.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.des_montosolestnat</value>
+  </data>
+  <data name="TextBox74.Value" xml:space="preserve">
+    <value>=Fields.Detalle.Desd_ClaseC</value>
+  </data>
+  <data name="TextBox94.Value" xml:space="preserve">
+    <value>Conductor:</value>
+  </data>
+  <data name="TextBox70.Value" xml:space="preserve">
+    <value>=Fields.Detalle.Desd_Codigo</value>
+  </data>
+  <data name="TextBox6.Value" xml:space="preserve">
+    <value>Clase C</value>
+  </data>
+  <data name="TextBox69.Value" xml:space="preserve">
+    <value>=Fields.Detalle.Desd_NroGtf</value>
+  </data>
+  <data name="TextBox57.Value" xml:space="preserve">
+    <value>Datos del Destinatario</value>
+  </data>
+  <data name="TextBox71.Value" xml:space="preserve">
+    <value>=Fields.Detalle.Desd_Especie</value>
+  </data>
+  <data name="TextBox73.Value" xml:space="preserve">
+    <value>=Fields.Detalle.Desd_Volm3</value>
+  </data>
+  <data name="TextBox32.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.des_dpto</value>
+  </data>
+  <data name="TextBox20.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.provincia</value>
+  </data>
+  <data name="TextBox4.Value" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="TextBox67.Value" xml:space="preserve">
+    <value>L.E./D.N.I. N°:</value>
+  </data>
+  <data name="TextBox44.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.des_conductor_nombre</value>
+  </data>
+  <data name="TextBox26.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.prop_ruc</value>
+  </data>
+  <data name="TextBox30.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.des_destinatario_nombre</value>
+  </data>
+  <data name="TextBox95.Value" xml:space="preserve">
+    <value>Licencia N°:</value>
+  </data>
+  <data name="TextBox48.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.con_dni</value>
+  </data>
+  <data name="TextBox46.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.con_nrolicencia</value>
+  </data>
+  <data name="TextBox3.Value" xml:space="preserve">
+    <value>Nombre Comercial</value>
+  </data>
+  <data name="TextBox50.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.veh_placa</value>
+  </data>
+  <data name="TextBox78.Value" xml:space="preserve">
+    <value>Titular del Contrato y/o Permiso:</value>
+  </data>
+  <data name="TextBox76.Value" xml:space="preserve">
+    <value>Permiso N° :</value>
+  </data>
+  <data name="TextBox2.Value" xml:space="preserve">
+    <value>Codigo</value>
+  </data>
+  <data name="reportNameTextBox.Value" xml:space="preserve">
+    <value>ReportDespachos</value>
+  </data>
+  <data name="TextBox7.Value" xml:space="preserve">
+    <value>N° RUC/DNI :</value>
+  </data>
+  <data name="TextBox103.Value" xml:space="preserve">
+    <value>Monto en soles:</value>
+  </data>
+  <data name="TextBox25.Value" xml:space="preserve">
+    <value>Direccion:</value>
+  </data>
+  <data name="currentTimeTextBox.Value" xml:space="preserve">
+    <value>=NOW()</value>
+  </data>
+  <data name="TextBox12.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.des_titular_nombre</value>
+  </data>
+  <data name="TextBox5.Value" xml:space="preserve">
+    <value>Volm3</value>
+  </data>
+  <data name="TextBox63.Value" xml:space="preserve">
+    <value>Distrito</value>
+  </data>
+  <data name="pageInfoTextBox.Value" xml:space="preserve">
+    <value>=PageNumber</value>
+  </data>
+  <data name="TextBox107.Value" xml:space="preserve">
+    <value>Pagos Efectuados por el Estractor</value>
+  </data>
+  <data name="TextBox82.Value" xml:space="preserve">
+    <value>RT Retransporte :</value>
+  </data>
+  <data name="TextBox34.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.des_prov</value>
+  </data>
+  <data name="TextBox75.Value" xml:space="preserve">
+    <value>Fecha:</value>
+  </data>
+  <data name="TextBox77.Value" xml:space="preserve">
+    <value>Contrato N° :</value>
+  </data>
+  <data name="TextBox108.Value" xml:space="preserve">
+    <value>Producto al Estado Natural / Recibo N°:</value>
+  </data>
+  <data name="TextBox38.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.des_direccion</value>
+  </data>
+  <data name="TextBox36.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.des_dist</value>
+  </data>
+  <data name="TextBox80.Value" xml:space="preserve">
+    <value>Datos Generales</value>
+  </data>
+  <data name="TextBox51.Value" xml:space="preserve">
+    <value>Dirección:</value>
+  </data>
+  <data name="TextBox56.Value" xml:space="preserve">
+    <value>=Fields.Cabecera.Nrocontrato</value>
+  </data>
+  <data name="TextBox79.Value" xml:space="preserve">
+    <value>TE Externo :</value>
+  </data>
+  <data name="TextBox102.Value" xml:space="preserve">
+    <value>Monto en soles:</value>
+  </data>
+  <data name="TextBox81.Value" xml:space="preserve">
+    <value>Departamento :</value>
+  </data>
+  <data name="TextBox83.Value" xml:space="preserve">
+    <value>TI Interno :</value>
+  </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>es-PE</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.ShowSnapGrid" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.SnapToSnapLines" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+</root>

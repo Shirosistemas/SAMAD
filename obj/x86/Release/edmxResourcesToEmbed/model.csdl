@@ -1,0 +1,2519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="samadModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="samadEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="mostrar_formato01" />
+    <EntitySet Name="almacen" EntityType="samadModel.almacen" />
+    <EntitySet Name="auditoria" EntityType="samadModel.auditoria" />
+    <EntitySet Name="cargos" EntityType="samadModel.cargos" />
+    <EntitySet Name="catalogodespachoreport" EntityType="samadModel.catalogodespachoreport" />
+    <EntitySet Name="clientes" EntityType="samadModel.clientes" />
+    <EntitySet Name="conductores" EntityType="samadModel.conductores" />
+    <EntitySet Name="contratos" EntityType="samadModel.contratos" />
+    <EntitySet Name="cubicacion" EntityType="samadModel.cubicacion" />
+    <EntitySet Name="deffs" EntityType="samadModel.deffs" />
+    <EntitySet Name="despacho" EntityType="samadModel.despacho" />
+    <EntitySet Name="despacho_catalogo" EntityType="samadModel.despacho_catalogo" />
+    <EntitySet Name="despacho_det" EntityType="samadModel.despacho_det" />
+    <EntitySet Name="empaquetado" EntityType="samadModel.empaquetado" />
+    <EntitySet Name="especies" EntityType="samadModel.especies" />
+    <EntitySet Name="formathoja" EntityType="samadModel.formathoja" />
+    <EntitySet Name="formato01" EntityType="samadModel.formato01" />
+    <EntitySet Name="formato01_det" EntityType="samadModel.formato01_det" />
+    <EntitySet Name="formato02" EntityType="samadModel.formato02" />
+    <EntitySet Name="formato02_det" EntityType="samadModel.formato02_det" />
+    <EntitySet Name="formato04" EntityType="samadModel.formato04" />
+    <EntitySet Name="formato04_det" EntityType="samadModel.formato04_det" />
+    <EntitySet Name="formato04_rumas" EntityType="samadModel.formato04_rumas" />
+    <EntitySet Name="formato04_rumas_det" EntityType="samadModel.formato04_rumas_det" />
+    <EntitySet Name="guiatf" EntityType="samadModel.guiatf" />
+    <EntitySet Name="guiatf_dbf" EntityType="samadModel.guiatf_dbf" />
+    <EntitySet Name="linea" EntityType="samadModel.linea" />
+    <EntitySet Name="lista_trozas_dbf" EntityType="samadModel.lista_trozas_dbf" />
+    <EntitySet Name="listatrozasc" EntityType="samadModel.listatrozasc" />
+    <EntitySet Name="listatrozasd" EntityType="samadModel.listatrozasd" />
+    <EntitySet Name="origenes" EntityType="samadModel.origenes" />
+    <EntitySet Name="paquete" EntityType="samadModel.paquete" />
+    <EntitySet Name="paquete_deta" EntityType="samadModel.paquete_deta" />
+    <EntitySet Name="personal" EntityType="samadModel.personal" />
+    <EntitySet Name="procedencia" EntityType="samadModel.procedencia" />
+    <EntitySet Name="procesos" EntityType="samadModel.procesos" />
+    <EntitySet Name="productos" EntityType="samadModel.productos" />
+    <EntitySet Name="productos_existencia" EntityType="samadModel.productos_existencia" />
+    <EntitySet Name="productos_semielaborados" EntityType="samadModel.productos_semielaborados" />
+    <EntitySet Name="propietarios" EntityType="samadModel.propietarios" />
+    <EntitySet Name="tipo_calculo_volumen" EntityType="samadModel.tipo_calculo_volumen" />
+    <EntitySet Name="titulares" EntityType="samadModel.titulares" />
+    <EntitySet Name="turnos" EntityType="samadModel.turnos" />
+    <EntitySet Name="ubdepartamento" EntityType="samadModel.ubdepartamento" />
+    <EntitySet Name="ubdistrito" EntityType="samadModel.ubdistrito" />
+    <EntitySet Name="ubicacion" EntityType="samadModel.ubicacion" />
+    <EntitySet Name="ubigeo" EntityType="samadModel.ubigeo" />
+    <EntitySet Name="ubprovincia" EntityType="samadModel.ubprovincia" />
+    <EntitySet Name="unidad_medida_ab" EntityType="samadModel.unidad_medida_ab" />
+    <EntitySet Name="unidad_medida_l" EntityType="samadModel.unidad_medida_l" />
+    <EntitySet Name="usuarios" EntityType="samadModel.usuarios" />
+    <EntitySet Name="vehiculos" EntityType="samadModel.vehiculos" />
+    <EntitySet Name="zafrasypoas" EntityType="samadModel.zafrasypoas" />
+    <EntitySet Name="listatroza_gtf" EntityType="samadModel.listatroza_gtf" />
+    <EntitySet Name="listavolrecepcion" EntityType="samadModel.listavolrecepcion" />
+    <EntitySet Name="vmostrar_catalogo_produccion" EntityType="samadModel.vmostrar_catalogo_produccion" />
+    <EntitySet Name="vmostrar_contratos" EntityType="samadModel.vmostrar_contratos" />
+    <EntitySet Name="vmostrar_documentos_formato01" EntityType="samadModel.vmostrar_documentos_formato01" />
+    <EntitySet Name="vmostrar_documentos_formato02" EntityType="samadModel.vmostrar_documentos_formato02" />
+    <EntitySet Name="vmostrar_empaserio_paq" EntityType="samadModel.vmostrar_empaserio_paq" />
+    <EntitySet Name="vmostrar_formato01" EntityType="samadModel.vmostrar_formato01" />
+    <EntitySet Name="vmostrar_formato02" EntityType="samadModel.vmostrar_formato02" />
+    <EntitySet Name="vmostrar_listaaseriogtf" EntityType="samadModel.vmostrar_listaaseriogtf" />
+    <EntitySet Name="vmostrar_listatrozas" EntityType="samadModel.vmostrar_listatrozas" />
+    <EntitySet Name="vmostrar_listatrozas_despacho" EntityType="samadModel.vmostrar_listatrozas_despacho" />
+    <EntitySet Name="vmostrar_listatrozasc" EntityType="samadModel.vmostrar_listatrozasc" />
+    <EntitySet Name="vmostrar_listatrozasconnrolista" EntityType="samadModel.vmostrar_listatrozasconnrolista" />
+    <EntitySet Name="vmostrar_listatrozasdetalle" EntityType="samadModel.vmostrar_listatrozasdetalle" />
+    <EntitySet Name="vmostrar_listatrozasportitular" EntityType="samadModel.vmostrar_listatrozasportitular" />
+    <EntitySet Name="vmostrar_producciontotal" EntityType="samadModel.vmostrar_producciontotal" />
+    <EntitySet Name="vmostrar_titulares" EntityType="samadModel.vmostrar_titulares" />
+    <EntitySet Name="vmostrar_titulares_aserrio" EntityType="samadModel.vmostrar_titulares_aserrio" />
+    <EntitySet Name="vmostrar_trozasrecepcionadas" EntityType="samadModel.vmostrar_trozasrecepcionadas" />
+    <EntitySet Name="vmostrar_zafrasypoas" EntityType="samadModel.vmostrar_zafrasypoas" />
+    <EntitySet Name="vw_consulta_gtf_dbf_01" EntityType="samadModel.vw_consulta_gtf_dbf_01" />
+    <EntitySet Name="vw_detalle_troza" EntityType="samadModel.vw_detalle_troza" />
+    <EntitySet Name="vw_empaquetado" EntityType="samadModel.vw_empaquetado" />
+    <EntitySet Name="vw_empresas_aserrios" EntityType="samadModel.vw_empresas_aserrios" />
+    <EntitySet Name="vw_formato02a" EntityType="samadModel.vw_formato02a" />
+    <EntitySet Name="vw_formato04" EntityType="samadModel.vw_formato04" />
+    <EntitySet Name="vw_listadodespachocabecera" EntityType="samadModel.vw_listadodespachocabecera" />
+    <EntitySet Name="vw_listadodespachodetalle" EntityType="samadModel.vw_listadodespachodetalle" />
+    <EntitySet Name="vw_mostrar_aserrio_01" EntityType="samadModel.vw_mostrar_aserrio_01" />
+    <EntitySet Name="vw_mostrar_aserrio_total_prod" EntityType="samadModel.vw_mostrar_aserrio_total_prod" />
+    <EntitySet Name="vw_mostrar_formato01_det_recep" EntityType="samadModel.vw_mostrar_formato01_det_recep" />
+    <EntitySet Name="vw_mostrar_formato02_det_aserrio" EntityType="samadModel.vw_mostrar_formato02_det_aserrio" />
+    <EntitySet Name="vw_mostrar_libro_operaciones" EntityType="samadModel.vw_mostrar_libro_operaciones" />
+    <EntitySet Name="vw_mostrar_lista_lotes_trozas" EntityType="samadModel.vw_mostrar_lista_lotes_trozas" />
+    <EntitySet Name="vw_mostrar_listastrozasgtf" EntityType="samadModel.vw_mostrar_listastrozasgtf" />
+    <EntitySet Name="vw_mostrar_nro_lista_periodo" EntityType="samadModel.vw_mostrar_nro_lista_periodo" />
+    <EntitySet Name="vw_mostrar_produccion" EntityType="samadModel.vw_mostrar_produccion" />
+    <EntitySet Name="vw_mostrar_producto_procesado" EntityType="samadModel.vw_mostrar_producto_procesado" />
+    <EntitySet Name="vw_mostrar_res_trozas_recep" EntityType="samadModel.vw_mostrar_res_trozas_recep" />
+    <EntitySet Name="vw_mostrar_resumen_trozas_aserradas" EntityType="samadModel.vw_mostrar_resumen_trozas_aserradas" />
+    <EntitySet Name="vw_mostrar_trozas_aserrad_titulares" EntityType="samadModel.vw_mostrar_trozas_aserrad_titulares" />
+    <EntitySet Name="vw_mostrar_trozas_aserradas" EntityType="samadModel.vw_mostrar_trozas_aserradas" />
+    <EntitySet Name="vw_mostrar_trozas_recepcionadas" EntityType="samadModel.vw_mostrar_trozas_recepcionadas" />
+    <EntitySet Name="vw_paquete" EntityType="samadModel.vw_paquete" />
+    <EntitySet Name="vw_paquete_despacho" EntityType="samadModel.vw_paquete_despacho" />
+    <EntitySet Name="vw_rumas" EntityType="samadModel.vw_rumas" />
+    <EntitySet Name="vw_rumas_despacho" EntityType="samadModel.vw_rumas_despacho" />
+    <EntitySet Name="vw_rumas_detalle" EntityType="samadModel.vw_rumas_detalle" />
+    <EntitySet Name="vw_titulares01" EntityType="samadModel.vw_titulares01" />
+    <EntitySet Name="vw_verificaexistecodigocorrelativo" EntityType="samadModel.vw_verificaexistecodigocorrelativo" />
+    <EntitySet Name="vw_verificaexistecodigoindustria" EntityType="samadModel.vw_verificaexistecodigoindustria" />
+    <EntitySet Name="vw_verificapaquetedespacho" EntityType="samadModel.vw_verificapaquetedespacho" />
+    <EntitySet Name="vw_verificarumadespacho" EntityType="samadModel.vw_verificarumadespacho" />
+    <EntitySet Name="vwlista_trozasc" EntityType="samadModel.vwlista_trozasc" />
+    <EntitySet Name="wmostrar_empaquetado" EntityType="samadModel.wmostrar_empaquetado" />
+    <AssociationSet Name="fkAlmacenResponsable" Association="samadModel.fkAlmacenResponsable">
+      <End Role="personal" EntitySet="personal" />
+      <End Role="almacen" EntitySet="almacen" />
+    </AssociationSet>
+    <AssociationSet Name="fkPersonalCargo" Association="samadModel.fkPersonalCargo">
+      <End Role="cargos" EntitySet="cargos" />
+      <End Role="personal" EntitySet="personal" />
+    </AssociationSet>
+    <AssociationSet Name="fkConductorTitular" Association="samadModel.fkConductorTitular">
+      <End Role="titulares" EntitySet="titulares" />
+      <End Role="conductores" EntitySet="conductores" />
+    </AssociationSet>
+    <AssociationSet Name="contratos_titular" Association="samadModel.contratos_titular">
+      <End Role="titulares" EntitySet="titulares" />
+      <End Role="contratos" EntitySet="contratos" />
+    </AssociationSet>
+    <AssociationSet Name="zyp_contratos" Association="samadModel.zyp_contratos">
+      <End Role="contratos" EntitySet="contratos" />
+      <End Role="zafrasypoas" EntitySet="zafrasypoas" />
+    </AssociationSet>
+    <AssociationSet Name="fkPaketeA" Association="samadModel.fkPaketeA">
+      <End Role="empaquetado" EntitySet="empaquetado" />
+      <End Role="paquete" EntitySet="paquete" />
+    </AssociationSet>
+    <AssociationSet Name="fkPaketeEmpresa" Association="samadModel.fkPaketeEmpresa">
+      <End Role="titulares" EntitySet="titulares" />
+      <End Role="empaquetado" EntitySet="empaquetado" />
+    </AssociationSet>
+    <AssociationSet Name="fkEspecieDet" Association="samadModel.fkEspecieDet">
+      <End Role="especies" EntitySet="especies" />
+      <End Role="formato02_det" EntitySet="formato02_det" />
+    </AssociationSet>
+    <AssociationSet Name="fkEspecieListat" Association="samadModel.fkEspecieListat">
+      <End Role="especies" EntitySet="especies" />
+      <End Role="listatrozasd" EntitySet="listatrozasd" />
+    </AssociationSet>
+    <AssociationSet Name="fkespeciesfto01" Association="samadModel.fkespeciesfto01">
+      <End Role="especies" EntitySet="especies" />
+      <End Role="formato01_det" EntitySet="formato01_det" />
+    </AssociationSet>
+    <AssociationSet Name="fkdetalle" Association="samadModel.fkdetalle">
+      <End Role="formato01" EntitySet="formato01" />
+      <End Role="formato01_det" EntitySet="formato01_det" />
+    </AssociationSet>
+    <AssociationSet Name="FK_formato02_det_1" Association="samadModel.FK_formato02_det_1">
+      <End Role="formato02" EntitySet="formato02" />
+      <End Role="formato02_det" EntitySet="formato02_det" />
+    </AssociationSet>
+    <AssociationSet Name="FKlt_id" Association="samadModel.FKlt_id">
+      <End Role="listatrozasc" EntitySet="listatrozasc" />
+      <End Role="listatrozasd" EntitySet="listatrozasd" />
+    </AssociationSet>
+    <AssociationSet Name="fkTitularTrozasc" Association="samadModel.fkTitularTrozasc">
+      <End Role="titulares" EntitySet="titulares" />
+      <End Role="listatrozasc" EntitySet="listatrozasc" />
+    </AssociationSet>
+    <AssociationSet Name="fkPaketeDeta" Association="samadModel.fkPaketeDeta">
+      <End Role="paquete" EntitySet="paquete" />
+      <End Role="paquete_deta" EntitySet="paquete_deta" />
+    </AssociationSet>
+    <AssociationSet Name="fk_procesos_titular" Association="samadModel.fk_procesos_titular">
+      <End Role="titulares" EntitySet="titulares" />
+      <End Role="procesos" EntitySet="procesos" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="mostrar_formato01_res" />
+  <EntityType Name="almacen">
+    <Key>
+      <PropertyRef Name="AlmacenId" />
+    </Key>
+    <Property Type="Int32" Name="AlmacenId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Codigo_almacen" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nombre_almacen" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Responsable" />
+    <NavigationProperty Name="personal" Relationship="samadModel.fkAlmacenResponsable" FromRole="almacen" ToRole="personal" />
+  </EntityType>
+  <EntityType Name="auditoria">
+    <Key>
+      <PropertyRef Name="Aud_Id" />
+    </Key>
+    <Property Type="Int32" Name="Aud_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="Aud_Fecha" />
+    <Property Type="String" Name="Aud_Tabla" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Aud_Accion" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Aud_Id_Registro" />
+    <Property Type="String" Name="Aud_Datos" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Aud_id_Usuario" />
+    <Property Type="String" Name="Aud_nombre_pc" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Aud_ip" MaxLength="45" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="cargos">
+    <Key>
+      <PropertyRef Name="Car_id" />
+    </Key>
+    <Property Type="Int32" Name="Car_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Car_Descripcion" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="personal" Relationship="samadModel.fkPersonalCargo" FromRole="cargos" ToRole="personal" />
+  </EntityType>
+  <EntityType Name="catalogodespachoreport">
+    <Key>
+      <PropertyRef Name="CatId" />
+    </Key>
+    <Property Type="Int32" Name="CatId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CatIdEspecie" />
+    <Property Type="Int32" Name="CatDeDtsId" />
+    <Property Type="Int32" Name="CatDesId" />
+    <Property Type="String" Name="CatEspecie" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CatEspesorA" />
+    <Property Type="Int32" Name="CatAnchoA" />
+    <Property Type="Int32" Name="CatLargoA" />
+    <Property Type="Decimal" Name="CatVolm3A" />
+    <Property Type="Decimal" Name="CatVolPtA" />
+    <Property Type="Int32" Name="CatCamtidadA" />
+    <Property Type="Int32" Name="CatEspesorB" />
+    <Property Type="Int32" Name="CatAnchoB" />
+    <Property Type="Int32" Name="CatLargoB" />
+    <Property Type="Decimal" Name="CatVolm3B" />
+    <Property Type="Decimal" Name="CatVolPtB" />
+    <Property Type="Int32" Name="CatCamtidadB" />
+    <Property Type="Int32" Name="CatEspesorC" />
+    <Property Type="Int32" Name="CatAnchoC" />
+    <Property Type="Int32" Name="CatLargoC" />
+    <Property Type="Decimal" Name="CatVolm3C" />
+    <Property Type="Decimal" Name="CatVolPtC" />
+    <Property Type="Int32" Name="CatCamtidadC" />
+    <Property Type="Int32" Name="CatEspesorD" />
+    <Property Type="Int32" Name="CatAnchoD" />
+    <Property Type="Int32" Name="CatLargoD" />
+    <Property Type="Decimal" Name="CatVolm3D" />
+    <Property Type="Decimal" Name="CatVolPtD" />
+    <Property Type="Int32" Name="CatCamtidadD" />
+    <Property Type="Boolean" Name="CatEstatus" />
+  </EntityType>
+  <EntityType Name="clientes">
+    <Key>
+      <PropertyRef Name="Clie_Id" />
+    </Key>
+    <Property Type="Int32" Name="Clie_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Clie_NomRaz" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Clie_TipoDoc" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Clie_NumDoc" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Clie_Direccion" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Clie_Telefono" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Clie_Contacto" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="conductores">
+    <Key>
+      <PropertyRef Name="Con_Id" />
+    </Key>
+    <Property Type="Int32" Name="Con_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Con_NomApe" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Con_NroLicencia" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Con_Dni" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Con_Emt_Id" />
+    <NavigationProperty Name="titulares" Relationship="samadModel.fkConductorTitular" FromRole="conductores" ToRole="titulares" />
+  </EntityType>
+  <EntityType Name="contratos">
+    <Key>
+      <PropertyRef Name="Con_id" />
+    </Key>
+    <Property Type="Int32" Name="Con_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Con_Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Con_Recurso" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Con_Anno" />
+    <Property Type="Int32" Name="Con_Pro_Id" />
+    <NavigationProperty Name="titulares" Relationship="samadModel.contratos_titular" FromRole="contratos" ToRole="titulares" />
+    <NavigationProperty Name="zafrasypoas" Relationship="samadModel.zyp_contratos" FromRole="contratos" ToRole="zafrasypoas" />
+  </EntityType>
+  <EntityType Name="cubicacion">
+    <Key>
+      <PropertyRef Name="Cub_Id" />
+    </Key>
+    <Property Type="Int32" Name="Cub_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Cub_Descrip" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="deffs">
+    <Key>
+      <PropertyRef Name="def_Id" />
+    </Key>
+    <Property Type="Int32" Name="def_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="def_Sede" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="despacho">
+    <Key>
+      <PropertyRef Name="Des_Id" />
+    </Key>
+    <Property Type="Int32" Name="Des_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="des_Ubigeo" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Des_Arffs" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Des_Fecha" />
+    <Property Type="DateTime" Name="Des_Fecha_ven" />
+    <Property Type="Int32" Name="Des_Periodo" />
+    <Property Type="String" Name="Des_TipoTransporte" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Des_NroDoc" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Des_Titular_Id" />
+    <Property Type="Int32" Name="Des_Propietario_Id" />
+    <Property Type="String" Name="Des_Tipo_Cv" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Des_Nro_CV" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Des_Nro_Guia_rem" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Des_Destinatario_Id" />
+    <Property Type="Int32" Name="Des_Transportista_Id" />
+    <Property Type="Int32" Name="Des_Vehiculo_Id" />
+    <Property Type="Int32" Name="Des_Contrato_Id" />
+  </EntityType>
+  <EntityType Name="despacho_catalogo">
+    <Key>
+      <PropertyRef Name="Cat_Id" />
+    </Key>
+    <Property Type="Int32" Name="Cat_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Cat_Des_Id" />
+    <Property Type="Int32" Name="Cat_Numero" />
+    <Property Type="String" Name="Cat_Especie" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Cat_Espesor" />
+    <Property Type="Decimal" Name="Cat_Ancho" />
+    <Property Type="Decimal" Name="Cat_Largo" />
+    <Property Type="Decimal" Name="Cat_Volm3" />
+    <Property Type="Decimal" Name="Cat_VolPT" />
+    <Property Type="Int32" Name="Cat_Cantidad" />
+    <Property Type="Boolean" Name="Cat_Estatus" />
+  </EntityType>
+  <EntityType Name="despacho_det">
+    <Key>
+      <PropertyRef Name="Desd_Id" />
+    </Key>
+    <Property Type="Int32" Name="Desd_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Desd_Des_Id" />
+    <Property Type="Int32" Name="Desd_GenId" />
+    <Property Type="String" Name="Desd_NroGtf" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Desd_EspecieId" />
+    <Property Type="String" Name="Desd_Especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Desd_Codigo" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Desd_Producto" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Desd_ClaseId" />
+    <Property Type="String" Name="Desd_ClaseC" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Desd_TipoUnid" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Desd_Cantidad" />
+    <Property Type="Decimal" Name="Desd_Volm3" />
+    <Property Type="Decimal" Name="Desd_VolPt" />
+    <Property Type="Int32" Name="Desd_RumaPaquete" />
+    <Property Type="Int32" Name="Desd_ParcialTotal" />
+    <Property Type="Decimal" Name="Desd_VolM3_GTFRec" />
+    <Property Type="Decimal" Name="Desd_Ac_Volm3_CM" />
+    <Property Type="Decimal" Name="Desd_Ac_Volm3_RC" />
+    <Property Type="Decimal" Name="Desd_Sal_Volm3_80" />
+    <Property Type="Int32" Name="Des_Estatu" />
+  </EntityType>
+  <EntityType Name="empaquetado">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Type="Int32" Name="RowId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Emp_NroDoc" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Emp_Fecha" />
+    <Property Type="Boolean" Name="Emp_Certificado" />
+    <Property Type="Int32" Name="Emp_AserraderoId" />
+    <Property Type="Int32" Name="Emp_CubicadorId" />
+    <Property Type="String" Name="Emp_Cubicador" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Emp_Periodo" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Emp_observacion" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="paquete" Relationship="samadModel.fkPaketeA" FromRole="empaquetado" ToRole="paquete" />
+    <NavigationProperty Name="titulares" Relationship="samadModel.fkPaketeEmpresa" FromRole="empaquetado" ToRole="titulares" />
+  </EntityType>
+  <EntityType Name="especies">
+    <Key>
+      <PropertyRef Name="Espe_Id" />
+    </Key>
+    <Property Type="Int32" Name="Espe_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Espe_NombreComun" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Espe_NombreCientifico" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="formato02_det" Relationship="samadModel.fkEspecieDet" FromRole="especies" ToRole="formato02_det" />
+    <NavigationProperty Name="listatrozasd" Relationship="samadModel.fkEspecieListat" FromRole="especies" ToRole="listatrozasd" />
+    <NavigationProperty Name="formato01_det" Relationship="samadModel.fkespeciesfto01" FromRole="especies" ToRole="formato01_det" />
+  </EntityType>
+  <EntityType Name="formathoja">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="Var" MaxLength="15" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="formato01">
+    <Key>
+      <PropertyRef Name="F01_id" />
+    </Key>
+    <Property Type="Int32" Name="F01_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="F01_Nro" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="F01_Fecha" />
+    <Property Type="Boolean" Name="F01_Certificada" />
+    <Property Type="Int32" Name="F01_ResponsableId" />
+    <Property Type="String" Name="F01_TipoTraslado" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01_Observacion" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F01_Pro_id" />
+    <Property Type="String" Name="F01_periodo" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01_Lote" MaxLength="6" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="formato01_det" Relationship="samadModel.fkdetalle" FromRole="formato01" ToRole="formato01_det" />
+  </EntityType>
+  <EntityType Name="formato01_det">
+    <Key>
+      <PropertyRef Name="F01d_Id" />
+    </Key>
+    <Property Type="Int32" Name="F01d_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="F01d_F01_Id" Nullable="false" />
+    <Property Type="String" Name="F01d_Lote" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Gtf" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_GuiaRemision" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F01d_Emp_Transp_id" />
+    <Property Type="String" Name="F01d_Emp_Transp" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="f01d_veh_Id" />
+    <Property Type="String" Name="f01d_Veh_Placa" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="f01d_con_Id" />
+    <Property Type="String" Name="f01d_Conductor" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F01d_Utilizado_F04_Id" />
+    <Property Type="String" Name="F01d_Tipo" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_unidad" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Lista_trozas" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Correlativo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_CodIndustria" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="EspecieId" />
+    <Property Type="String" Name="F01d_Especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="F01d_D1" />
+    <Property Type="Decimal" Name="F01d_D2" />
+    <Property Type="Decimal" Name="F01d_D3" />
+    <Property Type="Decimal" Name="F01d_Vol_M3" />
+    <Property Type="String" Name="F01d_Especiec" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="F01d_D1c" />
+    <Property Type="Decimal" Name="F01d_D2c" />
+    <Property Type="Decimal" Name="F01d_D3c" />
+    <Property Type="Decimal" Name="F01d_Vol_M3c" />
+    <Property Type="String" Name="F01d_Observacion" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Periodo" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F01d_Dm_pulgada" />
+    <Property Type="Decimal" Name="F01d_Long_pie" />
+    <Property Type="Decimal" Name="F01d_Vol_pt" />
+    <Property Type="Int32" Name="f01d_Pro_Id" />
+    <Property Type="String" Name="F01d_Procedencia" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Autogenerado" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Abastecimiento" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F01d_PropietarioId" />
+    <Property Type="String" Name="F01d_Propietario" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F01d_TitularId" />
+    <Property Type="String" Name="F01d_Titular" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F01d_ZYP_ID" />
+    <Property Type="Int32" Name="f01d_Ub_Id" />
+    <Property Type="String" Name="F01d_Ubicacion" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Calidad" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F01d_f02_id" />
+    <Property Type="Int32" Name="F01d_Ltd_Id" />
+    <Property Type="Boolean" Name="Estatus" />
+    <NavigationProperty Name="especies" Relationship="samadModel.fkespeciesfto01" FromRole="formato01_det" ToRole="especies" />
+    <NavigationProperty Name="formato01" Relationship="samadModel.fkdetalle" FromRole="formato01_det" ToRole="formato01" />
+  </EntityType>
+  <EntityType Name="formato02">
+    <Key>
+      <PropertyRef Name="F02_Id" />
+    </Key>
+    <Property Type="Int32" Name="F02_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="F02_Fecha" />
+    <Property Type="String" Name="F02_NroDoc" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F02_Responsable_Id" />
+    <Property Type="Boolean" Name="F02_Certificada" />
+    <Property Type="String" Name="F02_NroOpe" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02_Observacion" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F02_Turno_Id" />
+    <Property Type="Int64" Name="F02_Proc_id" />
+    <Property Type="String" Name="f02_periodo" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="f02_emp_id" />
+    <Property Type="Boolean" Name="Estatus" />
+    <NavigationProperty Name="formato02_det" Relationship="samadModel.FK_formato02_det_1" FromRole="formato02" ToRole="formato02_det" />
+  </EntityType>
+  <EntityType Name="formato02_det">
+    <Key>
+      <PropertyRef Name="F02d_Id" />
+    </Key>
+    <Property Type="Int32" Name="F02d_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="F02d_Cut" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02d_Codificacion" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="F02d_D1" />
+    <Property Type="Decimal" Name="F02d_D2" />
+    <Property Type="Decimal" Name="F02d_D3" />
+    <Property Type="Decimal" Name="F02d_Volm3" />
+    <Property Type="Decimal" Name="f02d_d1c" />
+    <Property Type="Decimal" Name="f02d_d2c" />
+    <Property Type="Decimal" Name="f02d_d3c" />
+    <Property Type="Decimal" Name="f02d_volm3c" />
+    <Property Type="Decimal" Name="f02d_d_pulgada" />
+    <Property Type="Decimal" Name="f02d_dpies" />
+    <Property Type="Decimal" Name="f02d_vol_pt" />
+    <Property Type="String" Name="F02d_Observacion" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F02d_F02_Id" />
+    <Property Type="Int32" Name="EspecieId" />
+    <Property Type="String" Name="F02d_Especie" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02d_CodIndustria" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02d_unidad" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02d_Lote" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02d_Periodo" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02d_GTF" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F02d_Ltd_Id" />
+    <Property Type="Boolean" Name="Estatus" />
+    <NavigationProperty Name="especies" Relationship="samadModel.fkEspecieDet" FromRole="formato02_det" ToRole="especies" />
+    <NavigationProperty Name="formato02" Relationship="samadModel.FK_formato02_det_1" FromRole="formato02_det" ToRole="formato02" />
+  </EntityType>
+  <EntityType Name="formato04">
+    <Key>
+      <PropertyRef Name="F04_Id" />
+    </Key>
+    <Property Type="Int32" Name="F04_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="F04_Nro" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F04_Nro_doc" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="F04_Fecha" />
+    <Property Type="String" Name="F04_TipoConteo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F04_Turno_Id" />
+    <Property Type="Int32" Name="F04_Responsable_Id" />
+    <Property Type="String" Name="F04_OrdenProduccion" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F04_Observacion" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F04_F02_Id" />
+    <Property Type="Int32" Name="F04_Pro_id" />
+    <Property Type="String" Name="F04_Periodo" MaxLength="5" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="formato04_det">
+    <Key>
+      <PropertyRef Name="F04d_Id" />
+    </Key>
+    <Property Type="Int32" Name="F04d_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="F04d_Cut" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F04d_Codigo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F04d_Especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="F04d_Espesor" />
+    <Property Type="Decimal" Name="F04d_Ancho" />
+    <Property Type="Decimal" Name="F04d_Largo" />
+    <Property Type="Decimal" Name="F04d_Volptp" />
+    <Property Type="Decimal" Name="F04d_Volpts" />
+    <Property Type="Int32" Name="F04d_NroPiezasp" />
+    <Property Type="Int32" Name="F04d_NroPiezass" />
+    <Property Type="String" Name="F04d_Calidad" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F04d_Producto_Id" />
+    <Property Type="String" Name="F04d_Observacion" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F04d_F04_Id" />
+    <Property Type="String" Name="F04d_lote" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F04d_codind" MaxLength="45" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="formato04_rumas">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Type="Int32" Name="RowId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="RumaId" Nullable="false" />
+    <Property Type="String" Name="Codigo_ruma" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ProductoId" />
+    <Property Type="String" Name="Descripcion_ruma" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="EspecieId" />
+    <Property Type="String" Name="Especie" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lote_troza" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Orden_produccion" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Cantidad" />
+    <Property Type="String" Name="TipUnidad" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="VolM3" />
+    <Property Type="Double" Name="VolPT" />
+    <Property Type="Boolean" Name="Estatus" />
+    <Property Type="Int32" Name="F04_Id" />
+    <Property Type="String" Name="FuncionCalculo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SisCubicacion" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Simbolo" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Objetivo_producto" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CentroTransac" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UbicaProducto" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="MaderaCertificada" />
+    <Property Type="String" Name="ClasificaProducto" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="VoLoTrozas" />
+    <Property Type="Decimal" Name="Sald_Vol_Trozas" />
+  </EntityType>
+  <EntityType Name="formato04_rumas_det">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Type="Int32" Name="RowId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="RumaId" />
+    <Property Type="Decimal" Name="Espesor" />
+    <Property Type="Decimal" Name="Ancho" />
+    <Property Type="Decimal" Name="Largo" />
+    <Property Type="Int32" Name="Cantidad" />
+    <Property Type="Decimal" Name="Vol_pt" />
+    <Property Type="Decimal" Name="Vol_m3" />
+    <Property Type="String" Name="Tipo_corte" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Estatus" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F04d_Cut" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F04TipoUnidad" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Orden" />
+  </EntityType>
+  <EntityType Name="guiatf">
+    <Key>
+      <PropertyRef Name="CID" />
+    </Key>
+    <Property Type="String" Name="CID" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="IDGUIA" />
+    <Property Type="Int32" Name="IDVIAJE" />
+    <Property Type="String" Name="TIPOPERMIS" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_UBIGEO" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_NRO" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_ATCFFS" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="GUI_FECHA" />
+    <Property Type="DateTime" Name="GUI_FECHAV" />
+    <Property Type="String" Name="GUI_ORIGEN" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="GUI_ZAFRA" />
+    <Property Type="String" Name="GUI_PCA" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_TITULA" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_CONTRA" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_NOMREP" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_NRORES" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_PLANMA" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_DEPTO" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_PROV" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_DISTRI" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_PROPIE" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_PROPDN" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_PROPRU" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_PROPDI" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_PROPDP" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_PROPPR" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_PROPD2" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_TIPOCC" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_NROCV" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_DESTIN" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_DESTDN" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_RUCDES" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_DIRECD" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_DPTODE" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_PROVDE" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_DISTDE" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_NROGR" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_TIPTRA" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_NOMVEH" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_TARPRO" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_TIPOVE" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_PLACA" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_CONDUC" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_DNI" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_LICENC" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_NROLIS" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_NROGTF" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="LI" />
+    <Property Type="String" Name="CIDV" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="guiatf_dbf">
+    <Key>
+      <PropertyRef Name="CID" />
+    </Key>
+    <Property Type="String" Name="CID" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="IDGUIA" />
+    <Property Type="Int32" Name="NRO_VIAJE" />
+    <Property Type="String" Name="GUI_UBIGEO" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NRO_GTF" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NOM_ATFFS" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="FECHA_ENV" />
+    <Property Type="DateTime" Name="FECHA_VENC" />
+    <Property Type="Int32" Name="ZAFRA" />
+    <Property Type="String" Name="PCA" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TITULAR" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CONTRATO" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PROPIETARI" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TIPO_CV" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NRO_CV" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="DESTINATAR" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NRGUIA_REM" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TRANSPORTE" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CONDUCTOR" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CIDV" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="linea">
+    <Key>
+      <PropertyRef Name="Lin_id" />
+    </Key>
+    <Property Type="Int64" Name="Lin_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Lin_Nombre" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Lin_Porcentual" Nullable="false" />
+  </EntityType>
+  <EntityType Name="lista_trozas_dbf">
+    <Key>
+      <PropertyRef Name="TITULA" />
+      <PropertyRef Name="ZAFRA" />
+      <PropertyRef Name="PCA" />
+      <PropertyRef Name="NRO_GTF" />
+      <PropertyRef Name="CORRELA" />
+      <PropertyRef Name="ESPECIE" />
+      <PropertyRef Name="PLACA" />
+      <PropertyRef Name="D1" />
+      <PropertyRef Name="D2" />
+      <PropertyRef Name="D3" />
+      <PropertyRef Name="VOLM3" />
+      <PropertyRef Name="NRO_LISTA_" />
+    </Key>
+    <Property Type="String" Name="TITULA" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ZAFRA" Nullable="false" />
+    <Property Type="String" Name="PCA" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NRO_GTF" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CORRELA" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ESPECIE" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PLACA" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="D1" Nullable="false" />
+    <Property Type="Decimal" Name="D2" Nullable="false" />
+    <Property Type="Decimal" Name="D3" Nullable="false" />
+    <Property Type="Decimal" Name="VOLM3" Nullable="false" />
+    <Property Type="String" Name="NRO_LISTA_" Nullable="false" MaxLength="13" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="listatrozasc">
+    <Key>
+      <PropertyRef Name="Lt_id" />
+    </Key>
+    <Property Type="Int32" Name="Lt_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Lt_Ubigeo" />
+    <Property Type="String" Name="Lt_Nrogtf" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Lt_Fecha" />
+    <Property Type="DateTime" Name="Lt_fecha_ven" />
+    <Property Type="Int32" Name="Lt_Titular_Id" />
+    <Property Type="Int32" Name="Lt_Propietario_Id" />
+    <Property Type="Int32" Name="Lt_Contrato_Id" />
+    <Property Type="Int32" Name="Lt_Poa_Id" />
+    <Property Type="String" Name="Lt_Zafra" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Lt_Transporte_Id" />
+    <Property Type="Int32" Name="Lt_Conductor_Id" />
+    <Property Type="Int32" Name="Lt_Destinatario_Id" />
+    <Property Type="String" Name="Lt_Tipo_Cv" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lt_Nro_Cv" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lt_NroGuia_rem" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lt_Observacion" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Lt_TipoDimension" />
+    <Property Type="String" Name="Lt_Deffs" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lt_unidad" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Estatus" />
+    <NavigationProperty Name="listatrozasd" Relationship="samadModel.FKlt_id" FromRole="listatrozasc" ToRole="listatrozasd" />
+    <NavigationProperty Name="titulares" Relationship="samadModel.fkTitularTrozasc" FromRole="listatrozasc" ToRole="titulares" />
+  </EntityType>
+  <EntityType Name="listatrozasd">
+    <Key>
+      <PropertyRef Name="Ltd_Id" />
+    </Key>
+    <Property Type="Int32" Name="Ltd_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="EspecieId" />
+    <Property Type="String" Name="Ltd_Especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Ltd_Codificacion" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Ltd_D1" />
+    <Property Type="Decimal" Name="Ltd_D2" />
+    <Property Type="Decimal" Name="Ltd_D3" />
+    <Property Type="Decimal" Name="Ltd_Vol_M3" />
+    <Property Type="Int32" Name="Ltd_Lt_Id" />
+    <Property Type="String" Name="Ltd_Autogenerado" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Ltd_NroListaTrozas" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Estatus" />
+    <NavigationProperty Name="especies" Relationship="samadModel.fkEspecieListat" FromRole="listatrozasd" ToRole="especies" />
+    <NavigationProperty Name="listatrozasc" Relationship="samadModel.FKlt_id" FromRole="listatrozasd" ToRole="listatrozasc" />
+  </EntityType>
+  <EntityType Name="origenes">
+    <Key>
+      <PropertyRef Name="Ori_Id" />
+    </Key>
+    <Property Type="Int32" Name="Ori_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Ori_Lugar" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Ori_Departamento" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Ori_Provincia" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Ori_Distrito" MaxLength="70" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="paquete">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Type="Int32" Name="RowId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="RumaId" />
+    <Property Type="Int32" Name="EmpaquetadoId" />
+    <Property Type="String" Name="Numpaquete" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ProductoOrigenId" />
+    <Property Type="Int32" Name="EspecieId" />
+    <Property Type="Int32" Name="Tipo_producto" />
+    <Property Type="String" Name="Acabado" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Humedad" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Clasificacion" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CubicadorId" />
+    <Property Type="String" Name="Ubicacion" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Observacion" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Periodo" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CantidadInicial" />
+    <Property Type="Decimal" Name="Volm3Inicial" />
+    <Property Type="Decimal" Name="VolptInicial" />
+    <Property Type="Int32" Name="Cantidad" />
+    <Property Type="Decimal" Name="Volm3" />
+    <Property Type="Decimal" Name="Volpt" />
+    <Property Type="Int32" Name="ProductoFinalId" />
+    <Property Type="String" Name="TipoUnidad" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="UtiCantidad" />
+    <Property Type="Decimal" Name="UtiVolM3" />
+    <Property Type="Decimal" Name="UtiVolPt" />
+    <Property Type="String" Name="CMUtilizado" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Estatus" />
+    <NavigationProperty Name="empaquetado" Relationship="samadModel.fkPaketeA" FromRole="paquete" ToRole="empaquetado" />
+    <NavigationProperty Name="paquete_deta" Relationship="samadModel.fkPaketeDeta" FromRole="paquete" ToRole="paquete_deta" />
+  </EntityType>
+  <EntityType Name="paquete_deta">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Type="Int32" Name="RowId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="PaqueteId" />
+    <Property Type="Decimal" Name="Espesor" />
+    <Property Type="Decimal" Name="Ancho" />
+    <Property Type="Decimal" Name="Largo" />
+    <Property Type="Decimal" Name="VolM3" />
+    <Property Type="Decimal" Name="VolPT" />
+    <Property Type="Int32" Name="Cantidad" />
+    <Property Type="Int32" Name="ProductoId" />
+    <Property Type="Boolean" Name="Estatus" />
+    <NavigationProperty Name="paquete" Relationship="samadModel.fkPaketeDeta" FromRole="paquete_deta" ToRole="paquete" />
+  </EntityType>
+  <EntityType Name="personal">
+    <Key>
+      <PropertyRef Name="Per_Id" />
+    </Key>
+    <Property Type="Int32" Name="Per_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Per_NomApe" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Per_CargoId" />
+    <Property Type="String" Name="Per_Cargo" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Per_Condicion" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="almacen" Relationship="samadModel.fkAlmacenResponsable" FromRole="personal" ToRole="almacen" />
+    <NavigationProperty Name="cargos" Relationship="samadModel.fkPersonalCargo" FromRole="personal" ToRole="cargos" />
+  </EntityType>
+  <EntityType Name="procedencia">
+    <Key>
+      <PropertyRef Name="Pro_id" />
+    </Key>
+    <Property Type="Int64" Name="Pro_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Pro_Nombre" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="procesos">
+    <Key>
+      <PropertyRef Name="Proc_id" />
+    </Key>
+    <Property Type="Int64" Name="Proc_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Proc_descripcion" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Pro_id" />
+    <NavigationProperty Name="titulares" Relationship="samadModel.fk_procesos_titular" FromRole="procesos" ToRole="titulares" />
+  </EntityType>
+  <EntityType Name="productos">
+    <Key>
+      <PropertyRef Name="Prod_Id" />
+    </Key>
+    <Property Type="Int32" Name="Prod_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Prod_TipoProducto" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Prod_NomProducto" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Prod_ClasificacionId" />
+    <Property Type="String" Name="Prod_ClasificacionCom" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Prod_Rendimiento" />
+    <Property Type="String" Name="Prod_UnidadMedidaAb" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Prod_UnidadMedidaL" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Prod_Espesor" />
+    <Property Type="String" Name="Prod_OperadorE" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Prod_Ancho" />
+    <Property Type="String" Name="Prod_OperadorA" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Prod_Largo" />
+    <Property Type="String" Name="Prod_OperadorL" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Prod_FuncionCalculo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Prod_SistemaCalculo" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Prod_Simbolo" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Prod_Fe" />
+  </EntityType>
+  <EntityType Name="productos_existencia">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Type="Int32" Name="RowId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Producto_id" />
+    <Property Type="String" Name="Ubicacion" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="Existencia" />
+    <Property Type="Double" Name="Precio" />
+    <Property Type="Double" Name="Ultima_entrada" />
+    <Property Type="Double" Name="Ultima_salida" />
+  </EntityType>
+  <EntityType Name="productos_semielaborados">
+    <Key>
+      <PropertyRef Name="RegistroId" />
+    </Key>
+    <Property Type="Int32" Name="RegistroId" Nullable="false" />
+    <Property Type="Int32" Name="Anio" />
+    <Property Type="String" Name="RumaId" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Especie" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nombre_producto" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="certificada" />
+    <Property Type="String" Name="Tipo_medida" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lote_origen" MaxLength="6" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="propietarios">
+    <Key>
+      <PropertyRef Name="Pro_id" />
+    </Key>
+    <Property Type="Int32" Name="Pro_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Pro_nomraz" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Pro_Dni" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Pro_Ruc" MaxLength="11" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tipo_calculo_volumen">
+    <Key>
+      <PropertyRef Name="TipCal_id" />
+    </Key>
+    <Property Type="Int32" Name="TipCal_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="TipCal_Elementos" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TipCal_DescripcionFunc" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TipCal_Volumen" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="TipCal_FcVm" />
+    <Property Type="Int32" Name="TipCal_Fe" />
+    <Property Type="String" Name="TipCal_Simbolo" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TipCal_Cod" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="titulares">
+    <Key>
+      <PropertyRef Name="Pro_Id" />
+    </Key>
+    <Property Type="Int32" Name="Pro_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Pro_Titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Pro_Ruc" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Pro_Rep_Legal" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Pro_Departamento" />
+    <Property Type="Int32" Name="Pro_Provincia" />
+    <Property Type="Int32" Name="Pro_Distrito" />
+    <Property Type="String" Name="Pro_Sector" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Pro_Propietariock" />
+    <Property Type="Boolean" Name="Pro_Destinock" />
+    <Property Type="Boolean" Name="Pro_Transporteck" />
+    <Property Type="String" Name="Pro_Direccion" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Pro_Dni" MaxLength="8" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="conductores" Relationship="samadModel.fkConductorTitular" FromRole="titulares" ToRole="conductores" />
+    <NavigationProperty Name="contratos" Relationship="samadModel.contratos_titular" FromRole="titulares" ToRole="contratos" />
+    <NavigationProperty Name="empaquetado" Relationship="samadModel.fkPaketeEmpresa" FromRole="titulares" ToRole="empaquetado" />
+    <NavigationProperty Name="listatrozasc" Relationship="samadModel.fkTitularTrozasc" FromRole="titulares" ToRole="listatrozasc" />
+    <NavigationProperty Name="procesos" Relationship="samadModel.fk_procesos_titular" FromRole="titulares" ToRole="procesos" />
+  </EntityType>
+  <EntityType Name="turnos">
+    <Key>
+      <PropertyRef Name="Tur_Id" />
+    </Key>
+    <Property Type="Int32" Name="Tur_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Tur_Descrip" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Tur_Horario" MaxLength="45" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ubdepartamento">
+    <Key>
+      <PropertyRef Name="idDepa" />
+    </Key>
+    <Property Type="Int32" Name="idDepa" Nullable="false" />
+    <Property Type="String" Name="departamento" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ubdistrito">
+    <Key>
+      <PropertyRef Name="idDist" />
+    </Key>
+    <Property Type="Int32" Name="idDist" Nullable="false" />
+    <Property Type="String" Name="distrito" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="idProv" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ubicacion">
+    <Key>
+      <PropertyRef Name="Ubi_id" />
+    </Key>
+    <Property Type="Int64" Name="Ubi_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Ubi_Nombre" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Ubi_ProId" />
+  </EntityType>
+  <EntityType Name="ubigeo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="DEPARTAMENTO" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CODIGO" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ubprovincia">
+    <Key>
+      <PropertyRef Name="idProv" />
+    </Key>
+    <Property Type="Int32" Name="idProv" Nullable="false" />
+    <Property Type="String" Name="provincia" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="idDepa" />
+  </EntityType>
+  <EntityType Name="unidad_medida_ab">
+    <Key>
+      <PropertyRef Name="Uni_id" />
+    </Key>
+    <Property Type="Int32" Name="Uni_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Uni_Abreviatura" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Uni_Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="unidad_medida_l">
+    <Key>
+      <PropertyRef Name="Unil_id" />
+    </Key>
+    <Property Type="Int32" Name="Unil_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Unil_Abreviatura" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Unil_Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="usuarios">
+    <Key>
+      <PropertyRef Name="usu_id" />
+    </Key>
+    <Property Type="Int32" Name="usu_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="usu_nombre" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="usu_password" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="uso_tipo" MaxLength="45" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vehiculos">
+    <Key>
+      <PropertyRef Name="Veh_Id" />
+    </Key>
+    <Property Type="Int32" Name="Veh_Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Veh_Marca" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Veh_Tipo_vehic" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Veh_Placa" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Veh_NroInscripcion" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Veh_Emt_Id" />
+    <Property Type="String" Name="Veh_Tipo" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="zafrasypoas">
+    <Key>
+      <PropertyRef Name="Zyp_id" />
+    </Key>
+    <Property Type="Int32" Name="Zyp_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Zyp_Resolucion" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_tipoPm" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Zafra" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Poa" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Zyp_Permiso_Id" />
+    <NavigationProperty Name="contratos" Relationship="samadModel.zyp_contratos" FromRole="zafrasypoas" ToRole="contratos" />
+  </EntityType>
+  <EntityType Name="listatroza_gtf">
+    <Key>
+      <PropertyRef Name="Lt_id" />
+      <PropertyRef Name="Ltd_Id" />
+      <PropertyRef Name="Pro_Titular" />
+    </Key>
+    <Property Type="Int32" Name="Lt_id" Nullable="false" />
+    <Property Type="String" Name="Lt_Nrogtf" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Lt_Fecha" />
+    <Property Type="Int32" Name="Lt_Propietario_Id" />
+    <Property Type="String" Name="Lt_unidad" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Ltd_Id" Nullable="false" />
+    <Property Type="String" Name="Ltd_Especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Ltd_Codificacion" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Ltd_D1" />
+    <Property Type="Decimal" Name="Ltd_D2" />
+    <Property Type="Decimal" Name="Ltd_D3" />
+    <Property Type="Decimal" Name="Ltd_Vol_M3" />
+    <Property Type="Int32" Name="Ltd_Lt_Id" />
+    <Property Type="String" Name="Ltd_Autogenerado" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Ltd_NroListaTrozas" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Estatus" />
+    <Property Type="Int32" Name="Lt_Titular_Id" />
+    <Property Type="String" Name="Pro_Titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Con_Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Zafra" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Poa" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Pro_Departamento" />
+    <Property Type="Int32" Name="Pro_Provincia" />
+    <Property Type="Int32" Name="Pro_Distrito" />
+    <Property Type="String" Name="Pro_Direccion" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Pro_Dni" MaxLength="8" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="listavolrecepcion">
+    <Key>
+      <PropertyRef Name="F01_id" />
+    </Key>
+    <Property Type="String" Name="F01d_Lote" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Gtf" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Correlativo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_CodIndustria" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="EspecieId" />
+    <Property Type="String" Name="F01d_Especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="VolM3Rec" />
+    <Property Type="String" Name="Con_Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F01_id" Nullable="false" />
+    <Property Type="String" Name="Zyp_Zafra" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Poa" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vmostrar_catalogo_produccion">
+    <Key>
+      <PropertyRef Name="RowId" />
+      <PropertyRef Name="RumaId" />
+      <PropertyRef Name="F04_Id" />
+      <PropertyRef Name="Prod_Id" />
+    </Key>
+    <Property Type="Int32" Name="RowId" Nullable="false" />
+    <Property Type="Int32" Name="RumaId" Nullable="false" />
+    <Property Type="String" Name="Codigo_ruma" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Descripcion_ruma" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Especie" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lote_troza" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Orden_produccion" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Objetivo_producto" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FuncionCalculo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SisCubicacion" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Simbolo" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CentroTransac" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UbicaProducto" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ClasificaProducto" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="MaderaCertificada" />
+    <Property Type="Decimal" Name="Espesor" />
+    <Property Type="Decimal" Name="Ancho" />
+    <Property Type="Decimal" Name="Largo" />
+    <Property Type="Int32" Name="Cantidad" />
+    <Property Type="Decimal" Name="Vol_pt" />
+    <Property Type="Decimal" Name="Vol_m3" />
+    <Property Type="String" Name="Tipo_corte" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Estatus" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F04d_Cut" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F04TipoUnidad" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F04_Id" Nullable="false" />
+    <Property Type="String" Name="F04_Periodo" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Prod_Id" Nullable="false" />
+    <Property Type="Int32" Name="ProductoId" />
+    <Property Type="String" Name="Prod_TipoProducto" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Prod_ClasificacionCom" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Prod_Rendimiento" />
+    <Property Type="String" Name="F04_Nro" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="F04_Fecha" />
+  </EntityType>
+  <EntityType Name="vmostrar_contratos">
+    <Key>
+      <PropertyRef Name="con_id" />
+      <PropertyRef Name="pro_titular" />
+    </Key>
+    <Property Type="Int32" Name="con_id" Nullable="false" />
+    <Property Type="String" Name="Con_Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Con_Recurso" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="pro_titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Con_Anno" />
+  </EntityType>
+  <EntityType Name="vmostrar_documentos_formato01">
+    <Key>
+      <PropertyRef Name="f01_Id" />
+      <PropertyRef Name="f01d_f01_id" />
+    </Key>
+    <Property Type="Int32" Name="f01_Id" Nullable="false" />
+    <Property Type="String" Name="f01_Nro" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="f01_Fecha" />
+    <Property Type="Int32" Name="f01d_f01_id" Nullable="false" />
+    <Property Type="Decimal" Name="f01d_Vol_M3" />
+  </EntityType>
+  <EntityType Name="vmostrar_documentos_formato02">
+    <Key>
+      <PropertyRef Name="f02_Id" />
+    </Key>
+    <Property Type="Int32" Name="f02_Id" Nullable="false" />
+    <Property Type="String" Name="f02_NroDoc" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="f02_Fecha" />
+    <Property Type="Decimal" Name="Volm3" />
+    <Property Type="Int32" Name="f02d_f02_id" />
+    <Property Type="String" Name="F02d_codIndustria" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02d_Codificacion" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vmostrar_empaserio_paq">
+    <Key>
+      <PropertyRef Name="Pro_Titular" />
+    </Key>
+    <Property Type="Int32" Name="F04_Pro_id" />
+    <Property Type="String" Name="Pro_Titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vmostrar_formato01">
+    <Key>
+      <PropertyRef Name="F01d_F01_Id" />
+      <PropertyRef Name="F01d_Id" />
+      <PropertyRef Name="Zyp_id" />
+    </Key>
+    <Property Type="String" Name="F01_Nro" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F01d_F01_Id" Nullable="false" />
+    <Property Type="Decimal" Name="F01d_Vol_M3" />
+    <Property Type="String" Name="F01d_CodIndustria" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Gtf" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Especiec" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F01d_TitularId" />
+    <Property Type="String" Name="F01d_Titular" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F01d_Id" Nullable="false" />
+    <Property Type="Int32" Name="F01d_ZYP_ID" />
+    <Property Type="Int32" Name="Zyp_id" Nullable="false" />
+    <Property Type="Int32" Name="f01d_Ub_Id" />
+    <Property Type="String" Name="Zyp_Zafra" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Poa" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vmostrar_formato02">
+    <Key>
+      <PropertyRef Name="F02d_Id" />
+      <PropertyRef Name="F02_Id" />
+      <PropertyRef Name="Proc_id" />
+    </Key>
+    <Property Type="Int32" Name="F02d_Id" Nullable="false" />
+    <Property Type="String" Name="F02d_Cut" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02d_Codificacion" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="F02d_D1" />
+    <Property Type="Decimal" Name="F02d_D2" />
+    <Property Type="Decimal" Name="F02d_D3" />
+    <Property Type="Decimal" Name="F02d_Volm3" />
+    <Property Type="String" Name="F02d_Observacion" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F02d_F02_Id" />
+    <Property Type="String" Name="F02d_Especie" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="f02D_CodIndustria" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F02_Id" Nullable="false" />
+    <Property Type="DateTime" Name="F02_Fecha" />
+    <Property Type="String" Name="F02_NroDoc" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F02_Responsable_Id" />
+    <Property Type="Boolean" Name="F02_Certificada" />
+    <Property Type="String" Name="F02_NroOpe" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02_Observacion" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F02_Turno_Id" />
+    <Property Type="Int64" Name="F02_Proc_id" />
+    <Property Type="String" Name="f02_periodo" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="Proc_id" Nullable="false" />
+    <Property Type="String" Name="Proc_descripcion" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Pro_id" />
+  </EntityType>
+  <EntityType Name="vmostrar_listaaseriogtf">
+    <Key>
+      <PropertyRef Name="trozas" />
+    </Key>
+    <Property Type="Int32" Name="id" />
+    <Property Type="String" Name="especie" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="trozas" Nullable="false" />
+    <Property Type="Decimal" Name="largo" />
+    <Property Type="Decimal" Name="volm3" />
+    <Property Type="String" Name="F02d_GTF" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vmostrar_listatrozas">
+    <Key>
+      <PropertyRef Name="Ltd_Id" />
+    </Key>
+    <Property Type="String" Name="Lt_Nrogtf" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="lt_Titular_Id" />
+    <Property Type="Int32" Name="Ltd_Id" Nullable="false" />
+    <Property Type="String" Name="Ltd_Especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Ltd_Codificacion" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Ltd_D1" />
+    <Property Type="Decimal" Name="Ltd_D2" />
+    <Property Type="Decimal" Name="Ltd_D3" />
+    <Property Type="Decimal" Name="Ltd_Vol_m3" />
+    <Property Type="String" Name="Ltd_Autogenerado" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Lt_Poa_Id" />
+    <Property Type="String" Name="Lt_Zafra" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vmostrar_listatrozas_despacho">
+    <Key>
+      <PropertyRef Name="lt_id" />
+      <PropertyRef Name="pro_titular" />
+      <PropertyRef Name="Trozas" />
+      <PropertyRef Name="pro_id" />
+    </Key>
+    <Property Type="Int32" Name="lt_id" Nullable="false" />
+    <Property Type="String" Name="Lt_Nrogtf" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="pro_titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="Trozas" Nullable="false" />
+    <Property Type="Decimal" Name="Volm3" />
+    <Property Type="Int32" Name="pro_id" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vmostrar_listatrozasc">
+    <Key>
+      <PropertyRef Name="lt_id" />
+      <PropertyRef Name="pro_id" />
+      <PropertyRef Name="pro_titular" />
+      <PropertyRef Name="titular_ruc" />
+      <PropertyRef Name="departamento" />
+      <PropertyRef Name="prop_id" />
+      <PropertyRef Name="prop_nomraz" />
+      <PropertyRef Name="prop_ruc" />
+      <PropertyRef Name="con_id" />
+      <PropertyRef Name="zyp_id" />
+      <PropertyRef Name="veh_id" />
+      <PropertyRef Name="cond_id" />
+      <PropertyRef Name="des_id" />
+      <PropertyRef Name="des_nomraz" />
+      <PropertyRef Name="des_departamento" />
+      <PropertyRef Name="des_distrito" />
+      <PropertyRef Name="distrito" />
+      <PropertyRef Name="des_ruc" />
+    </Key>
+    <Property Type="Int32" Name="lt_id" Nullable="false" />
+    <Property Type="String" Name="Lt_Nrogtf" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="lt_Fecha" />
+    <Property Type="Int32" Name="lt_titular_id" />
+    <Property Type="Int32" Name="lt_propietario_id" />
+    <Property Type="Int32" Name="lt_contrato_id" />
+    <Property Type="String" Name="lt_deffs" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="lt_poa_id" />
+    <Property Type="Int32" Name="lt_transporte_id" />
+    <Property Type="Int32" Name="lt_conductor_id" />
+    <Property Type="Int32" Name="lt_destinatario_id" />
+    <Property Type="String" Name="lt_observacion" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="lt_tipodimension" />
+    <Property Type="Int32" Name="pro_id" Nullable="false" />
+    <Property Type="String" Name="pro_titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="titular_ruc" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="pro_departamento" />
+    <Property Type="String" Name="departamento" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="pro_provincia" />
+    <Property Type="String" Name="provincia" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="pro_distrito" />
+    <Property Type="String" Name="pro_sector" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="prop_id" Nullable="false" />
+    <Property Type="String" Name="prop_nomraz" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="prop_ruc" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="con_id" Nullable="false" />
+    <Property Type="String" Name="con_descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="zyp_id" Nullable="false" />
+    <Property Type="String" Name="zyp_poa" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="veh_id" Nullable="false" />
+    <Property Type="String" Name="veh_placa" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="veh_tipo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="veh_nroinscripcion" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="cond_id" Nullable="false" />
+    <Property Type="String" Name="con_nomape" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="con_nrolicencia" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="con_dni" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="veh_marca" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="des_id" Nullable="false" />
+    <Property Type="String" Name="des_nomraz" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_departamento" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_provincia" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_distrito" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="distrito" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_direccion" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_ruc" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lt_Zafra" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vmostrar_listatrozasconnrolista">
+    <Key>
+      <PropertyRef Name="Ltd_Id" />
+    </Key>
+    <Property Type="String" Name="Lt_Nrogtf" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="lt_Titular_Id" />
+    <Property Type="Int32" Name="Ltd_Id" Nullable="false" />
+    <Property Type="String" Name="Ltd_Especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Ltd_Codificacion" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Ltd_D1" />
+    <Property Type="Decimal" Name="Ltd_D2" />
+    <Property Type="Decimal" Name="Ltd_D3" />
+    <Property Type="Decimal" Name="Ltd_Vol_m3" />
+    <Property Type="String" Name="Ltd_NroListaTrozas" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Ltd_Autogenerado" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="cut" MaxLength="39" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vmostrar_listatrozasdetalle">
+    <Key>
+      <PropertyRef Name="Ltd_Id" />
+    </Key>
+    <Property Type="Int32" Name="Ltd_Id" Nullable="false" />
+    <Property Type="String" Name="Ltd_Especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Ltd_Codificacion" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Ltd_D1" />
+    <Property Type="Decimal" Name="Ltd_D2" />
+    <Property Type="Decimal" Name="Ltd_D3" />
+    <Property Type="Decimal" Name="Ltd_Vol_M3" />
+    <Property Type="Int32" Name="Ltd_Lt_Id" />
+    <Property Type="String" Name="Ltd_Autogenerado" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Ltd_NroListaTrozas" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lt_Nrogtf" MaxLength="15" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vmostrar_listatrozasportitular">
+    <Key>
+      <PropertyRef Name="Lt_id" />
+      <PropertyRef Name="Pro_Titular" />
+      <PropertyRef Name="Trozas" />
+      <PropertyRef Name="Pro_Id" />
+    </Key>
+    <Property Type="Int32" Name="Lt_id" Nullable="false" />
+    <Property Type="String" Name="Lt_Nrogtf" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Lt_Fecha" />
+    <Property Type="String" Name="Pro_Titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="Trozas" Nullable="false" />
+    <Property Type="Int32" Name="Pro_Id" Nullable="false" />
+    <Property Type="Decimal" Name="Volm3" />
+    <Property Type="String" Name="Zyp_Poa" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vmostrar_producciontotal">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Type="Int32" Name="RowId" Nullable="false" />
+    <Property Type="DateTime" Name="Fecha" />
+    <Property Type="String" Name="Lote_Aserrio" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Especie" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lote_Trozas" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Cantidad" />
+    <Property Type="Double" Name="VolM3" />
+    <Property Type="Double" Name="VolPT" />
+    <Property Type="String" Name="Producto" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vmostrar_titulares">
+    <Key>
+      <PropertyRef Name="pro_id" />
+      <PropertyRef Name="pro_titular" />
+      <PropertyRef Name="pro_ruc" />
+      <PropertyRef Name="departamento" />
+      <PropertyRef Name="distrito" />
+      <PropertyRef Name="Pro_Rep_Legal" />
+    </Key>
+    <Property Type="Int32" Name="pro_id" Nullable="false" />
+    <Property Type="String" Name="pro_titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="pro_ruc" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="pro_departamento" />
+    <Property Type="String" Name="departamento" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="pro_provincia" />
+    <Property Type="String" Name="provincia" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="pro_distrito" />
+    <Property Type="String" Name="distrito" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="pro_sector" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="pro_direccion" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="pro_propietariock" />
+    <Property Type="Boolean" Name="pro_destinock" />
+    <Property Type="Boolean" Name="pro_transporteck" />
+    <Property Type="String" Name="Pro_Dni" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Pro_Rep_Legal" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vmostrar_titulares_aserrio">
+    <Key>
+      <PropertyRef Name="titularID" />
+      <PropertyRef Name="ruc" />
+      <PropertyRef Name="contratoID" />
+      <PropertyRef Name="departamento" />
+      <PropertyRef Name="distrito" />
+      <PropertyRef Name="Zyp_id" />
+      <PropertyRef Name="Rep_Legal" />
+    </Key>
+    <Property Type="Int32" Name="titularID" Nullable="false" />
+    <Property Type="String" Name="titular" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ruc" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="contratoID" Nullable="false" />
+    <Property Type="String" Name="contrato" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="departamentoID" />
+    <Property Type="String" Name="departamento" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="provinciaID" />
+    <Property Type="String" Name="provincia" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="distritoID" />
+    <Property Type="String" Name="distrito" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="EsEmpresa" />
+    <Property Type="String" Name="GTF" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Zyp_id" Nullable="false" />
+    <Property Type="String" Name="Zyp_Zafra" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Poa" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="OrigenRecurso" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Resolucion" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TipoPm" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Rep_Legal" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="periodo" MaxLength="45" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vmostrar_trozasrecepcionadas">
+    <Key>
+      <PropertyRef Name="F01d_Id" />
+    </Key>
+    <Property Type="String" Name="F01_Nro" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F01d_Id" Nullable="false" />
+    <Property Type="String" Name="F01d_Autogenerado" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Especiec" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="F01d_D1c" />
+    <Property Type="Decimal" Name="F01d_D2c" />
+    <Property Type="Decimal" Name="F01d_D3c" />
+    <Property Type="Decimal" Name="F01d_Vol_M3c" />
+  </EntityType>
+  <EntityType Name="vmostrar_zafrasypoas">
+    <Key>
+      <PropertyRef Name="zyp_id" />
+      <PropertyRef Name="Pro_Titular" />
+    </Key>
+    <Property Type="Int32" Name="zyp_id" Nullable="false" />
+    <Property Type="String" Name="Zyp_Zafra" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Poa" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Con_Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Zyp_Permiso_Id" />
+    <Property Type="String" Name="Pro_Titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Resolucion" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_tipoPm" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_consulta_gtf_dbf_01">
+    <Key>
+      <PropertyRef Name="TITULAR_ID" />
+      <PropertyRef Name="CONTRATO_ID" />
+      <PropertyRef Name="POA_ID" />
+      <PropertyRef Name="PROPIETARIO_ID" />
+      <PropertyRef Name="DETINATARIO_ID" />
+      <PropertyRef Name="TRANSPORTE_ID" />
+      <PropertyRef Name="CONDUCTOR_ID" />
+    </Key>
+    <Property Type="String" Name="NRO_GTFs" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GUI_UBIGEO" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NOM_ATFFS" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="FECHA_ENV" />
+    <Property Type="DateTime" Name="FECHA_VENC" />
+    <Property Type="Int32" Name="TITULAR_ID" Nullable="false" />
+    <Property Type="Int32" Name="CONTRATO_ID" Nullable="false" />
+    <Property Type="Int32" Name="ZAFRA" />
+    <Property Type="Int32" Name="POA_ID" Nullable="false" />
+    <Property Type="Int32" Name="PROPIETARIO_ID" Nullable="false" />
+    <Property Type="String" Name="TIPO_CV" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="NRO_CV" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="DETINATARIO_ID" Nullable="false" />
+    <Property Type="Int32" Name="TRANSPORTE_ID" Nullable="false" />
+    <Property Type="Int32" Name="CONDUCTOR_ID" Nullable="false" />
+    <Property Type="String" Name="NRGUIA_REM" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_detalle_troza">
+    <Key>
+      <PropertyRef Name="RowId" />
+      <PropertyRef Name="Nombre_propietario" />
+    </Key>
+    <Property Type="Int32" Name="RowId" Nullable="false" />
+    <Property Type="String" Name="Numtroza" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Ltd_D1" />
+    <Property Type="Decimal" Name="Ltd_D2" />
+    <Property Type="Decimal" Name="Ltd_D3" />
+    <Property Type="Decimal" Name="Ltd_Vol_M3" />
+    <Property Type="Int32" Name="Lt_Titular_Id" />
+    <Property Type="String" Name="Ltd_NroListaTrozas" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Ltd_Lt_Id" />
+    <Property Type="String" Name="Ltd_Autogenerado" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Lt_Poa_Id" />
+    <Property Type="Int32" Name="PropietarioId" />
+    <Property Type="String" Name="Nombre_propietario" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Estatus" />
+    <Property Type="Int32" Name="ConductorId" />
+    <Property Type="Int32" Name="Lt_Transporte_Id" />
+    <Property Type="String" Name="Veh_Placa" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="EspecieId" />
+    <Property Type="String" Name="especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lt_Nrogtf" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lt_Zafra" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Lt_Contrato_Id" />
+  </EntityType>
+  <EntityType Name="vw_empaquetado">
+    <Key>
+      <PropertyRef Name="RowId" />
+      <PropertyRef Name="Pro_Titular" />
+    </Key>
+    <Property Type="Int32" Name="RowId" Nullable="false" />
+    <Property Type="String" Name="Emp_NroDoc" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Emp_Fecha" />
+    <Property Type="Boolean" Name="Emp_Certificado" />
+    <Property Type="Int32" Name="Emp_AserraderoId" />
+    <Property Type="String" Name="Pro_Titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Emp_CubicadorId" />
+    <Property Type="String" Name="Emp_Cubicador" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Emp_observacion" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Emp_Periodo" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_empresas_aserrios">
+    <Key>
+      <PropertyRef Name="Pro_Id" />
+      <PropertyRef Name="Pro_Titular" />
+    </Key>
+    <Property Type="Int32" Name="Pro_Id" Nullable="false" />
+    <Property Type="String" Name="Pro_Titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_formato02a">
+    <Key>
+      <PropertyRef Name="F02_Id" />
+    </Key>
+    <Property Type="Int32" Name="F02_Id" Nullable="false" />
+    <Property Type="DateTime" Name="F02_Fecha" />
+    <Property Type="String" Name="F02d_Lote" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="f02_periodo" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02_NroOpe" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="EspecieID" />
+    <Property Type="String" Name="Especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02_NroDoc" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Estatus" />
+    <Property Type="Decimal" Name="F02d_Volm3" />
+    <Property Type="Decimal" Name="F02d_D3" />
+  </EntityType>
+  <EntityType Name="vw_formato04">
+    <Key>
+      <PropertyRef Name="f04_id" />
+    </Key>
+    <Property Type="Int32" Name="f04_id" Nullable="false" />
+    <Property Type="String" Name="f04_nro" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="f04_fecha" />
+    <Property Type="String" Name="f04_tipoconteo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="f04_turno_id" />
+    <Property Type="String" Name="tur_descrip" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="tur_horario" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="f04_Observacion" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="f04_ordenproduccion" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="per_nomape" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="per_cargo" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="f04_responsable_id" />
+    <Property Type="Int32" Name="f04_f02_id" />
+    <Property Type="String" Name="f02_NroDoc" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="f04_periodo" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="pro_titular" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="pro_id" />
+  </EntityType>
+  <EntityType Name="vw_listadodespachocabecera">
+    <Key>
+      <PropertyRef Name="des_id" />
+      <PropertyRef Name="des_titular_nombre" />
+      <PropertyRef Name="pro_ruc" />
+      <PropertyRef Name="des_rep_legal" />
+      <PropertyRef Name="departamento" />
+      <PropertyRef Name="distrito" />
+      <PropertyRef Name="des_propietario_nombre" />
+      <PropertyRef Name="prop_ruc" />
+      <PropertyRef Name="departamento_p" />
+      <PropertyRef Name="distrito_p" />
+      <PropertyRef Name="des_destinatario_nombre" />
+      <PropertyRef Name="des_dpto" />
+      <PropertyRef Name="des_dist" />
+      <PropertyRef Name="des_ruc" />
+    </Key>
+    <Property Type="Int32" Name="des_id" Nullable="false" />
+    <Property Type="String" Name="des_Ubigeo" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Des_Arffs" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="des_fecha" />
+    <Property Type="DateTime" Name="Des_Fecha_ven" />
+    <Property Type="String" Name="des_nrodoc" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="des_titular_id" />
+    <Property Type="Int32" Name="Des_Periodo" />
+    <Property Type="String" Name="des_titular_nombre" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="pro_ruc" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_rep_legal" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="pro_sector" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="departamento" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="provincia" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="distrito" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="des_propietario_id" />
+    <Property Type="String" Name="des_propietario_nombre" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="prop_ruc" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="prop_dni" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="des_destinatario_id" />
+    <Property Type="String" Name="des_direccion_p" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="departamento_p" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="provincia_p" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="distrito_p" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_tipo_cv" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_nro_CV" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Des_Nro_Guia_rem" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_destinatario_nombre" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_dpto" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_prov" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_dist" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_direccion" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_ruc" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_dni" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="des_transportista_id" />
+    <Property Type="String" Name="des_conductor_nombre" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="con_nrolicencia" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="con_dni" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="des_vehiculo_id" />
+    <Property Type="String" Name="veh_placa" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="veh_tipo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Veh_Tipo_vehic" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Veh_Emt_Id" />
+    <Property Type="Int32" Name="Des_Contrato_Id" />
+    <Property Type="String" Name="Nrocontrato" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_recurso" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_resolucion" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_tipopm" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_tipotransporte" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_listadodespachodetalle">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="DetID" />
+    <Property Type="String" Name="NroGtf" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LoteAser_Pqt" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nom_Cientifico" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Producto" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Clase_Comercial" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Cantidad" />
+    <Property Type="String" Name="Tipo_Unidad" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Volm3" />
+    <Property Type="Decimal" Name="VolPt" />
+  </EntityType>
+  <EntityType Name="vw_mostrar_aserrio_01">
+    <Key>
+      <PropertyRef Name="RowId" />
+      <PropertyRef Name="F04_Id" />
+      <PropertyRef Name="Prod_Id" />
+      <PropertyRef Name="Pro_Titular" />
+    </Key>
+    <Property Type="Int32" Name="RowId" Nullable="false" />
+    <Property Type="Int32" Name="F04_Id" Nullable="false" />
+    <Property Type="String" Name="Lote_troza" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nro_Lot_As" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="EspecieId" />
+    <Property Type="String" Name="Especie" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nom_Producto" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Prod_ClasificacionId" />
+    <Property Type="String" Name="Prod_ClasificacionCom" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Cantidad" />
+    <Property Type="String" Name="TipUnidad" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="VolM3" />
+    <Property Type="Double" Name="VolPT" />
+    <Property Type="String" Name="Objetivo_producto" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ClasificaProducto" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Prod_Id" Nullable="false" />
+    <Property Type="String" Name="F04_Nro" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F04_Nro_doc" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="F04_Fecha" />
+    <Property Type="String" Name="F04_TipoConteo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CentroTransac" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UbicaProducto" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Simbolo" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Estatus" />
+    <Property Type="String" Name="periodo" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Pro_Titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Tur_Descrip" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CodeUnico" MaxLength="106" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_mostrar_aserrio_total_prod">
+    <Key>
+      <PropertyRef Name="RowId" />
+      <PropertyRef Name="F04_Id" />
+      <PropertyRef Name="Prod_Id" />
+      <PropertyRef Name="Titular" />
+      <PropertyRef Name="Nom_Aserradero" />
+    </Key>
+    <Property Type="Int32" Name="RowId" Nullable="false" />
+    <Property Type="Int32" Name="F04_Id" Nullable="false" />
+    <Property Type="String" Name="Lote_troza" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nro_Lot_As" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="EspecieId" />
+    <Property Type="String" Name="Especie" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nom_Producto" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Prod_ClasificacionId" />
+    <Property Type="String" Name="Prod_ClasificacionCom" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Cantidad" />
+    <Property Type="String" Name="TipUnidad" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="VolM3" />
+    <Property Type="Double" Name="VolPT" />
+    <Property Type="String" Name="Objetivo_producto" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ClasificaProducto" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Prod_Id" Nullable="false" />
+    <Property Type="String" Name="F04_Nro" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Gtf" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Con_Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CodeUnico" MaxLength="106" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zafra" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Pca" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F04_Nro_doc" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="F04_Fecha" />
+    <Property Type="String" Name="F04_TipoConteo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CentroTransac" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UbicaProducto" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Estatus" />
+    <Property Type="String" Name="periodo" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nom_Aserradero" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Tur_Descrip" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_mostrar_formato01_det_recep">
+    <Key>
+      <PropertyRef Name="F01d_Id" />
+    </Key>
+    <Property Type="Int32" Name="F01d_Id" Nullable="false" />
+    <Property Type="String" Name="Lt_Nrogtf" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="EspecieId" />
+    <Property Type="String" Name="F01d_Especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="F01d_Vol_M3" />
+    <Property Type="String" Name="Nro_contrato" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_mostrar_formato02_det_aserrio">
+    <Key>
+      <PropertyRef Name="F02d_Id" />
+    </Key>
+    <Property Type="Int32" Name="F02d_Id" Nullable="false" />
+    <Property Type="String" Name="F02d_Especie" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Con_Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02d_GTF" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="suma_volm3" />
+  </EntityType>
+  <EntityType Name="vw_mostrar_libro_operaciones">
+    <Key>
+      <PropertyRef Name="Desd_Id" />
+      <PropertyRef Name="Des_Id" />
+      <PropertyRef Name="tipo" />
+      <PropertyRef Name="Nombre" />
+      <PropertyRef Name="T_Trozas" />
+      <PropertyRef Name="uind_med" />
+      <PropertyRef Name="Pro_Titular" />
+    </Key>
+    <Property Type="Int32" Name="Desd_Id" Nullable="false" />
+    <Property Type="Int32" Name="Des_Id" Nullable="false" />
+    <Property Type="DateTime" Name="fecha_Ing" />
+    <Property Type="String" Name="Receptor" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="tipo" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nombre_comun" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nombre_Cientifico" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="T_Trozas" Nullable="false" />
+    <Property Type="String" Name="uind_med" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="T_Volm3" />
+    <Property Type="String" Name="Nro_Gtf" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="fechaGtf" />
+    <Property Type="String" Name="localidad" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nro_contrato" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Des_Fecha" />
+    <Property Type="String" Name="Desd_Producto" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Desd_Cantidad" />
+    <Property Type="Decimal" Name="VolM3Com" />
+    <Property Type="Decimal" Name="VolM3Rec" />
+    <Property Type="Decimal" Name="Desd_Ac_Volm3_CM" />
+    <Property Type="Decimal" Name="Desd_Ac_Volm3_RC" />
+    <Property Type="Decimal" Name="Vol_Total" />
+    <Property Type="Decimal" Name="Saldo_80" />
+    <Property Type="String" Name="Pro_Titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Des_Periodo" />
+  </EntityType>
+  <EntityType Name="vw_mostrar_lista_lotes_trozas">
+    <Key>
+      <PropertyRef Name="F01_id" />
+      <PropertyRef Name="Pro_Titular" />
+    </Key>
+    <Property Type="Int32" Name="F01_id" Nullable="false" />
+    <Property Type="String" Name="F01d_Lote" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Gtf" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F01d_TitularId" />
+    <Property Type="String" Name="F01d_Especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Pro_Titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Con_Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zafra" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Pca" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="codeUnico" MaxLength="56" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_mostrar_listastrozasgtf">
+    <Key>
+      <PropertyRef Name="Lt_id" />
+      <PropertyRef Name="Ltd_Id" />
+      <PropertyRef Name="Pro_Titular" />
+    </Key>
+    <Property Type="Int32" Name="Lt_id" Nullable="false" />
+    <Property Type="String" Name="Lt_Nrogtf" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Lt_Fecha" />
+    <Property Type="Int32" Name="Lt_Propietario_Id" />
+    <Property Type="String" Name="Lt_unidad" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Ltd_Id" Nullable="false" />
+    <Property Type="Int32" Name="EspecieId" />
+    <Property Type="String" Name="Ltd_Especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Ltd_Codificacion" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Ltd_D1" />
+    <Property Type="Decimal" Name="Ltd_D2" />
+    <Property Type="Decimal" Name="Ltd_D3" />
+    <Property Type="Decimal" Name="volm3gtf" />
+    <Property Type="Int32" Name="Ltd_Lt_Id" />
+    <Property Type="String" Name="Ltd_Autogenerado" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Ltd_NroListaTrozas" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Estatus" />
+    <Property Type="Int32" Name="Lt_Titular_Id" />
+    <Property Type="String" Name="Pro_Titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Con_Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Zafra" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Poa" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Pro_Departamento" />
+    <Property Type="Int32" Name="Pro_Provincia" />
+    <Property Type="Int32" Name="Pro_Distrito" />
+    <Property Type="String" Name="Pro_Direccion" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Pro_Dni" MaxLength="8" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_mostrar_nro_lista_periodo">
+    <Key>
+      <PropertyRef Name="F02_Id" />
+    </Key>
+    <Property Type="Int32" Name="F02_Id" Nullable="false" />
+    <Property Type="String" Name="F02_NroDoc" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="f02_periodo" MaxLength="45" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_mostrar_produccion">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Type="Int32" Name="RowId" Nullable="false" />
+    <Property Type="String" Name="Especie" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Descripcion_ruma" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Prod_ClasificacionCom" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="T_Pzs" />
+    <Property Type="Double" Name="T_Vol_m3" />
+    <Property Type="String" Name="Objetivo_producto" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Prod_ClasificacionId" />
+    <Property Type="String" Name="Lote_troza" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="CodigoUnic" MaxLength="17" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_mostrar_producto_procesado">
+    <Key>
+      <PropertyRef Name="Desd_Id" />
+      <PropertyRef Name="Des_Id" />
+      <PropertyRef Name="Pro_Titular" />
+    </Key>
+    <Property Type="Int32" Name="Desd_Id" Nullable="false" />
+    <Property Type="Int32" Name="Des_Id" Nullable="false" />
+    <Property Type="DateTime" Name="Des_Fecha" />
+    <Property Type="String" Name="Desd_Codigo" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Desd_Especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Desd_Producto" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CComercialID" />
+    <Property Type="String" Name="Desd_ClaseC" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Desd_Cantidad" />
+    <Property Type="Decimal" Name="Desd_Volm3" />
+    <Property Type="Decimal" Name="Desd_Ac_Volm3_CM" />
+    <Property Type="Decimal" Name="Desd_Ac_Volm3_RC" />
+    <Property Type="Decimal" Name="Saldo_80" />
+    <Property Type="String" Name="Code_Unico" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Des_Periodo" />
+    <Property Type="String" Name="Pro_Titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_mostrar_res_trozas_recep">
+    <Key>
+      <PropertyRef Name="F01d_Id" />
+      <PropertyRef Name="tipo" />
+      <PropertyRef Name="Nombre" />
+      <PropertyRef Name="T_Trozas" />
+      <PropertyRef Name="uind_med" />
+    </Key>
+    <Property Type="Int32" Name="F01d_Id" Nullable="false" />
+    <Property Type="DateTime" Name="fecha_Ing" />
+    <Property Type="String" Name="Receptor" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="tipo" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nombre_comun" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Nombre_Cientifico" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="T_Trozas" Nullable="false" />
+    <Property Type="String" Name="uind_med" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="T_Volm3" />
+    <Property Type="String" Name="Nro_Gtf" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="fechaGtf" />
+    <Property Type="String" Name="Nro_contrato" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="localidad" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Cod_Unico" MaxLength="32" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_mostrar_resumen_trozas_aserradas">
+    <Key>
+      <PropertyRef Name="Lt_id" />
+      <PropertyRef Name="F02_Id" />
+      <PropertyRef Name="F02d_Id" />
+      <PropertyRef Name="Pro_Id" />
+      <PropertyRef Name="T_trozas" />
+      <PropertyRef Name="Pro_Titular" />
+    </Key>
+    <Property Type="Int32" Name="Lt_id" Nullable="false" />
+    <Property Type="Int32" Name="F02_Id" Nullable="false" />
+    <Property Type="Int32" Name="F02d_Id" Nullable="false" />
+    <Property Type="Int32" Name="Pro_Id" Nullable="false" />
+    <Property Type="String" Name="F02_NroDoc" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="f02_periodo" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02d_Lote" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="F02_Fecha" />
+    <Property Type="String" Name="F02d_Especie" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Int64" Name="T_trozas" Nullable="false" />
+    <Property Type="Decimal" Name="T_VolM3Gtf" />
+    <Property Type="Decimal" Name="T_Volm3CIn" />
+    <Property Type="Decimal" Name="T_Volpt" />
+    <Property Type="String" Name="Pro_Titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Con_Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Zafra" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Poa" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02d_GTF" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Proc_descripcion" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="EspecieId" />
+  </EntityType>
+  <EntityType Name="vw_mostrar_trozas_aserrad_titulares">
+    <Key>
+      <PropertyRef Name="F02_Id" />
+      <PropertyRef Name="Pro_Titular" />
+      <PropertyRef Name="nom_aserrad" />
+    </Key>
+    <Property Type="Int32" Name="F02_Id" Nullable="false" />
+    <Property Type="DateTime" Name="F02_Fecha" />
+    <Property Type="String" Name="Pro_Titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="contrato" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Zafra" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Poa" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="nom_aserrad" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_mostrar_trozas_aserradas">
+    <Key>
+      <PropertyRef Name="Lt_id" />
+      <PropertyRef Name="F02_Id" />
+      <PropertyRef Name="F02d_Id" />
+      <PropertyRef Name="Pro_Id" />
+      <PropertyRef Name="Pro_Titular" />
+      <PropertyRef Name="Aserradero" />
+    </Key>
+    <Property Type="Int32" Name="Lt_id" Nullable="false" />
+    <Property Type="Int32" Name="F02_Id" Nullable="false" />
+    <Property Type="Int32" Name="F02d_Id" Nullable="false" />
+    <Property Type="Int32" Name="Pro_Id" Nullable="false" />
+    <Property Type="String" Name="F02_NroDoc" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="f02_periodo" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02d_Lote" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="F02_Fecha" />
+    <Property Type="String" Name="F02d_Especie" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02d_Codificacion" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02d_CodIndustria" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="F02d_D1" />
+    <Property Type="Decimal" Name="F02d_D2" />
+    <Property Type="Decimal" Name="F02d_D3" />
+    <Property Type="Decimal" Name="f02d_d1c" />
+    <Property Type="Decimal" Name="f02d_d2c" />
+    <Property Type="Decimal" Name="f02d_d3c" />
+    <Property Type="Decimal" Name="f02d_volm3c" />
+    <Property Type="Decimal" Name="f02d_d_pulgada" />
+    <Property Type="Decimal" Name="f02d_dpies" />
+    <Property Type="Decimal" Name="f02d_vol_pt" />
+    <Property Type="Decimal" Name="F02d_Volm3" />
+    <Property Type="String" Name="Pro_Titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Con_Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Zafra" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Poa" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F02d_GTF" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Estatus" />
+    <Property Type="Int32" Name="f02_emp_id" />
+    <Property Type="String" Name="Aserradero" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Proc_descripcion" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_mostrar_trozas_recepcionadas">
+    <Key>
+      <PropertyRef Name="F01_id" />
+      <PropertyRef Name="F01d_Id" />
+      <PropertyRef Name="F01d_F01_Id" />
+    </Key>
+    <Property Type="Int32" Name="F01_id" Nullable="false" />
+    <Property Type="Int32" Name="F01d_Id" Nullable="false" />
+    <Property Type="Int32" Name="F01d_F01_Id" Nullable="false" />
+    <Property Type="DateTime" Name="F01_Fecha" />
+    <Property Type="String" Name="F01d_Lote" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Con_Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Titular" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Zafra" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Poa" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Gtf" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Correlativo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_CodIndustria" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="F01d_D1" />
+    <Property Type="Decimal" Name="F01d_D2" />
+    <Property Type="Decimal" Name="F01d_D3" />
+    <Property Type="Decimal" Name="F01d_Vol_M3" />
+    <Property Type="Decimal" Name="F01d_D1c" />
+    <Property Type="Decimal" Name="F01d_D2c" />
+    <Property Type="Decimal" Name="F01d_D3c" />
+    <Property Type="Decimal" Name="F01d_Vol_M3c" />
+    <Property Type="Int32" Name="F01d_Dm_pulgada" />
+    <Property Type="Decimal" Name="F01d_Long_pie" />
+    <Property Type="Decimal" Name="F01d_Vol_pt" />
+    <Property Type="String" Name="F01d_Procedencia" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Autogenerado" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Estatus" />
+    <Property Type="String" Name="F01d_Propietario" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F01d_Abastecimiento" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Periodo" MaxLength="4" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_paquete">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="RumaId" />
+    <Property Type="String" Name="Paquete" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="EspecieId" />
+    <Property Type="String" Name="Especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Acabado" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Humedad" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Clasificacion" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Cantidad" />
+    <Property Type="Decimal" Name="Volm3" />
+    <Property Type="Decimal" Name="Volpt" />
+    <Property Type="Int32" Name="pid" />
+  </EntityType>
+  <EntityType Name="vw_paquete_despacho">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Type="Int32" Name="RowId" Nullable="false" />
+    <Property Type="Int32" Name="RumaId" />
+    <Property Type="String" Name="Numpaquete" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="EspecieId" />
+    <Property Type="String" Name="Espe_NombreComun" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ProductoId" />
+    <Property Type="String" Name="Prod_NomProducto" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Prod_ClasificacionCom" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Prod_TipoProducto" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TipoUnidad" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Periodo" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Espesor" />
+    <Property Type="Decimal" Name="Ancho" />
+    <Property Type="Decimal" Name="Largo" />
+    <Property Type="Decimal" Name="VolPT" />
+    <Property Type="Decimal" Name="VolM3" />
+    <Property Type="Decimal" Name="Canidad" />
+    <Property Type="Boolean" Name="Estatus" />
+    <Property Type="Int32" Name="Prod_Rendimiento" />
+    <Property Type="Int32" Name="Prod_ClasificacionId" />
+  </EntityType>
+  <EntityType Name="vw_rumas">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Type="Int32" Name="RowId" Nullable="false" />
+    <Property Type="Int32" Name="EspecieId" />
+    <Property Type="String" Name="Nombre_especie" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lote_troza" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Orden_produccion" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Codigo_ruma" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ProductoId" />
+    <Property Type="Int32" Name="Cantidad" />
+    <Property Type="String" Name="TipUnidad" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="MaderaCertificada" />
+    <Property Type="String" Name="Objetivo_producto" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="F04_Id" />
+    <Property Type="DateTime" Name="F04_Fecha" />
+    <Property Type="String" Name="SisCubicacion" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Double" Name="VolM3" />
+    <Property Type="Double" Name="VolPT" />
+    <Property Type="Boolean" Name="Estatus" />
+    <Property Type="String" Name="ClasificaProducto" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Sald_Vol_Trozas" />
+    <Property Type="Decimal" Name="VoLoTrozas" />
+    <Property Type="Int32" Name="F04_Pro_id" />
+    <Property Type="String" Name="F04_Periodo" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Descripcion_ruma" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Prod_Rendimiento" />
+    <Property Type="String" Name="Prod_TipoProducto" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_rumas_despacho">
+    <Key>
+      <PropertyRef Name="RowId" />
+      <PropertyRef Name="RumaId" />
+    </Key>
+    <Property Type="Int32" Name="RowId" Nullable="false" />
+    <Property Type="Int32" Name="RumaId" Nullable="false" />
+    <Property Type="String" Name="Codigo_ruma" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="EspecieId" />
+    <Property Type="String" Name="Especie" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ProductoId" />
+    <Property Type="String" Name="Prod_NomProducto" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Prod_ClasificacionCom" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Prod_TipoProducto" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="TipUnidad" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Objetivo_producto" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="F04_Periodo" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Cantidad" />
+    <Property Type="Decimal" Name="VolPT" />
+    <Property Type="Decimal" Name="VolM3" />
+    <Property Type="Boolean" Name="Estatus" />
+    <Property Type="Int32" Name="Prod_Rendimiento" />
+    <Property Type="Int32" Name="Prod_ClasificacionId" />
+  </EntityType>
+  <EntityType Name="vw_rumas_detalle">
+    <Key>
+      <PropertyRef Name="RowId" />
+    </Key>
+    <Property Type="Int32" Name="RowId" Nullable="false" />
+    <Property Type="Int32" Name="RumaId" />
+    <Property Type="Decimal" Name="Espesor" />
+    <Property Type="Decimal" Name="Ancho" />
+    <Property Type="Decimal" Name="Largo" />
+    <Property Type="Int32" Name="Cantidad" />
+    <Property Type="Decimal" Name="Vol_pt" />
+    <Property Type="Decimal" Name="Vol_m3" />
+    <Property Type="String" Name="Descripcion_ruma" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_titulares01">
+    <Key>
+      <PropertyRef Name="Nombre_titular" />
+      <PropertyRef Name="No_ruc" />
+      <PropertyRef Name="ContratoId" />
+    </Key>
+    <Property Type="Int32" Name="TitularId" />
+    <Property Type="String" Name="Nombre_titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="No_ruc" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ContratoId" Nullable="false" />
+    <Property Type="String" Name="Num_contrato" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_verificaexistecodigocorrelativo">
+    <Key>
+      <PropertyRef Name="IdF01" />
+    </Key>
+    <Property Type="Int32" Name="IdF01" Nullable="false" />
+    <Property Type="String" Name="PeriodoF01" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="TitularF01" />
+    <Property Type="String" Name="CodCorrelativo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="Estatus" />
+  </EntityType>
+  <EntityType Name="vw_verificaexistecodigoindustria">
+    <Key>
+      <PropertyRef Name="IdF01" />
+    </Key>
+    <Property Type="Int32" Name="IdF01" Nullable="false" />
+    <Property Type="String" Name="PeriodoF01" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="TitularF01" />
+    <Property Type="String" Name="CodIndustria" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="estado" />
+  </EntityType>
+  <EntityType Name="vw_verificapaquetedespacho">
+    <Key>
+      <PropertyRef Name="cuantos" />
+    </Key>
+    <Property Type="Int64" Name="empid" />
+    <Property Type="Int64" Name="cuantos" Nullable="false" />
+    <Property Type="String" Name="periodo" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="especieid" />
+    <Property Type="String" Name="codigopaquete" MaxLength="6" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vw_verificarumadespacho">
+    <Key>
+      <PropertyRef Name="cuantos" />
+    </Key>
+    <Property Type="Int64" Name="idruma" />
+    <Property Type="Int64" Name="cuantos" Nullable="false" />
+    <Property Type="String" Name="periodo" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="codigoruma" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="especie" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="objetivo" MaxLength="150" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vwlista_trozasc">
+    <Key>
+      <PropertyRef Name="Lt_id" />
+      <PropertyRef Name="lt_titular" />
+      <PropertyRef Name="titular_ruc" />
+      <PropertyRef Name="lt_rep_legal" />
+      <PropertyRef Name="departamento" />
+      <PropertyRef Name="distrito" />
+      <PropertyRef Name="prop_nomraz" />
+      <PropertyRef Name="prop_ruc" />
+      <PropertyRef Name="pro_departament" />
+      <PropertyRef Name="pro_distrito" />
+      <PropertyRef Name="des_nomraz" />
+      <PropertyRef Name="des_ruc" />
+      <PropertyRef Name="des_departamento" />
+      <PropertyRef Name="des_distrito" />
+    </Key>
+    <Property Type="Int32" Name="Lt_id" Nullable="false" />
+    <Property Type="String" Name="Lt_Nrogtf" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Lt_Ubigeo" />
+    <Property Type="DateTime" Name="Lt_Fecha" />
+    <Property Type="DateTime" Name="Lt_fecha_ven" />
+    <Property Type="Boolean" Name="Lt_TipoDimension" />
+    <Property Type="Int32" Name="Lt_Titular_Id" />
+    <Property Type="String" Name="lt_titular" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="titular_ruc" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="lt_rep_legal" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="departamento" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="provincia" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="distrito" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Pro_Sector" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lt_Deffs" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Lt_Propietario_Id" />
+    <Property Type="String" Name="prop_nomraz" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="lt_dni_p" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="prop_ruc" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="lt_direccion_p" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="pro_departament" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="pro_provincia" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="pro_distrito" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lt_Tipo_Cv" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lt_Nro_Cv" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Lt_Destinatario_Id" />
+    <Property Type="String" Name="des_nomraz" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="lt_dni_d" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_ruc" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_direccion" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_departamento" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_provincia" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="des_distrito" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Lt_Contrato_Id" />
+    <Property Type="String" Name="Con_Descripcion" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lt_Origen_Rec" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Lt_Poa_Id" />
+    <Property Type="String" Name="Lt_Zafra" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="lt_Resolucion" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="lt_TipoPm" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Zyp_Poa" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Lt_Transporte_Id" />
+    <Property Type="String" Name="Veh_Placa" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Veh_Tipo" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lt_Tipo_Vehic" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Lt_NroGuia_rem" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Lt_Conductor_Id" />
+    <Property Type="String" Name="con_nomape" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Con_Dni" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Con_NroLicencia" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Veh_Emt_Id" />
+  </EntityType>
+  <EntityType Name="wmostrar_empaquetado">
+    <Key>
+      <PropertyRef Name="RowId" />
+      <PropertyRef Name="Prod_Id" />
+    </Key>
+    <Property Type="Int32" Name="RowId" Nullable="false" />
+    <Property Type="String" Name="Emp_NroDoc" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="Emp_Fecha" />
+    <Property Type="String" Name="Emp_Periodo" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Numpaquete" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Acabado" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Humedad" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Clasificacion" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Periodo" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CantidadInicial" />
+    <Property Type="Decimal" Name="Volm3Inicial" />
+    <Property Type="Decimal" Name="VolptInicial" />
+    <Property Type="Decimal" Name="Espesor" />
+    <Property Type="Decimal" Name="Ancho" />
+    <Property Type="Decimal" Name="Largo" />
+    <Property Type="Decimal" Name="VolM3" />
+    <Property Type="Decimal" Name="VolPT" />
+    <Property Type="Int32" Name="Cantidad" />
+    <Property Type="Int32" Name="ProductoId" />
+    <Property Type="Boolean" Name="Estatus" />
+    <Property Type="Int32" Name="EmpaquetadoId" />
+    <Property Type="Int32" Name="Prod_Id" Nullable="false" />
+    <Property Type="String" Name="Prod_NomProducto" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Prod_ClasificacionCom" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Prod_Rendimiento" />
+    <Property Type="String" Name="Prod_TipoProducto" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Ubicacion" MaxLength="45" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="fkAlmacenResponsable">
+    <End Type="samadModel.personal" Role="personal" Multiplicity="0..1" />
+    <End Type="samadModel.almacen" Role="almacen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="personal">
+        <PropertyRef Name="Per_Id" />
+      </Principal>
+      <Dependent Role="almacen">
+        <PropertyRef Name="Responsable" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fkPersonalCargo">
+    <End Type="samadModel.cargos" Role="cargos" Multiplicity="0..1" />
+    <End Type="samadModel.personal" Role="personal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cargos">
+        <PropertyRef Name="Car_id" />
+      </Principal>
+      <Dependent Role="personal">
+        <PropertyRef Name="Per_CargoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fkConductorTitular">
+    <End Type="samadModel.titulares" Role="titulares" Multiplicity="0..1" />
+    <End Type="samadModel.conductores" Role="conductores" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="titulares">
+        <PropertyRef Name="Pro_Id" />
+      </Principal>
+      <Dependent Role="conductores">
+        <PropertyRef Name="Con_Emt_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="contratos_titular">
+    <End Type="samadModel.titulares" Role="titulares" Multiplicity="0..1" />
+    <End Type="samadModel.contratos" Role="contratos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="titulares">
+        <PropertyRef Name="Pro_Id" />
+      </Principal>
+      <Dependent Role="contratos">
+        <PropertyRef Name="Con_Pro_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="zyp_contratos">
+    <End Type="samadModel.contratos" Role="contratos" Multiplicity="0..1" />
+    <End Type="samadModel.zafrasypoas" Role="zafrasypoas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="contratos">
+        <PropertyRef Name="Con_id" />
+      </Principal>
+      <Dependent Role="zafrasypoas">
+        <PropertyRef Name="Zyp_Permiso_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fkPaketeA">
+    <End Type="samadModel.empaquetado" Role="empaquetado" Multiplicity="0..1" />
+    <End Type="samadModel.paquete" Role="paquete" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="empaquetado">
+        <PropertyRef Name="RowId" />
+      </Principal>
+      <Dependent Role="paquete">
+        <PropertyRef Name="EmpaquetadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fkPaketeEmpresa">
+    <End Type="samadModel.titulares" Role="titulares" Multiplicity="0..1" />
+    <End Type="samadModel.empaquetado" Role="empaquetado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="titulares">
+        <PropertyRef Name="Pro_Id" />
+      </Principal>
+      <Dependent Role="empaquetado">
+        <PropertyRef Name="Emp_AserraderoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fkEspecieDet">
+    <End Type="samadModel.especies" Role="especies" Multiplicity="0..1" />
+    <End Type="samadModel.formato02_det" Role="formato02_det" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="especies">
+        <PropertyRef Name="Espe_Id" />
+      </Principal>
+      <Dependent Role="formato02_det">
+        <PropertyRef Name="EspecieId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fkEspecieListat">
+    <End Type="samadModel.especies" Role="especies" Multiplicity="0..1" />
+    <End Type="samadModel.listatrozasd" Role="listatrozasd" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="especies">
+        <PropertyRef Name="Espe_Id" />
+      </Principal>
+      <Dependent Role="listatrozasd">
+        <PropertyRef Name="EspecieId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fkespeciesfto01">
+    <End Type="samadModel.especies" Role="especies" Multiplicity="0..1" />
+    <End Type="samadModel.formato01_det" Role="formato01_det" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="especies">
+        <PropertyRef Name="Espe_Id" />
+      </Principal>
+      <Dependent Role="formato01_det">
+        <PropertyRef Name="EspecieId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fkdetalle">
+    <End Type="samadModel.formato01" Role="formato01" Multiplicity="1" />
+    <End Type="samadModel.formato01_det" Role="formato01_det" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="formato01">
+        <PropertyRef Name="F01_id" />
+      </Principal>
+      <Dependent Role="formato01_det">
+        <PropertyRef Name="F01d_F01_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_formato02_det_1">
+    <End Type="samadModel.formato02" Role="formato02" Multiplicity="0..1" />
+    <End Type="samadModel.formato02_det" Role="formato02_det" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="formato02">
+        <PropertyRef Name="F02_Id" />
+      </Principal>
+      <Dependent Role="formato02_det">
+        <PropertyRef Name="F02d_F02_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKlt_id">
+    <End Type="samadModel.listatrozasc" Role="listatrozasc" Multiplicity="0..1" />
+    <End Type="samadModel.listatrozasd" Role="listatrozasd" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="listatrozasc">
+        <PropertyRef Name="Lt_id" />
+      </Principal>
+      <Dependent Role="listatrozasd">
+        <PropertyRef Name="Ltd_Lt_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fkTitularTrozasc">
+    <End Type="samadModel.titulares" Role="titulares" Multiplicity="0..1" />
+    <End Type="samadModel.listatrozasc" Role="listatrozasc" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="titulares">
+        <PropertyRef Name="Pro_Id" />
+      </Principal>
+      <Dependent Role="listatrozasc">
+        <PropertyRef Name="Lt_Titular_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fkPaketeDeta">
+    <End Type="samadModel.paquete" Role="paquete" Multiplicity="0..1" />
+    <End Type="samadModel.paquete_deta" Role="paquete_deta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="paquete">
+        <PropertyRef Name="RowId" />
+      </Principal>
+      <Dependent Role="paquete_deta">
+        <PropertyRef Name="PaqueteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_procesos_titular">
+    <End Type="samadModel.titulares" Role="titulares" Multiplicity="0..1" />
+    <End Type="samadModel.procesos" Role="procesos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="titulares">
+        <PropertyRef Name="Pro_Id" />
+      </Principal>
+      <Dependent Role="procesos">
+        <PropertyRef Name="Pro_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

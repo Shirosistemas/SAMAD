@@ -1,0 +1,2098 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="samadModelStoreContainer" CdmEntityContainer="samadEntities">
+    <FunctionImportMapping FunctionImportName="mostrar_formato01" FunctionName="samadModel.Store.mostrar_formato01" />
+    <EntitySetMapping Name="almacen">
+      <EntityTypeMapping TypeName="samadModel.almacen">
+        <MappingFragment StoreEntitySet="almacen">
+          <ScalarProperty Name="Responsable" ColumnName="Responsable" />
+          <ScalarProperty Name="Nombre_almacen" ColumnName="Nombre_almacen" />
+          <ScalarProperty Name="Codigo_almacen" ColumnName="Codigo_almacen" />
+          <ScalarProperty Name="AlmacenId" ColumnName="AlmacenId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="auditoria">
+      <EntityTypeMapping TypeName="samadModel.auditoria">
+        <MappingFragment StoreEntitySet="auditoria">
+          <ScalarProperty Name="Aud_ip" ColumnName="Aud_ip" />
+          <ScalarProperty Name="Aud_nombre_pc" ColumnName="Aud_nombre_pc" />
+          <ScalarProperty Name="Aud_id_Usuario" ColumnName="Aud_id_Usuario" />
+          <ScalarProperty Name="Aud_Datos" ColumnName="Aud_Datos" />
+          <ScalarProperty Name="Aud_Id_Registro" ColumnName="Aud_Id_Registro" />
+          <ScalarProperty Name="Aud_Accion" ColumnName="Aud_Accion" />
+          <ScalarProperty Name="Aud_Tabla" ColumnName="Aud_Tabla" />
+          <ScalarProperty Name="Aud_Fecha" ColumnName="Aud_Fecha" />
+          <ScalarProperty Name="Aud_Id" ColumnName="Aud_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cargos">
+      <EntityTypeMapping TypeName="samadModel.cargos">
+        <MappingFragment StoreEntitySet="cargos">
+          <ScalarProperty Name="Car_Descripcion" ColumnName="Car_Descripcion" />
+          <ScalarProperty Name="Car_id" ColumnName="Car_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="catalogodespachoreport">
+      <EntityTypeMapping TypeName="samadModel.catalogodespachoreport">
+        <MappingFragment StoreEntitySet="catalogodespachoreport">
+          <ScalarProperty Name="CatEstatus" ColumnName="CatEstatus" />
+          <ScalarProperty Name="CatCamtidadD" ColumnName="CatCamtidadD" />
+          <ScalarProperty Name="CatVolPtD" ColumnName="CatVolPtD" />
+          <ScalarProperty Name="CatVolm3D" ColumnName="CatVolm3D" />
+          <ScalarProperty Name="CatLargoD" ColumnName="CatLargoD" />
+          <ScalarProperty Name="CatAnchoD" ColumnName="CatAnchoD" />
+          <ScalarProperty Name="CatEspesorD" ColumnName="CatEspesorD" />
+          <ScalarProperty Name="CatCamtidadC" ColumnName="CatCamtidadC" />
+          <ScalarProperty Name="CatVolPtC" ColumnName="CatVolPtC" />
+          <ScalarProperty Name="CatVolm3C" ColumnName="CatVolm3C" />
+          <ScalarProperty Name="CatLargoC" ColumnName="CatLargoC" />
+          <ScalarProperty Name="CatAnchoC" ColumnName="CatAnchoC" />
+          <ScalarProperty Name="CatEspesorC" ColumnName="CatEspesorC" />
+          <ScalarProperty Name="CatCamtidadB" ColumnName="CatCamtidadB" />
+          <ScalarProperty Name="CatVolPtB" ColumnName="CatVolPtB" />
+          <ScalarProperty Name="CatVolm3B" ColumnName="CatVolm3B" />
+          <ScalarProperty Name="CatLargoB" ColumnName="CatLargoB" />
+          <ScalarProperty Name="CatAnchoB" ColumnName="CatAnchoB" />
+          <ScalarProperty Name="CatEspesorB" ColumnName="CatEspesorB" />
+          <ScalarProperty Name="CatCamtidadA" ColumnName="CatCamtidadA" />
+          <ScalarProperty Name="CatVolPtA" ColumnName="CatVolPtA" />
+          <ScalarProperty Name="CatVolm3A" ColumnName="CatVolm3A" />
+          <ScalarProperty Name="CatLargoA" ColumnName="CatLargoA" />
+          <ScalarProperty Name="CatAnchoA" ColumnName="CatAnchoA" />
+          <ScalarProperty Name="CatEspesorA" ColumnName="CatEspesorA" />
+          <ScalarProperty Name="CatEspecie" ColumnName="CatEspecie" />
+          <ScalarProperty Name="CatDesId" ColumnName="CatDesId" />
+          <ScalarProperty Name="CatDeDtsId" ColumnName="CatDeDtsId" />
+          <ScalarProperty Name="CatIdEspecie" ColumnName="CatIdEspecie" />
+          <ScalarProperty Name="CatId" ColumnName="CatId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clientes">
+      <EntityTypeMapping TypeName="samadModel.clientes">
+        <MappingFragment StoreEntitySet="clientes">
+          <ScalarProperty Name="Clie_Contacto" ColumnName="Clie_Contacto" />
+          <ScalarProperty Name="Clie_Telefono" ColumnName="Clie_Telefono" />
+          <ScalarProperty Name="Clie_Direccion" ColumnName="Clie_Direccion" />
+          <ScalarProperty Name="Clie_NumDoc" ColumnName="Clie_NumDoc" />
+          <ScalarProperty Name="Clie_TipoDoc" ColumnName="Clie_TipoDoc" />
+          <ScalarProperty Name="Clie_NomRaz" ColumnName="Clie_NomRaz" />
+          <ScalarProperty Name="Clie_Id" ColumnName="Clie_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="conductores">
+      <EntityTypeMapping TypeName="samadModel.conductores">
+        <MappingFragment StoreEntitySet="conductores">
+          <ScalarProperty Name="Con_Emt_Id" ColumnName="Con_Emt_Id" />
+          <ScalarProperty Name="Con_Dni" ColumnName="Con_Dni" />
+          <ScalarProperty Name="Con_NroLicencia" ColumnName="Con_NroLicencia" />
+          <ScalarProperty Name="Con_NomApe" ColumnName="Con_NomApe" />
+          <ScalarProperty Name="Con_Id" ColumnName="Con_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="contratos">
+      <EntityTypeMapping TypeName="samadModel.contratos">
+        <MappingFragment StoreEntitySet="contratos">
+          <ScalarProperty Name="Con_Pro_Id" ColumnName="Con_Pro_Id" />
+          <ScalarProperty Name="Con_Anno" ColumnName="Con_Anno" />
+          <ScalarProperty Name="Con_Recurso" ColumnName="Con_Recurso" />
+          <ScalarProperty Name="Con_Descripcion" ColumnName="Con_Descripcion" />
+          <ScalarProperty Name="Con_id" ColumnName="Con_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cubicacion">
+      <EntityTypeMapping TypeName="samadModel.cubicacion">
+        <MappingFragment StoreEntitySet="cubicacion">
+          <ScalarProperty Name="Cub_Descrip" ColumnName="Cub_Descrip" />
+          <ScalarProperty Name="Cub_Id" ColumnName="Cub_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="deffs">
+      <EntityTypeMapping TypeName="samadModel.deffs">
+        <MappingFragment StoreEntitySet="deffs">
+          <ScalarProperty Name="def_Sede" ColumnName="def_Sede" />
+          <ScalarProperty Name="def_Id" ColumnName="def_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="despacho">
+      <EntityTypeMapping TypeName="samadModel.despacho">
+        <MappingFragment StoreEntitySet="despacho">
+          <ScalarProperty Name="Des_Contrato_Id" ColumnName="Des_Contrato_Id" />
+          <ScalarProperty Name="Des_Vehiculo_Id" ColumnName="Des_Vehiculo_Id" />
+          <ScalarProperty Name="Des_Transportista_Id" ColumnName="Des_Transportista_Id" />
+          <ScalarProperty Name="Des_Destinatario_Id" ColumnName="Des_Destinatario_Id" />
+          <ScalarProperty Name="Des_Nro_Guia_rem" ColumnName="Des_Nro_Guia_rem" />
+          <ScalarProperty Name="Des_Nro_CV" ColumnName="Des_Nro_CV" />
+          <ScalarProperty Name="Des_Tipo_Cv" ColumnName="Des_Tipo_Cv" />
+          <ScalarProperty Name="Des_Propietario_Id" ColumnName="Des_Propietario_Id" />
+          <ScalarProperty Name="Des_Titular_Id" ColumnName="Des_Titular_Id" />
+          <ScalarProperty Name="Des_NroDoc" ColumnName="Des_NroDoc" />
+          <ScalarProperty Name="Des_TipoTransporte" ColumnName="Des_TipoTransporte" />
+          <ScalarProperty Name="Des_Periodo" ColumnName="Des_Periodo" />
+          <ScalarProperty Name="Des_Fecha_ven" ColumnName="Des_Fecha_ven" />
+          <ScalarProperty Name="Des_Fecha" ColumnName="Des_Fecha" />
+          <ScalarProperty Name="Des_Arffs" ColumnName="Des_Arffs" />
+          <ScalarProperty Name="des_Ubigeo" ColumnName="des_Ubigeo" />
+          <ScalarProperty Name="Des_Id" ColumnName="Des_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="despacho_catalogo">
+      <EntityTypeMapping TypeName="samadModel.despacho_catalogo">
+        <MappingFragment StoreEntitySet="despacho_catalogo">
+          <ScalarProperty Name="Cat_Estatus" ColumnName="Cat_Estatus" />
+          <ScalarProperty Name="Cat_Cantidad" ColumnName="Cat_Cantidad" />
+          <ScalarProperty Name="Cat_VolPT" ColumnName="Cat_VolPT" />
+          <ScalarProperty Name="Cat_Volm3" ColumnName="Cat_Volm3" />
+          <ScalarProperty Name="Cat_Largo" ColumnName="Cat_Largo" />
+          <ScalarProperty Name="Cat_Ancho" ColumnName="Cat_Ancho" />
+          <ScalarProperty Name="Cat_Espesor" ColumnName="Cat_Espesor" />
+          <ScalarProperty Name="Cat_Especie" ColumnName="Cat_Especie" />
+          <ScalarProperty Name="Cat_Numero" ColumnName="Cat_Numero" />
+          <ScalarProperty Name="Cat_Des_Id" ColumnName="Cat_Des_Id" />
+          <ScalarProperty Name="Cat_Id" ColumnName="Cat_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="despacho_det">
+      <EntityTypeMapping TypeName="samadModel.despacho_det">
+        <MappingFragment StoreEntitySet="despacho_det">
+          <ScalarProperty Name="Des_Estatu" ColumnName="Des_Estatu" />
+          <ScalarProperty Name="Desd_Sal_Volm3_80" ColumnName="Desd_Sal_Volm3_80" />
+          <ScalarProperty Name="Desd_Ac_Volm3_RC" ColumnName="Desd_Ac_Volm3_RC" />
+          <ScalarProperty Name="Desd_Ac_Volm3_CM" ColumnName="Desd_Ac_Volm3_CM" />
+          <ScalarProperty Name="Desd_VolM3_GTFRec" ColumnName="Desd_VolM3_GTFRec" />
+          <ScalarProperty Name="Desd_ParcialTotal" ColumnName="Desd_ParcialTotal" />
+          <ScalarProperty Name="Desd_RumaPaquete" ColumnName="Desd_RumaPaquete" />
+          <ScalarProperty Name="Desd_VolPt" ColumnName="Desd_VolPt" />
+          <ScalarProperty Name="Desd_Volm3" ColumnName="Desd_Volm3" />
+          <ScalarProperty Name="Desd_Cantidad" ColumnName="Desd_Cantidad" />
+          <ScalarProperty Name="Desd_TipoUnid" ColumnName="Desd_TipoUnid" />
+          <ScalarProperty Name="Desd_ClaseC" ColumnName="Desd_ClaseC" />
+          <ScalarProperty Name="Desd_ClaseId" ColumnName="Desd_ClaseId" />
+          <ScalarProperty Name="Desd_Producto" ColumnName="Desd_Producto" />
+          <ScalarProperty Name="Desd_Codigo" ColumnName="Desd_Codigo" />
+          <ScalarProperty Name="Desd_Especie" ColumnName="Desd_Especie" />
+          <ScalarProperty Name="Desd_EspecieId" ColumnName="Desd_EspecieId" />
+          <ScalarProperty Name="Desd_NroGtf" ColumnName="Desd_NroGtf" />
+          <ScalarProperty Name="Desd_GenId" ColumnName="Desd_GenId" />
+          <ScalarProperty Name="Desd_Des_Id" ColumnName="Desd_Des_Id" />
+          <ScalarProperty Name="Desd_Id" ColumnName="Desd_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="empaquetado">
+      <EntityTypeMapping TypeName="samadModel.empaquetado">
+        <MappingFragment StoreEntitySet="empaquetado">
+          <ScalarProperty Name="Emp_observacion" ColumnName="Emp_observacion" />
+          <ScalarProperty Name="Emp_Periodo" ColumnName="Emp_Periodo" />
+          <ScalarProperty Name="Emp_Cubicador" ColumnName="Emp_Cubicador" />
+          <ScalarProperty Name="Emp_CubicadorId" ColumnName="Emp_CubicadorId" />
+          <ScalarProperty Name="Emp_AserraderoId" ColumnName="Emp_AserraderoId" />
+          <ScalarProperty Name="Emp_Certificado" ColumnName="Emp_Certificado" />
+          <ScalarProperty Name="Emp_Fecha" ColumnName="Emp_Fecha" />
+          <ScalarProperty Name="Emp_NroDoc" ColumnName="Emp_NroDoc" />
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="especies">
+      <EntityTypeMapping TypeName="samadModel.especies">
+        <MappingFragment StoreEntitySet="especies">
+          <ScalarProperty Name="Espe_NombreCientifico" ColumnName="Espe_NombreCientifico" />
+          <ScalarProperty Name="Espe_NombreComun" ColumnName="Espe_NombreComun" />
+          <ScalarProperty Name="Espe_Id" ColumnName="Espe_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formathoja">
+      <EntityTypeMapping TypeName="samadModel.formathoja">
+        <MappingFragment StoreEntitySet="formathoja">
+          <ScalarProperty Name="Var" ColumnName="Var" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formato01">
+      <EntityTypeMapping TypeName="samadModel.formato01">
+        <MappingFragment StoreEntitySet="formato01">
+          <ScalarProperty Name="F01_Lote" ColumnName="F01_Lote" />
+          <ScalarProperty Name="F01_periodo" ColumnName="F01_periodo" />
+          <ScalarProperty Name="F01_Pro_id" ColumnName="F01_Pro_id" />
+          <ScalarProperty Name="F01_Observacion" ColumnName="F01_Observacion" />
+          <ScalarProperty Name="F01_TipoTraslado" ColumnName="F01_TipoTraslado" />
+          <ScalarProperty Name="F01_ResponsableId" ColumnName="F01_ResponsableId" />
+          <ScalarProperty Name="F01_Certificada" ColumnName="F01_Certificada" />
+          <ScalarProperty Name="F01_Fecha" ColumnName="F01_Fecha" />
+          <ScalarProperty Name="F01_Nro" ColumnName="F01_Nro" />
+          <ScalarProperty Name="F01_id" ColumnName="F01_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formato01_det">
+      <EntityTypeMapping TypeName="samadModel.formato01_det">
+        <MappingFragment StoreEntitySet="formato01_det">
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="F01d_Ltd_Id" ColumnName="F01d_Ltd_Id" />
+          <ScalarProperty Name="F01d_f02_id" ColumnName="F01d_f02_id" />
+          <ScalarProperty Name="F01d_Calidad" ColumnName="F01d_Calidad" />
+          <ScalarProperty Name="F01d_Ubicacion" ColumnName="F01d_Ubicacion" />
+          <ScalarProperty Name="f01d_Ub_Id" ColumnName="f01d_Ub_Id" />
+          <ScalarProperty Name="F01d_ZYP_ID" ColumnName="F01d_ZYP_ID" />
+          <ScalarProperty Name="F01d_Titular" ColumnName="F01d_Titular" />
+          <ScalarProperty Name="F01d_TitularId" ColumnName="F01d_TitularId" />
+          <ScalarProperty Name="F01d_Propietario" ColumnName="F01d_Propietario" />
+          <ScalarProperty Name="F01d_PropietarioId" ColumnName="F01d_PropietarioId" />
+          <ScalarProperty Name="F01d_Abastecimiento" ColumnName="F01d_Abastecimiento" />
+          <ScalarProperty Name="F01d_Autogenerado" ColumnName="F01d_Autogenerado" />
+          <ScalarProperty Name="F01d_Procedencia" ColumnName="F01d_Procedencia" />
+          <ScalarProperty Name="f01d_Pro_Id" ColumnName="f01d_Pro_Id" />
+          <ScalarProperty Name="F01d_Vol_pt" ColumnName="F01d_Vol_pt" />
+          <ScalarProperty Name="F01d_Long_pie" ColumnName="F01d_Long_pie" />
+          <ScalarProperty Name="F01d_Dm_pulgada" ColumnName="F01d_Dm_pulgada" />
+          <ScalarProperty Name="Periodo" ColumnName="Periodo" />
+          <ScalarProperty Name="F01d_Observacion" ColumnName="F01d_Observacion" />
+          <ScalarProperty Name="F01d_Vol_M3c" ColumnName="F01d_Vol_M3c" />
+          <ScalarProperty Name="F01d_D3c" ColumnName="F01d_D3c" />
+          <ScalarProperty Name="F01d_D2c" ColumnName="F01d_D2c" />
+          <ScalarProperty Name="F01d_D1c" ColumnName="F01d_D1c" />
+          <ScalarProperty Name="F01d_Especiec" ColumnName="F01d_Especiec" />
+          <ScalarProperty Name="F01d_Vol_M3" ColumnName="F01d_Vol_M3" />
+          <ScalarProperty Name="F01d_D3" ColumnName="F01d_D3" />
+          <ScalarProperty Name="F01d_D2" ColumnName="F01d_D2" />
+          <ScalarProperty Name="F01d_D1" ColumnName="F01d_D1" />
+          <ScalarProperty Name="F01d_Especie" ColumnName="F01d_Especie" />
+          <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+          <ScalarProperty Name="F01d_CodIndustria" ColumnName="F01d_CodIndustria" />
+          <ScalarProperty Name="F01d_Correlativo" ColumnName="F01d_Correlativo" />
+          <ScalarProperty Name="F01d_Lista_trozas" ColumnName="F01d_Lista_trozas" />
+          <ScalarProperty Name="F01d_unidad" ColumnName="F01d_unidad" />
+          <ScalarProperty Name="F01d_Tipo" ColumnName="F01d_Tipo" />
+          <ScalarProperty Name="F01d_Utilizado_F04_Id" ColumnName="F01d_Utilizado_F04_Id" />
+          <ScalarProperty Name="f01d_Conductor" ColumnName="f01d_Conductor" />
+          <ScalarProperty Name="f01d_con_Id" ColumnName="f01d_con_Id" />
+          <ScalarProperty Name="f01d_Veh_Placa" ColumnName="f01d_Veh_Placa" />
+          <ScalarProperty Name="f01d_veh_Id" ColumnName="f01d_veh_Id" />
+          <ScalarProperty Name="F01d_Emp_Transp" ColumnName="F01d_Emp_Transp" />
+          <ScalarProperty Name="F01d_Emp_Transp_id" ColumnName="F01d_Emp_Transp_id" />
+          <ScalarProperty Name="F01d_GuiaRemision" ColumnName="F01d_GuiaRemision" />
+          <ScalarProperty Name="F01d_Gtf" ColumnName="F01d_Gtf" />
+          <ScalarProperty Name="F01d_Lote" ColumnName="F01d_Lote" />
+          <ScalarProperty Name="F01d_F01_Id" ColumnName="F01d_F01_Id" />
+          <ScalarProperty Name="F01d_Id" ColumnName="F01d_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formato02">
+      <EntityTypeMapping TypeName="samadModel.formato02">
+        <MappingFragment StoreEntitySet="formato02">
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="f02_emp_id" ColumnName="f02_emp_id" />
+          <ScalarProperty Name="f02_periodo" ColumnName="f02_periodo" />
+          <ScalarProperty Name="F02_Proc_id" ColumnName="F02_Proc_id" />
+          <ScalarProperty Name="F02_Turno_Id" ColumnName="F02_Turno_Id" />
+          <ScalarProperty Name="F02_Observacion" ColumnName="F02_Observacion" />
+          <ScalarProperty Name="F02_NroOpe" ColumnName="F02_NroOpe" />
+          <ScalarProperty Name="F02_Certificada" ColumnName="F02_Certificada" />
+          <ScalarProperty Name="F02_Responsable_Id" ColumnName="F02_Responsable_Id" />
+          <ScalarProperty Name="F02_NroDoc" ColumnName="F02_NroDoc" />
+          <ScalarProperty Name="F02_Fecha" ColumnName="F02_Fecha" />
+          <ScalarProperty Name="F02_Id" ColumnName="F02_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formato02_det">
+      <EntityTypeMapping TypeName="samadModel.formato02_det">
+        <MappingFragment StoreEntitySet="formato02_det">
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="F02d_Ltd_Id" ColumnName="F02d_Ltd_Id" />
+          <ScalarProperty Name="F02d_GTF" ColumnName="F02d_GTF" />
+          <ScalarProperty Name="F02d_Periodo" ColumnName="F02d_Periodo" />
+          <ScalarProperty Name="F02d_Lote" ColumnName="F02d_Lote" />
+          <ScalarProperty Name="F02d_unidad" ColumnName="F02d_unidad" />
+          <ScalarProperty Name="F02d_CodIndustria" ColumnName="F02d_CodIndustria" />
+          <ScalarProperty Name="F02d_Especie" ColumnName="F02d_Especie" />
+          <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+          <ScalarProperty Name="F02d_F02_Id" ColumnName="F02d_F02_Id" />
+          <ScalarProperty Name="F02d_Observacion" ColumnName="F02d_Observacion" />
+          <ScalarProperty Name="f02d_vol_pt" ColumnName="f02d_vol_pt" />
+          <ScalarProperty Name="f02d_dpies" ColumnName="f02d_dpies" />
+          <ScalarProperty Name="f02d_d_pulgada" ColumnName="f02d_d_pulgada" />
+          <ScalarProperty Name="f02d_volm3c" ColumnName="f02d_volm3c" />
+          <ScalarProperty Name="f02d_d3c" ColumnName="f02d_d3c" />
+          <ScalarProperty Name="f02d_d2c" ColumnName="f02d_d2c" />
+          <ScalarProperty Name="f02d_d1c" ColumnName="f02d_d1c" />
+          <ScalarProperty Name="F02d_Volm3" ColumnName="F02d_Volm3" />
+          <ScalarProperty Name="F02d_D3" ColumnName="F02d_D3" />
+          <ScalarProperty Name="F02d_D2" ColumnName="F02d_D2" />
+          <ScalarProperty Name="F02d_D1" ColumnName="F02d_D1" />
+          <ScalarProperty Name="F02d_Codificacion" ColumnName="F02d_Codificacion" />
+          <ScalarProperty Name="F02d_Cut" ColumnName="F02d_Cut" />
+          <ScalarProperty Name="F02d_Id" ColumnName="F02d_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formato04">
+      <EntityTypeMapping TypeName="samadModel.formato04">
+        <MappingFragment StoreEntitySet="formato04">
+          <ScalarProperty Name="F04_Periodo" ColumnName="F04_Periodo" />
+          <ScalarProperty Name="F04_Pro_id" ColumnName="F04_Pro_id" />
+          <ScalarProperty Name="F04_F02_Id" ColumnName="F04_F02_Id" />
+          <ScalarProperty Name="F04_Observacion" ColumnName="F04_Observacion" />
+          <ScalarProperty Name="F04_OrdenProduccion" ColumnName="F04_OrdenProduccion" />
+          <ScalarProperty Name="F04_Responsable_Id" ColumnName="F04_Responsable_Id" />
+          <ScalarProperty Name="F04_Turno_Id" ColumnName="F04_Turno_Id" />
+          <ScalarProperty Name="F04_TipoConteo" ColumnName="F04_TipoConteo" />
+          <ScalarProperty Name="F04_Fecha" ColumnName="F04_Fecha" />
+          <ScalarProperty Name="F04_Nro_doc" ColumnName="F04_Nro_doc" />
+          <ScalarProperty Name="F04_Nro" ColumnName="F04_Nro" />
+          <ScalarProperty Name="F04_Id" ColumnName="F04_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formato04_det">
+      <EntityTypeMapping TypeName="samadModel.formato04_det">
+        <MappingFragment StoreEntitySet="formato04_det">
+          <ScalarProperty Name="F04d_codind" ColumnName="F04d_codind" />
+          <ScalarProperty Name="F04d_lote" ColumnName="F04d_lote" />
+          <ScalarProperty Name="F04d_F04_Id" ColumnName="F04d_F04_Id" />
+          <ScalarProperty Name="F04d_Observacion" ColumnName="F04d_Observacion" />
+          <ScalarProperty Name="F04d_Producto_Id" ColumnName="F04d_Producto_Id" />
+          <ScalarProperty Name="F04d_Calidad" ColumnName="F04d_Calidad" />
+          <ScalarProperty Name="F04d_NroPiezass" ColumnName="F04d_NroPiezass" />
+          <ScalarProperty Name="F04d_NroPiezasp" ColumnName="F04d_NroPiezasp" />
+          <ScalarProperty Name="F04d_Volpts" ColumnName="F04d_Volpts" />
+          <ScalarProperty Name="F04d_Volptp" ColumnName="F04d_Volptp" />
+          <ScalarProperty Name="F04d_Largo" ColumnName="F04d_Largo" />
+          <ScalarProperty Name="F04d_Ancho" ColumnName="F04d_Ancho" />
+          <ScalarProperty Name="F04d_Espesor" ColumnName="F04d_Espesor" />
+          <ScalarProperty Name="F04d_Especie" ColumnName="F04d_Especie" />
+          <ScalarProperty Name="F04d_Codigo" ColumnName="F04d_Codigo" />
+          <ScalarProperty Name="F04d_Cut" ColumnName="F04d_Cut" />
+          <ScalarProperty Name="F04d_Id" ColumnName="F04d_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formato04_rumas">
+      <EntityTypeMapping TypeName="samadModel.formato04_rumas">
+        <MappingFragment StoreEntitySet="formato04_rumas">
+          <ScalarProperty Name="Sald_Vol_Trozas" ColumnName="Sald_Vol_Trozas" />
+          <ScalarProperty Name="VoLoTrozas" ColumnName="VoLoTrozas" />
+          <ScalarProperty Name="ClasificaProducto" ColumnName="ClasificaProducto" />
+          <ScalarProperty Name="MaderaCertificada" ColumnName="MaderaCertificada" />
+          <ScalarProperty Name="UbicaProducto" ColumnName="UbicaProducto" />
+          <ScalarProperty Name="CentroTransac" ColumnName="CentroTransac" />
+          <ScalarProperty Name="Objetivo_producto" ColumnName="Objetivo_producto" />
+          <ScalarProperty Name="Simbolo" ColumnName="Simbolo" />
+          <ScalarProperty Name="SisCubicacion" ColumnName="SisCubicacion" />
+          <ScalarProperty Name="FuncionCalculo" ColumnName="FuncionCalculo" />
+          <ScalarProperty Name="F04_Id" ColumnName="F04_Id" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="VolPT" ColumnName="VolPT" />
+          <ScalarProperty Name="VolM3" ColumnName="VolM3" />
+          <ScalarProperty Name="TipUnidad" ColumnName="TipUnidad" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Orden_produccion" ColumnName="Orden_produccion" />
+          <ScalarProperty Name="Lote_troza" ColumnName="Lote_troza" />
+          <ScalarProperty Name="Especie" ColumnName="Especie" />
+          <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+          <ScalarProperty Name="Descripcion_ruma" ColumnName="Descripcion_ruma" />
+          <ScalarProperty Name="ProductoId" ColumnName="ProductoId" />
+          <ScalarProperty Name="Codigo_ruma" ColumnName="Codigo_ruma" />
+          <ScalarProperty Name="RumaId" ColumnName="RumaId" />
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="formato04_rumas_det">
+      <EntityTypeMapping TypeName="samadModel.formato04_rumas_det">
+        <MappingFragment StoreEntitySet="formato04_rumas_det">
+          <ScalarProperty Name="Orden" ColumnName="Orden" />
+          <ScalarProperty Name="F04TipoUnidad" ColumnName="F04TipoUnidad" />
+          <ScalarProperty Name="F04d_Cut" ColumnName="F04d_Cut" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="Tipo_corte" ColumnName="Tipo_corte" />
+          <ScalarProperty Name="Vol_m3" ColumnName="Vol_m3" />
+          <ScalarProperty Name="Vol_pt" ColumnName="Vol_pt" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Largo" ColumnName="Largo" />
+          <ScalarProperty Name="Ancho" ColumnName="Ancho" />
+          <ScalarProperty Name="Espesor" ColumnName="Espesor" />
+          <ScalarProperty Name="RumaId" ColumnName="RumaId" />
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="guiatf">
+      <EntityTypeMapping TypeName="samadModel.guiatf">
+        <MappingFragment StoreEntitySet="guiatf">
+          <ScalarProperty Name="CIDV" ColumnName="CIDV" />
+          <ScalarProperty Name="LI" ColumnName="LI" />
+          <ScalarProperty Name="GUI_NROGTF" ColumnName="GUI_NROGTF" />
+          <ScalarProperty Name="GUI_NROLIS" ColumnName="GUI_NROLIS" />
+          <ScalarProperty Name="GUI_LICENC" ColumnName="GUI_LICENC" />
+          <ScalarProperty Name="GUI_DNI" ColumnName="GUI_DNI" />
+          <ScalarProperty Name="GUI_CONDUC" ColumnName="GUI_CONDUC" />
+          <ScalarProperty Name="GUI_PLACA" ColumnName="GUI_PLACA" />
+          <ScalarProperty Name="GUI_TIPOVE" ColumnName="GUI_TIPOVE" />
+          <ScalarProperty Name="GUI_TARPRO" ColumnName="GUI_TARPRO" />
+          <ScalarProperty Name="GUI_NOMVEH" ColumnName="GUI_NOMVEH" />
+          <ScalarProperty Name="GUI_TIPTRA" ColumnName="GUI_TIPTRA" />
+          <ScalarProperty Name="GUI_NROGR" ColumnName="GUI_NROGR" />
+          <ScalarProperty Name="GUI_DISTDE" ColumnName="GUI_DISTDE" />
+          <ScalarProperty Name="GUI_PROVDE" ColumnName="GUI_PROVDE" />
+          <ScalarProperty Name="GUI_DPTODE" ColumnName="GUI_DPTODE" />
+          <ScalarProperty Name="GUI_DIRECD" ColumnName="GUI_DIRECD" />
+          <ScalarProperty Name="GUI_RUCDES" ColumnName="GUI_RUCDES" />
+          <ScalarProperty Name="GUI_DESTDN" ColumnName="GUI_DESTDN" />
+          <ScalarProperty Name="GUI_DESTIN" ColumnName="GUI_DESTIN" />
+          <ScalarProperty Name="GUI_NROCV" ColumnName="GUI_NROCV" />
+          <ScalarProperty Name="GUI_TIPOCC" ColumnName="GUI_TIPOCC" />
+          <ScalarProperty Name="GUI_PROPD2" ColumnName="GUI_PROPD2" />
+          <ScalarProperty Name="GUI_PROPPR" ColumnName="GUI_PROPPR" />
+          <ScalarProperty Name="GUI_PROPDP" ColumnName="GUI_PROPDP" />
+          <ScalarProperty Name="GUI_PROPDI" ColumnName="GUI_PROPDI" />
+          <ScalarProperty Name="GUI_PROPRU" ColumnName="GUI_PROPRU" />
+          <ScalarProperty Name="GUI_PROPDN" ColumnName="GUI_PROPDN" />
+          <ScalarProperty Name="GUI_PROPIE" ColumnName="GUI_PROPIE" />
+          <ScalarProperty Name="GUI_DISTRI" ColumnName="GUI_DISTRI" />
+          <ScalarProperty Name="GUI_PROV" ColumnName="GUI_PROV" />
+          <ScalarProperty Name="GUI_DEPTO" ColumnName="GUI_DEPTO" />
+          <ScalarProperty Name="GUI_PLANMA" ColumnName="GUI_PLANMA" />
+          <ScalarProperty Name="GUI_NRORES" ColumnName="GUI_NRORES" />
+          <ScalarProperty Name="GUI_NOMREP" ColumnName="GUI_NOMREP" />
+          <ScalarProperty Name="GUI_CONTRA" ColumnName="GUI_CONTRA" />
+          <ScalarProperty Name="GUI_TITULA" ColumnName="GUI_TITULA" />
+          <ScalarProperty Name="GUI_PCA" ColumnName="GUI_PCA" />
+          <ScalarProperty Name="GUI_ZAFRA" ColumnName="GUI_ZAFRA" />
+          <ScalarProperty Name="GUI_ORIGEN" ColumnName="GUI_ORIGEN" />
+          <ScalarProperty Name="GUI_FECHAV" ColumnName="GUI_FECHAV" />
+          <ScalarProperty Name="GUI_FECHA" ColumnName="GUI_FECHA" />
+          <ScalarProperty Name="GUI_ATCFFS" ColumnName="GUI_ATCFFS" />
+          <ScalarProperty Name="GUI_NRO" ColumnName="GUI_NRO" />
+          <ScalarProperty Name="GUI_UBIGEO" ColumnName="GUI_UBIGEO" />
+          <ScalarProperty Name="TIPOPERMIS" ColumnName="TIPOPERMIS" />
+          <ScalarProperty Name="IDVIAJE" ColumnName="IDVIAJE" />
+          <ScalarProperty Name="IDGUIA" ColumnName="IDGUIA" />
+          <ScalarProperty Name="CID" ColumnName="CID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="guiatf_dbf">
+      <EntityTypeMapping TypeName="samadModel.guiatf_dbf">
+        <MappingFragment StoreEntitySet="guiatf_dbf">
+          <ScalarProperty Name="CIDV" ColumnName="CIDV" />
+          <ScalarProperty Name="CONDUCTOR" ColumnName="CONDUCTOR" />
+          <ScalarProperty Name="TRANSPORTE" ColumnName="TRANSPORTE" />
+          <ScalarProperty Name="NRGUIA_REM" ColumnName="NRGUIA_REM" />
+          <ScalarProperty Name="DESTINATAR" ColumnName="DESTINATAR" />
+          <ScalarProperty Name="NRO_CV" ColumnName="NRO_CV" />
+          <ScalarProperty Name="TIPO_CV" ColumnName="TIPO_CV" />
+          <ScalarProperty Name="PROPIETARI" ColumnName="PROPIETARI" />
+          <ScalarProperty Name="CONTRATO" ColumnName="CONTRATO" />
+          <ScalarProperty Name="TITULAR" ColumnName="TITULAR" />
+          <ScalarProperty Name="PCA" ColumnName="PCA" />
+          <ScalarProperty Name="ZAFRA" ColumnName="ZAFRA" />
+          <ScalarProperty Name="FECHA_VENC" ColumnName="FECHA_VENC" />
+          <ScalarProperty Name="FECHA_ENV" ColumnName="FECHA_ENV" />
+          <ScalarProperty Name="NOM_ATFFS" ColumnName="NOM_ATFFS" />
+          <ScalarProperty Name="NRO_GTF" ColumnName="NRO_GTF" />
+          <ScalarProperty Name="GUI_UBIGEO" ColumnName="GUI_UBIGEO" />
+          <ScalarProperty Name="NRO_VIAJE" ColumnName="NRO_VIAJE" />
+          <ScalarProperty Name="IDGUIA" ColumnName="IDGUIA" />
+          <ScalarProperty Name="CID" ColumnName="CID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="linea">
+      <EntityTypeMapping TypeName="samadModel.linea">
+        <MappingFragment StoreEntitySet="linea">
+          <ScalarProperty Name="Lin_Porcentual" ColumnName="Lin_Porcentual" />
+          <ScalarProperty Name="Lin_Nombre" ColumnName="Lin_Nombre" />
+          <ScalarProperty Name="Lin_id" ColumnName="Lin_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lista_trozas_dbf">
+      <EntityTypeMapping TypeName="samadModel.lista_trozas_dbf">
+        <MappingFragment StoreEntitySet="lista_trozas_dbf">
+          <ScalarProperty Name="NRO_LISTA_" ColumnName="NRO_LISTA_" />
+          <ScalarProperty Name="VOLM3" ColumnName="VOLM3" />
+          <ScalarProperty Name="D3" ColumnName="D3" />
+          <ScalarProperty Name="D2" ColumnName="D2" />
+          <ScalarProperty Name="D1" ColumnName="D1" />
+          <ScalarProperty Name="PLACA" ColumnName="PLACA" />
+          <ScalarProperty Name="ESPECIE" ColumnName="ESPECIE" />
+          <ScalarProperty Name="CORRELA" ColumnName="CORRELA" />
+          <ScalarProperty Name="NRO_GTF" ColumnName="NRO_GTF" />
+          <ScalarProperty Name="PCA" ColumnName="PCA" />
+          <ScalarProperty Name="ZAFRA" ColumnName="ZAFRA" />
+          <ScalarProperty Name="TITULA" ColumnName="TITULA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="listatrozasc">
+      <EntityTypeMapping TypeName="samadModel.listatrozasc">
+        <MappingFragment StoreEntitySet="listatrozasc">
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="Lt_unidad" ColumnName="Lt_unidad" />
+          <ScalarProperty Name="Lt_Deffs" ColumnName="Lt_Deffs" />
+          <ScalarProperty Name="Lt_TipoDimension" ColumnName="Lt_TipoDimension" />
+          <ScalarProperty Name="Lt_Observacion" ColumnName="Lt_Observacion" />
+          <ScalarProperty Name="Lt_NroGuia_rem" ColumnName="Lt_NroGuia_rem" />
+          <ScalarProperty Name="Lt_Nro_Cv" ColumnName="Lt_Nro_Cv" />
+          <ScalarProperty Name="Lt_Tipo_Cv" ColumnName="Lt_Tipo_Cv" />
+          <ScalarProperty Name="Lt_Destinatario_Id" ColumnName="Lt_Destinatario_Id" />
+          <ScalarProperty Name="Lt_Conductor_Id" ColumnName="Lt_Conductor_Id" />
+          <ScalarProperty Name="Lt_Transporte_Id" ColumnName="Lt_Transporte_Id" />
+          <ScalarProperty Name="Lt_Zafra" ColumnName="Lt_Zafra" />
+          <ScalarProperty Name="Lt_Poa_Id" ColumnName="Lt_Poa_Id" />
+          <ScalarProperty Name="Lt_Contrato_Id" ColumnName="Lt_Contrato_Id" />
+          <ScalarProperty Name="Lt_Propietario_Id" ColumnName="Lt_Propietario_Id" />
+          <ScalarProperty Name="Lt_Titular_Id" ColumnName="Lt_Titular_Id" />
+          <ScalarProperty Name="Lt_fecha_ven" ColumnName="Lt_fecha_ven" />
+          <ScalarProperty Name="Lt_Fecha" ColumnName="Lt_Fecha" />
+          <ScalarProperty Name="Lt_Nrogtf" ColumnName="Lt_Nrogtf" />
+          <ScalarProperty Name="Lt_Ubigeo" ColumnName="Lt_Ubigeo" />
+          <ScalarProperty Name="Lt_id" ColumnName="Lt_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="listatrozasd">
+      <EntityTypeMapping TypeName="samadModel.listatrozasd">
+        <MappingFragment StoreEntitySet="listatrozasd">
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="Ltd_NroListaTrozas" ColumnName="Ltd_NroListaTrozas" />
+          <ScalarProperty Name="Ltd_Autogenerado" ColumnName="Ltd_Autogenerado" />
+          <ScalarProperty Name="Ltd_Lt_Id" ColumnName="Ltd_Lt_Id" />
+          <ScalarProperty Name="Ltd_Vol_M3" ColumnName="Ltd_Vol_M3" />
+          <ScalarProperty Name="Ltd_D3" ColumnName="Ltd_D3" />
+          <ScalarProperty Name="Ltd_D2" ColumnName="Ltd_D2" />
+          <ScalarProperty Name="Ltd_D1" ColumnName="Ltd_D1" />
+          <ScalarProperty Name="Ltd_Codificacion" ColumnName="Ltd_Codificacion" />
+          <ScalarProperty Name="Ltd_Especie" ColumnName="Ltd_Especie" />
+          <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+          <ScalarProperty Name="Ltd_Id" ColumnName="Ltd_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="origenes">
+      <EntityTypeMapping TypeName="samadModel.origenes">
+        <MappingFragment StoreEntitySet="origenes">
+          <ScalarProperty Name="Ori_Distrito" ColumnName="Ori_Distrito" />
+          <ScalarProperty Name="Ori_Provincia" ColumnName="Ori_Provincia" />
+          <ScalarProperty Name="Ori_Departamento" ColumnName="Ori_Departamento" />
+          <ScalarProperty Name="Ori_Lugar" ColumnName="Ori_Lugar" />
+          <ScalarProperty Name="Ori_Id" ColumnName="Ori_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="paquete">
+      <EntityTypeMapping TypeName="samadModel.paquete">
+        <MappingFragment StoreEntitySet="paquete">
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="CMUtilizado" ColumnName="CMUtilizado" />
+          <ScalarProperty Name="UtiVolPt" ColumnName="UtiVolPt" />
+          <ScalarProperty Name="UtiVolM3" ColumnName="UtiVolM3" />
+          <ScalarProperty Name="UtiCantidad" ColumnName="UtiCantidad" />
+          <ScalarProperty Name="TipoUnidad" ColumnName="TipoUnidad" />
+          <ScalarProperty Name="ProductoFinalId" ColumnName="ProductoFinalId" />
+          <ScalarProperty Name="Volpt" ColumnName="Volpt" />
+          <ScalarProperty Name="Volm3" ColumnName="Volm3" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="VolptInicial" ColumnName="VolptInicial" />
+          <ScalarProperty Name="Volm3Inicial" ColumnName="Volm3Inicial" />
+          <ScalarProperty Name="CantidadInicial" ColumnName="CantidadInicial" />
+          <ScalarProperty Name="Periodo" ColumnName="Periodo" />
+          <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+          <ScalarProperty Name="Ubicacion" ColumnName="Ubicacion" />
+          <ScalarProperty Name="CubicadorId" ColumnName="CubicadorId" />
+          <ScalarProperty Name="Clasificacion" ColumnName="Clasificacion" />
+          <ScalarProperty Name="Humedad" ColumnName="Humedad" />
+          <ScalarProperty Name="Acabado" ColumnName="Acabado" />
+          <ScalarProperty Name="Tipo_producto" ColumnName="Tipo_producto" />
+          <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+          <ScalarProperty Name="ProductoOrigenId" ColumnName="ProductoOrigenId" />
+          <ScalarProperty Name="Numpaquete" ColumnName="Numpaquete" />
+          <ScalarProperty Name="EmpaquetadoId" ColumnName="EmpaquetadoId" />
+          <ScalarProperty Name="RumaId" ColumnName="RumaId" />
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="paquete_deta">
+      <EntityTypeMapping TypeName="samadModel.paquete_deta">
+        <MappingFragment StoreEntitySet="paquete_deta">
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="ProductoId" ColumnName="ProductoId" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="VolPT" ColumnName="VolPT" />
+          <ScalarProperty Name="VolM3" ColumnName="VolM3" />
+          <ScalarProperty Name="Largo" ColumnName="Largo" />
+          <ScalarProperty Name="Ancho" ColumnName="Ancho" />
+          <ScalarProperty Name="Espesor" ColumnName="Espesor" />
+          <ScalarProperty Name="PaqueteId" ColumnName="PaqueteId" />
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="personal">
+      <EntityTypeMapping TypeName="samadModel.personal">
+        <MappingFragment StoreEntitySet="personal">
+          <ScalarProperty Name="Per_Condicion" ColumnName="Per_Condicion" />
+          <ScalarProperty Name="Per_Cargo" ColumnName="Per_Cargo" />
+          <ScalarProperty Name="Per_CargoId" ColumnName="Per_CargoId" />
+          <ScalarProperty Name="Per_NomApe" ColumnName="Per_NomApe" />
+          <ScalarProperty Name="Per_Id" ColumnName="Per_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="procedencia">
+      <EntityTypeMapping TypeName="samadModel.procedencia">
+        <MappingFragment StoreEntitySet="procedencia">
+          <ScalarProperty Name="Pro_Nombre" ColumnName="Pro_Nombre" />
+          <ScalarProperty Name="Pro_id" ColumnName="Pro_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="procesos">
+      <EntityTypeMapping TypeName="samadModel.procesos">
+        <MappingFragment StoreEntitySet="procesos">
+          <ScalarProperty Name="Pro_id" ColumnName="Pro_id" />
+          <ScalarProperty Name="Proc_descripcion" ColumnName="Proc_descripcion" />
+          <ScalarProperty Name="Proc_id" ColumnName="Proc_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="productos">
+      <EntityTypeMapping TypeName="samadModel.productos">
+        <MappingFragment StoreEntitySet="productos">
+          <ScalarProperty Name="Prod_Fe" ColumnName="Prod_Fe" />
+          <ScalarProperty Name="Prod_Simbolo" ColumnName="Prod_Simbolo" />
+          <ScalarProperty Name="Prod_SistemaCalculo" ColumnName="Prod_SistemaCalculo" />
+          <ScalarProperty Name="Prod_FuncionCalculo" ColumnName="Prod_FuncionCalculo" />
+          <ScalarProperty Name="Prod_OperadorL" ColumnName="Prod_OperadorL" />
+          <ScalarProperty Name="Prod_Largo" ColumnName="Prod_Largo" />
+          <ScalarProperty Name="Prod_OperadorA" ColumnName="Prod_OperadorA" />
+          <ScalarProperty Name="Prod_Ancho" ColumnName="Prod_Ancho" />
+          <ScalarProperty Name="Prod_OperadorE" ColumnName="Prod_OperadorE" />
+          <ScalarProperty Name="Prod_Espesor" ColumnName="Prod_Espesor" />
+          <ScalarProperty Name="Prod_UnidadMedidaL" ColumnName="Prod_UnidadMedidaL" />
+          <ScalarProperty Name="Prod_UnidadMedidaAb" ColumnName="Prod_UnidadMedidaAb" />
+          <ScalarProperty Name="Prod_Rendimiento" ColumnName="Prod_Rendimiento" />
+          <ScalarProperty Name="Prod_ClasificacionCom" ColumnName="Prod_ClasificacionCom" />
+          <ScalarProperty Name="Prod_ClasificacionId" ColumnName="Prod_ClasificacionId" />
+          <ScalarProperty Name="Prod_NomProducto" ColumnName="Prod_NomProducto" />
+          <ScalarProperty Name="Prod_TipoProducto" ColumnName="Prod_TipoProducto" />
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="productos_existencia">
+      <EntityTypeMapping TypeName="samadModel.productos_existencia">
+        <MappingFragment StoreEntitySet="productos_existencia">
+          <ScalarProperty Name="Ultima_salida" ColumnName="Ultima_salida" />
+          <ScalarProperty Name="Ultima_entrada" ColumnName="Ultima_entrada" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Existencia" ColumnName="Existencia" />
+          <ScalarProperty Name="Ubicacion" ColumnName="Ubicacion" />
+          <ScalarProperty Name="Producto_id" ColumnName="Producto_id" />
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="productos_semielaborados">
+      <EntityTypeMapping TypeName="samadModel.productos_semielaborados">
+        <MappingFragment StoreEntitySet="productos_semielaborados">
+          <ScalarProperty Name="Lote_origen" ColumnName="Lote_origen" />
+          <ScalarProperty Name="Tipo_medida" ColumnName="Tipo_medida" />
+          <ScalarProperty Name="certificada" ColumnName="certificada" />
+          <ScalarProperty Name="Nombre_producto" ColumnName="Nombre_producto" />
+          <ScalarProperty Name="Especie" ColumnName="Especie" />
+          <ScalarProperty Name="RumaId" ColumnName="RumaId" />
+          <ScalarProperty Name="Anio" ColumnName="Anio" />
+          <ScalarProperty Name="RegistroId" ColumnName="RegistroId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="propietarios">
+      <EntityTypeMapping TypeName="samadModel.propietarios">
+        <MappingFragment StoreEntitySet="propietarios">
+          <ScalarProperty Name="Pro_Ruc" ColumnName="Pro_Ruc" />
+          <ScalarProperty Name="Pro_Dni" ColumnName="Pro_Dni" />
+          <ScalarProperty Name="Pro_nomraz" ColumnName="Pro_nomraz" />
+          <ScalarProperty Name="Pro_id" ColumnName="Pro_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipo_calculo_volumen">
+      <EntityTypeMapping TypeName="samadModel.tipo_calculo_volumen">
+        <MappingFragment StoreEntitySet="tipo_calculo_volumen">
+          <ScalarProperty Name="TipCal_Cod" ColumnName="TipCal_Cod" />
+          <ScalarProperty Name="TipCal_Simbolo" ColumnName="TipCal_Simbolo" />
+          <ScalarProperty Name="TipCal_Fe" ColumnName="TipCal_Fe" />
+          <ScalarProperty Name="TipCal_FcVm" ColumnName="TipCal_FcVm" />
+          <ScalarProperty Name="TipCal_Volumen" ColumnName="TipCal_Volumen" />
+          <ScalarProperty Name="TipCal_DescripcionFunc" ColumnName="TipCal_DescripcionFunc" />
+          <ScalarProperty Name="TipCal_Elementos" ColumnName="TipCal_Elementos" />
+          <ScalarProperty Name="TipCal_id" ColumnName="TipCal_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="titulares">
+      <EntityTypeMapping TypeName="samadModel.titulares">
+        <MappingFragment StoreEntitySet="titulares">
+          <ScalarProperty Name="Pro_Dni" ColumnName="Pro_Dni" />
+          <ScalarProperty Name="Pro_Direccion" ColumnName="Pro_Direccion" />
+          <ScalarProperty Name="Pro_Transporteck" ColumnName="Pro_Transporteck" />
+          <ScalarProperty Name="Pro_Destinock" ColumnName="Pro_Destinock" />
+          <ScalarProperty Name="Pro_Propietariock" ColumnName="Pro_Propietariock" />
+          <ScalarProperty Name="Pro_Sector" ColumnName="Pro_Sector" />
+          <ScalarProperty Name="Pro_Distrito" ColumnName="Pro_Distrito" />
+          <ScalarProperty Name="Pro_Provincia" ColumnName="Pro_Provincia" />
+          <ScalarProperty Name="Pro_Departamento" ColumnName="Pro_Departamento" />
+          <ScalarProperty Name="Pro_Rep_Legal" ColumnName="Pro_Rep_Legal" />
+          <ScalarProperty Name="Pro_Ruc" ColumnName="Pro_Ruc" />
+          <ScalarProperty Name="Pro_Titular" ColumnName="Pro_Titular" />
+          <ScalarProperty Name="Pro_Id" ColumnName="Pro_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="turnos">
+      <EntityTypeMapping TypeName="samadModel.turnos">
+        <MappingFragment StoreEntitySet="turnos">
+          <ScalarProperty Name="Tur_Horario" ColumnName="Tur_Horario" />
+          <ScalarProperty Name="Tur_Descrip" ColumnName="Tur_Descrip" />
+          <ScalarProperty Name="Tur_Id" ColumnName="Tur_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ubdepartamento">
+      <EntityTypeMapping TypeName="samadModel.ubdepartamento">
+        <MappingFragment StoreEntitySet="ubdepartamento">
+          <ScalarProperty Name="departamento" ColumnName="departamento" />
+          <ScalarProperty Name="idDepa" ColumnName="idDepa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ubdistrito">
+      <EntityTypeMapping TypeName="samadModel.ubdistrito">
+        <MappingFragment StoreEntitySet="ubdistrito">
+          <ScalarProperty Name="idProv" ColumnName="idProv" />
+          <ScalarProperty Name="distrito" ColumnName="distrito" />
+          <ScalarProperty Name="idDist" ColumnName="idDist" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ubicacion">
+      <EntityTypeMapping TypeName="samadModel.ubicacion">
+        <MappingFragment StoreEntitySet="ubicacion">
+          <ScalarProperty Name="Ubi_ProId" ColumnName="Ubi_ProId" />
+          <ScalarProperty Name="Ubi_Nombre" ColumnName="Ubi_Nombre" />
+          <ScalarProperty Name="Ubi_id" ColumnName="Ubi_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ubigeo">
+      <EntityTypeMapping TypeName="samadModel.ubigeo">
+        <MappingFragment StoreEntitySet="ubigeo">
+          <ScalarProperty Name="CODIGO" ColumnName="CODIGO" />
+          <ScalarProperty Name="DEPARTAMENTO" ColumnName="DEPARTAMENTO" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ubprovincia">
+      <EntityTypeMapping TypeName="samadModel.ubprovincia">
+        <MappingFragment StoreEntitySet="ubprovincia">
+          <ScalarProperty Name="idDepa" ColumnName="idDepa" />
+          <ScalarProperty Name="provincia" ColumnName="provincia" />
+          <ScalarProperty Name="idProv" ColumnName="idProv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="unidad_medida_ab">
+      <EntityTypeMapping TypeName="samadModel.unidad_medida_ab">
+        <MappingFragment StoreEntitySet="unidad_medida_ab">
+          <ScalarProperty Name="Uni_Descripcion" ColumnName="Uni_Descripcion" />
+          <ScalarProperty Name="Uni_Abreviatura" ColumnName="Uni_Abreviatura" />
+          <ScalarProperty Name="Uni_id" ColumnName="Uni_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="unidad_medida_l">
+      <EntityTypeMapping TypeName="samadModel.unidad_medida_l">
+        <MappingFragment StoreEntitySet="unidad_medida_l">
+          <ScalarProperty Name="Unil_Descripcion" ColumnName="Unil_Descripcion" />
+          <ScalarProperty Name="Unil_Abreviatura" ColumnName="Unil_Abreviatura" />
+          <ScalarProperty Name="Unil_id" ColumnName="Unil_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuarios">
+      <EntityTypeMapping TypeName="samadModel.usuarios">
+        <MappingFragment StoreEntitySet="usuarios">
+          <ScalarProperty Name="uso_tipo" ColumnName="uso_tipo" />
+          <ScalarProperty Name="usu_password" ColumnName="usu_password" />
+          <ScalarProperty Name="usu_nombre" ColumnName="usu_nombre" />
+          <ScalarProperty Name="usu_id" ColumnName="usu_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vehiculos">
+      <EntityTypeMapping TypeName="samadModel.vehiculos">
+        <MappingFragment StoreEntitySet="vehiculos">
+          <ScalarProperty Name="Veh_Tipo" ColumnName="Veh_Tipo" />
+          <ScalarProperty Name="Veh_Emt_Id" ColumnName="Veh_Emt_Id" />
+          <ScalarProperty Name="Veh_NroInscripcion" ColumnName="Veh_NroInscripcion" />
+          <ScalarProperty Name="Veh_Placa" ColumnName="Veh_Placa" />
+          <ScalarProperty Name="Veh_Tipo_vehic" ColumnName="Veh_Tipo_vehic" />
+          <ScalarProperty Name="Veh_Marca" ColumnName="Veh_Marca" />
+          <ScalarProperty Name="Veh_Id" ColumnName="Veh_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="zafrasypoas">
+      <EntityTypeMapping TypeName="samadModel.zafrasypoas">
+        <MappingFragment StoreEntitySet="zafrasypoas">
+          <ScalarProperty Name="Zyp_Permiso_Id" ColumnName="Zyp_Permiso_Id" />
+          <ScalarProperty Name="Zyp_Poa" ColumnName="Zyp_Poa" />
+          <ScalarProperty Name="Zyp_Zafra" ColumnName="Zyp_Zafra" />
+          <ScalarProperty Name="Zyp_tipoPm" ColumnName="Zyp_tipoPm" />
+          <ScalarProperty Name="Zyp_Resolucion" ColumnName="Zyp_Resolucion" />
+          <ScalarProperty Name="Zyp_id" ColumnName="Zyp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="listatroza_gtf">
+      <EntityTypeMapping TypeName="samadModel.listatroza_gtf">
+        <MappingFragment StoreEntitySet="listatroza_gtf">
+          <ScalarProperty Name="Pro_Dni" ColumnName="Pro_Dni" />
+          <ScalarProperty Name="Pro_Direccion" ColumnName="Pro_Direccion" />
+          <ScalarProperty Name="Pro_Distrito" ColumnName="Pro_Distrito" />
+          <ScalarProperty Name="Pro_Provincia" ColumnName="Pro_Provincia" />
+          <ScalarProperty Name="Pro_Departamento" ColumnName="Pro_Departamento" />
+          <ScalarProperty Name="Zyp_Poa" ColumnName="Zyp_Poa" />
+          <ScalarProperty Name="Zyp_Zafra" ColumnName="Zyp_Zafra" />
+          <ScalarProperty Name="Con_Descripcion" ColumnName="Con_Descripcion" />
+          <ScalarProperty Name="Pro_Titular" ColumnName="Pro_Titular" />
+          <ScalarProperty Name="Lt_Titular_Id" ColumnName="Lt_Titular_Id" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="Ltd_NroListaTrozas" ColumnName="Ltd_NroListaTrozas" />
+          <ScalarProperty Name="Ltd_Autogenerado" ColumnName="Ltd_Autogenerado" />
+          <ScalarProperty Name="Ltd_Lt_Id" ColumnName="Ltd_Lt_Id" />
+          <ScalarProperty Name="Ltd_Vol_M3" ColumnName="Ltd_Vol_M3" />
+          <ScalarProperty Name="Ltd_D3" ColumnName="Ltd_D3" />
+          <ScalarProperty Name="Ltd_D2" ColumnName="Ltd_D2" />
+          <ScalarProperty Name="Ltd_D1" ColumnName="Ltd_D1" />
+          <ScalarProperty Name="Ltd_Codificacion" ColumnName="Ltd_Codificacion" />
+          <ScalarProperty Name="Ltd_Especie" ColumnName="Ltd_Especie" />
+          <ScalarProperty Name="Ltd_Id" ColumnName="Ltd_Id" />
+          <ScalarProperty Name="Lt_unidad" ColumnName="Lt_unidad" />
+          <ScalarProperty Name="Lt_Propietario_Id" ColumnName="Lt_Propietario_Id" />
+          <ScalarProperty Name="Lt_Fecha" ColumnName="Lt_Fecha" />
+          <ScalarProperty Name="Lt_Nrogtf" ColumnName="Lt_Nrogtf" />
+          <ScalarProperty Name="Lt_id" ColumnName="Lt_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="listavolrecepcion">
+      <EntityTypeMapping TypeName="samadModel.listavolrecepcion">
+        <MappingFragment StoreEntitySet="listavolrecepcion">
+          <ScalarProperty Name="Zyp_Poa" ColumnName="Zyp_Poa" />
+          <ScalarProperty Name="Zyp_Zafra" ColumnName="Zyp_Zafra" />
+          <ScalarProperty Name="F01_id" ColumnName="F01_id" />
+          <ScalarProperty Name="Con_Descripcion" ColumnName="Con_Descripcion" />
+          <ScalarProperty Name="VolM3Rec" ColumnName="VolM3Rec" />
+          <ScalarProperty Name="F01d_Especie" ColumnName="F01d_Especie" />
+          <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+          <ScalarProperty Name="F01d_CodIndustria" ColumnName="F01d_CodIndustria" />
+          <ScalarProperty Name="F01d_Correlativo" ColumnName="F01d_Correlativo" />
+          <ScalarProperty Name="F01d_Gtf" ColumnName="F01d_Gtf" />
+          <ScalarProperty Name="F01d_Lote" ColumnName="F01d_Lote" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_catalogo_produccion">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_catalogo_produccion">
+        <MappingFragment StoreEntitySet="vmostrar_catalogo_produccion">
+          <ScalarProperty Name="F04_Fecha" ColumnName="F04_Fecha" />
+          <ScalarProperty Name="F04_Nro" ColumnName="F04_Nro" />
+          <ScalarProperty Name="Prod_Rendimiento" ColumnName="Prod_Rendimiento" />
+          <ScalarProperty Name="Prod_ClasificacionCom" ColumnName="Prod_ClasificacionCom" />
+          <ScalarProperty Name="Prod_TipoProducto" ColumnName="Prod_TipoProducto" />
+          <ScalarProperty Name="ProductoId" ColumnName="ProductoId" />
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="F04_Periodo" ColumnName="F04_Periodo" />
+          <ScalarProperty Name="F04_Id" ColumnName="F04_Id" />
+          <ScalarProperty Name="F04TipoUnidad" ColumnName="F04TipoUnidad" />
+          <ScalarProperty Name="F04d_Cut" ColumnName="F04d_Cut" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="Tipo_corte" ColumnName="Tipo_corte" />
+          <ScalarProperty Name="Vol_m3" ColumnName="Vol_m3" />
+          <ScalarProperty Name="Vol_pt" ColumnName="Vol_pt" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Largo" ColumnName="Largo" />
+          <ScalarProperty Name="Ancho" ColumnName="Ancho" />
+          <ScalarProperty Name="Espesor" ColumnName="Espesor" />
+          <ScalarProperty Name="MaderaCertificada" ColumnName="MaderaCertificada" />
+          <ScalarProperty Name="ClasificaProducto" ColumnName="ClasificaProducto" />
+          <ScalarProperty Name="UbicaProducto" ColumnName="UbicaProducto" />
+          <ScalarProperty Name="CentroTransac" ColumnName="CentroTransac" />
+          <ScalarProperty Name="Simbolo" ColumnName="Simbolo" />
+          <ScalarProperty Name="SisCubicacion" ColumnName="SisCubicacion" />
+          <ScalarProperty Name="FuncionCalculo" ColumnName="FuncionCalculo" />
+          <ScalarProperty Name="Objetivo_producto" ColumnName="Objetivo_producto" />
+          <ScalarProperty Name="Orden_produccion" ColumnName="Orden_produccion" />
+          <ScalarProperty Name="Lote_troza" ColumnName="Lote_troza" />
+          <ScalarProperty Name="Especie" ColumnName="Especie" />
+          <ScalarProperty Name="Descripcion_ruma" ColumnName="Descripcion_ruma" />
+          <ScalarProperty Name="Codigo_ruma" ColumnName="Codigo_ruma" />
+          <ScalarProperty Name="RumaId" ColumnName="RumaId" />
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_contratos">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_contratos">
+        <MappingFragment StoreEntitySet="vmostrar_contratos">
+          <ScalarProperty Name="Con_Anno" ColumnName="Con_Anno" />
+          <ScalarProperty Name="pro_titular" ColumnName="pro_titular" />
+          <ScalarProperty Name="Con_Recurso" ColumnName="Con_Recurso" />
+          <ScalarProperty Name="Con_Descripcion" ColumnName="Con_Descripcion" />
+          <ScalarProperty Name="con_id" ColumnName="con_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_documentos_formato01">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_documentos_formato01">
+        <MappingFragment StoreEntitySet="vmostrar_documentos_formato01">
+          <ScalarProperty Name="f01d_Vol_M3" ColumnName="f01d_Vol_M3" />
+          <ScalarProperty Name="f01d_f01_id" ColumnName="f01d_f01_id" />
+          <ScalarProperty Name="f01_Fecha" ColumnName="f01_Fecha" />
+          <ScalarProperty Name="f01_Nro" ColumnName="f01_Nro" />
+          <ScalarProperty Name="f01_Id" ColumnName="f01_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_documentos_formato02">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_documentos_formato02">
+        <MappingFragment StoreEntitySet="vmostrar_documentos_formato02">
+          <ScalarProperty Name="F02d_Codificacion" ColumnName="F02d_Codificacion" />
+          <ScalarProperty Name="F02d_codIndustria" ColumnName="F02d_codIndustria" />
+          <ScalarProperty Name="f02d_f02_id" ColumnName="f02d_f02_id" />
+          <ScalarProperty Name="Volm3" ColumnName="Volm3" />
+          <ScalarProperty Name="f02_Fecha" ColumnName="f02_Fecha" />
+          <ScalarProperty Name="f02_NroDoc" ColumnName="f02_NroDoc" />
+          <ScalarProperty Name="f02_Id" ColumnName="f02_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_empaserio_paq">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_empaserio_paq">
+        <MappingFragment StoreEntitySet="vmostrar_empaserio_paq">
+          <ScalarProperty Name="Pro_Titular" ColumnName="Pro_Titular" />
+          <ScalarProperty Name="F04_Pro_id" ColumnName="F04_Pro_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_formato01">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_formato01">
+        <MappingFragment StoreEntitySet="vmostrar_formato01">
+          <ScalarProperty Name="Zyp_Poa" ColumnName="Zyp_Poa" />
+          <ScalarProperty Name="Zyp_Zafra" ColumnName="Zyp_Zafra" />
+          <ScalarProperty Name="f01d_Ub_Id" ColumnName="f01d_Ub_Id" />
+          <ScalarProperty Name="Zyp_id" ColumnName="Zyp_id" />
+          <ScalarProperty Name="F01d_ZYP_ID" ColumnName="F01d_ZYP_ID" />
+          <ScalarProperty Name="F01d_Id" ColumnName="F01d_Id" />
+          <ScalarProperty Name="F01d_Titular" ColumnName="F01d_Titular" />
+          <ScalarProperty Name="F01d_TitularId" ColumnName="F01d_TitularId" />
+          <ScalarProperty Name="F01d_Especiec" ColumnName="F01d_Especiec" />
+          <ScalarProperty Name="F01d_Especie" ColumnName="F01d_Especie" />
+          <ScalarProperty Name="F01d_Gtf" ColumnName="F01d_Gtf" />
+          <ScalarProperty Name="F01d_CodIndustria" ColumnName="F01d_CodIndustria" />
+          <ScalarProperty Name="F01d_Vol_M3" ColumnName="F01d_Vol_M3" />
+          <ScalarProperty Name="F01d_F01_Id" ColumnName="F01d_F01_Id" />
+          <ScalarProperty Name="F01_Nro" ColumnName="F01_Nro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_formato02">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_formato02">
+        <MappingFragment StoreEntitySet="vmostrar_formato02">
+          <ScalarProperty Name="Pro_id" ColumnName="Pro_id" />
+          <ScalarProperty Name="Proc_descripcion" ColumnName="Proc_descripcion" />
+          <ScalarProperty Name="Proc_id" ColumnName="Proc_id" />
+          <ScalarProperty Name="f02_periodo" ColumnName="f02_periodo" />
+          <ScalarProperty Name="F02_Proc_id" ColumnName="F02_Proc_id" />
+          <ScalarProperty Name="F02_Turno_Id" ColumnName="F02_Turno_Id" />
+          <ScalarProperty Name="F02_Observacion" ColumnName="F02_Observacion" />
+          <ScalarProperty Name="F02_NroOpe" ColumnName="F02_NroOpe" />
+          <ScalarProperty Name="F02_Certificada" ColumnName="F02_Certificada" />
+          <ScalarProperty Name="F02_Responsable_Id" ColumnName="F02_Responsable_Id" />
+          <ScalarProperty Name="F02_NroDoc" ColumnName="F02_NroDoc" />
+          <ScalarProperty Name="F02_Fecha" ColumnName="F02_Fecha" />
+          <ScalarProperty Name="F02_Id" ColumnName="F02_Id" />
+          <ScalarProperty Name="f02D_CodIndustria" ColumnName="f02D_CodIndustria" />
+          <ScalarProperty Name="F02d_Especie" ColumnName="F02d_Especie" />
+          <ScalarProperty Name="F02d_F02_Id" ColumnName="F02d_F02_Id" />
+          <ScalarProperty Name="F02d_Observacion" ColumnName="F02d_Observacion" />
+          <ScalarProperty Name="F02d_Volm3" ColumnName="F02d_Volm3" />
+          <ScalarProperty Name="F02d_D3" ColumnName="F02d_D3" />
+          <ScalarProperty Name="F02d_D2" ColumnName="F02d_D2" />
+          <ScalarProperty Name="F02d_D1" ColumnName="F02d_D1" />
+          <ScalarProperty Name="F02d_Codificacion" ColumnName="F02d_Codificacion" />
+          <ScalarProperty Name="F02d_Cut" ColumnName="F02d_Cut" />
+          <ScalarProperty Name="F02d_Id" ColumnName="F02d_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_listaaseriogtf">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_listaaseriogtf">
+        <MappingFragment StoreEntitySet="vmostrar_listaaseriogtf">
+          <ScalarProperty Name="F02d_GTF" ColumnName="F02d_GTF" />
+          <ScalarProperty Name="volm3" ColumnName="volm3" />
+          <ScalarProperty Name="largo" ColumnName="largo" />
+          <ScalarProperty Name="trozas" ColumnName="trozas" />
+          <ScalarProperty Name="especie" ColumnName="especie" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_listatrozas">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_listatrozas">
+        <MappingFragment StoreEntitySet="vmostrar_listatrozas">
+          <ScalarProperty Name="Lt_Zafra" ColumnName="Lt_Zafra" />
+          <ScalarProperty Name="Lt_Poa_Id" ColumnName="Lt_Poa_Id" />
+          <ScalarProperty Name="Ltd_Autogenerado" ColumnName="Ltd_Autogenerado" />
+          <ScalarProperty Name="Ltd_Vol_m3" ColumnName="Ltd_Vol_m3" />
+          <ScalarProperty Name="Ltd_D3" ColumnName="Ltd_D3" />
+          <ScalarProperty Name="Ltd_D2" ColumnName="Ltd_D2" />
+          <ScalarProperty Name="Ltd_D1" ColumnName="Ltd_D1" />
+          <ScalarProperty Name="Ltd_Codificacion" ColumnName="Ltd_Codificacion" />
+          <ScalarProperty Name="Ltd_Especie" ColumnName="Ltd_Especie" />
+          <ScalarProperty Name="Ltd_Id" ColumnName="Ltd_Id" />
+          <ScalarProperty Name="lt_Titular_Id" ColumnName="lt_Titular_Id" />
+          <ScalarProperty Name="Lt_Nrogtf" ColumnName="Lt_Nrogtf" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_listatrozas_despacho">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_listatrozas_despacho">
+        <MappingFragment StoreEntitySet="vmostrar_listatrozas_despacho">
+          <ScalarProperty Name="pro_id" ColumnName="pro_id" />
+          <ScalarProperty Name="Volm3" ColumnName="Volm3" />
+          <ScalarProperty Name="Trozas" ColumnName="Trozas" />
+          <ScalarProperty Name="pro_titular" ColumnName="pro_titular" />
+          <ScalarProperty Name="Lt_Nrogtf" ColumnName="Lt_Nrogtf" />
+          <ScalarProperty Name="lt_id" ColumnName="lt_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_listatrozasc">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_listatrozasc">
+        <MappingFragment StoreEntitySet="vmostrar_listatrozasc">
+          <ScalarProperty Name="Lt_Zafra" ColumnName="Lt_Zafra" />
+          <ScalarProperty Name="des_ruc" ColumnName="des_ruc" />
+          <ScalarProperty Name="des_direccion" ColumnName="des_direccion" />
+          <ScalarProperty Name="distrito" ColumnName="distrito" />
+          <ScalarProperty Name="des_distrito" ColumnName="des_distrito" />
+          <ScalarProperty Name="des_provincia" ColumnName="des_provincia" />
+          <ScalarProperty Name="des_departamento" ColumnName="des_departamento" />
+          <ScalarProperty Name="des_nomraz" ColumnName="des_nomraz" />
+          <ScalarProperty Name="des_id" ColumnName="des_id" />
+          <ScalarProperty Name="veh_marca" ColumnName="veh_marca" />
+          <ScalarProperty Name="con_dni" ColumnName="con_dni" />
+          <ScalarProperty Name="con_nrolicencia" ColumnName="con_nrolicencia" />
+          <ScalarProperty Name="con_nomape" ColumnName="con_nomape" />
+          <ScalarProperty Name="cond_id" ColumnName="cond_id" />
+          <ScalarProperty Name="veh_nroinscripcion" ColumnName="veh_nroinscripcion" />
+          <ScalarProperty Name="veh_tipo" ColumnName="veh_tipo" />
+          <ScalarProperty Name="veh_placa" ColumnName="veh_placa" />
+          <ScalarProperty Name="veh_id" ColumnName="veh_id" />
+          <ScalarProperty Name="zyp_poa" ColumnName="zyp_poa" />
+          <ScalarProperty Name="zyp_id" ColumnName="zyp_id" />
+          <ScalarProperty Name="con_descripcion" ColumnName="con_descripcion" />
+          <ScalarProperty Name="con_id" ColumnName="con_id" />
+          <ScalarProperty Name="prop_ruc" ColumnName="prop_ruc" />
+          <ScalarProperty Name="prop_nomraz" ColumnName="prop_nomraz" />
+          <ScalarProperty Name="prop_id" ColumnName="prop_id" />
+          <ScalarProperty Name="pro_sector" ColumnName="pro_sector" />
+          <ScalarProperty Name="pro_distrito" ColumnName="pro_distrito" />
+          <ScalarProperty Name="provincia" ColumnName="provincia" />
+          <ScalarProperty Name="pro_provincia" ColumnName="pro_provincia" />
+          <ScalarProperty Name="departamento" ColumnName="departamento" />
+          <ScalarProperty Name="pro_departamento" ColumnName="pro_departamento" />
+          <ScalarProperty Name="titular_ruc" ColumnName="titular_ruc" />
+          <ScalarProperty Name="pro_titular" ColumnName="pro_titular" />
+          <ScalarProperty Name="pro_id" ColumnName="pro_id" />
+          <ScalarProperty Name="lt_tipodimension" ColumnName="lt_tipodimension" />
+          <ScalarProperty Name="lt_observacion" ColumnName="lt_observacion" />
+          <ScalarProperty Name="lt_destinatario_id" ColumnName="lt_destinatario_id" />
+          <ScalarProperty Name="lt_conductor_id" ColumnName="lt_conductor_id" />
+          <ScalarProperty Name="lt_transporte_id" ColumnName="lt_transporte_id" />
+          <ScalarProperty Name="lt_poa_id" ColumnName="lt_poa_id" />
+          <ScalarProperty Name="lt_deffs" ColumnName="lt_deffs" />
+          <ScalarProperty Name="lt_contrato_id" ColumnName="lt_contrato_id" />
+          <ScalarProperty Name="lt_propietario_id" ColumnName="lt_propietario_id" />
+          <ScalarProperty Name="lt_titular_id" ColumnName="lt_titular_id" />
+          <ScalarProperty Name="lt_Fecha" ColumnName="lt_Fecha" />
+          <ScalarProperty Name="Lt_Nrogtf" ColumnName="Lt_Nrogtf" />
+          <ScalarProperty Name="lt_id" ColumnName="lt_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_listatrozasconnrolista">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_listatrozasconnrolista">
+        <MappingFragment StoreEntitySet="vmostrar_listatrozasconnrolista">
+          <ScalarProperty Name="cut" ColumnName="cut" />
+          <ScalarProperty Name="Ltd_Autogenerado" ColumnName="Ltd_Autogenerado" />
+          <ScalarProperty Name="Ltd_NroListaTrozas" ColumnName="Ltd_NroListaTrozas" />
+          <ScalarProperty Name="Ltd_Vol_m3" ColumnName="Ltd_Vol_m3" />
+          <ScalarProperty Name="Ltd_D3" ColumnName="Ltd_D3" />
+          <ScalarProperty Name="Ltd_D2" ColumnName="Ltd_D2" />
+          <ScalarProperty Name="Ltd_D1" ColumnName="Ltd_D1" />
+          <ScalarProperty Name="Ltd_Codificacion" ColumnName="Ltd_Codificacion" />
+          <ScalarProperty Name="Ltd_Especie" ColumnName="Ltd_Especie" />
+          <ScalarProperty Name="Ltd_Id" ColumnName="Ltd_Id" />
+          <ScalarProperty Name="lt_Titular_Id" ColumnName="lt_Titular_Id" />
+          <ScalarProperty Name="Lt_Nrogtf" ColumnName="Lt_Nrogtf" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_listatrozasdetalle">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_listatrozasdetalle">
+        <MappingFragment StoreEntitySet="vmostrar_listatrozasdetalle">
+          <ScalarProperty Name="Lt_Nrogtf" ColumnName="Lt_Nrogtf" />
+          <ScalarProperty Name="Ltd_NroListaTrozas" ColumnName="Ltd_NroListaTrozas" />
+          <ScalarProperty Name="Ltd_Autogenerado" ColumnName="Ltd_Autogenerado" />
+          <ScalarProperty Name="Ltd_Lt_Id" ColumnName="Ltd_Lt_Id" />
+          <ScalarProperty Name="Ltd_Vol_M3" ColumnName="Ltd_Vol_M3" />
+          <ScalarProperty Name="Ltd_D3" ColumnName="Ltd_D3" />
+          <ScalarProperty Name="Ltd_D2" ColumnName="Ltd_D2" />
+          <ScalarProperty Name="Ltd_D1" ColumnName="Ltd_D1" />
+          <ScalarProperty Name="Ltd_Codificacion" ColumnName="Ltd_Codificacion" />
+          <ScalarProperty Name="Ltd_Especie" ColumnName="Ltd_Especie" />
+          <ScalarProperty Name="Ltd_Id" ColumnName="Ltd_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_listatrozasportitular">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_listatrozasportitular">
+        <MappingFragment StoreEntitySet="vmostrar_listatrozasportitular">
+          <ScalarProperty Name="Zyp_Poa" ColumnName="Zyp_Poa" />
+          <ScalarProperty Name="Volm3" ColumnName="Volm3" />
+          <ScalarProperty Name="Pro_Id" ColumnName="Pro_Id" />
+          <ScalarProperty Name="Trozas" ColumnName="Trozas" />
+          <ScalarProperty Name="Pro_Titular" ColumnName="Pro_Titular" />
+          <ScalarProperty Name="Lt_Fecha" ColumnName="Lt_Fecha" />
+          <ScalarProperty Name="Lt_Nrogtf" ColumnName="Lt_Nrogtf" />
+          <ScalarProperty Name="Lt_id" ColumnName="Lt_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_producciontotal">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_producciontotal">
+        <MappingFragment StoreEntitySet="vmostrar_producciontotal">
+          <ScalarProperty Name="Producto" ColumnName="Producto" />
+          <ScalarProperty Name="VolPT" ColumnName="VolPT" />
+          <ScalarProperty Name="VolM3" ColumnName="VolM3" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Lote_Trozas" ColumnName="Lote_Trozas" />
+          <ScalarProperty Name="Especie" ColumnName="Especie" />
+          <ScalarProperty Name="Lote_Aserrio" ColumnName="Lote_Aserrio" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_titulares">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_titulares">
+        <MappingFragment StoreEntitySet="vmostrar_titulares">
+          <ScalarProperty Name="Pro_Rep_Legal" ColumnName="Pro_Rep_Legal" />
+          <ScalarProperty Name="Pro_Dni" ColumnName="Pro_Dni" />
+          <ScalarProperty Name="pro_transporteck" ColumnName="pro_transporteck" />
+          <ScalarProperty Name="pro_destinock" ColumnName="pro_destinock" />
+          <ScalarProperty Name="pro_propietariock" ColumnName="pro_propietariock" />
+          <ScalarProperty Name="pro_direccion" ColumnName="pro_direccion" />
+          <ScalarProperty Name="pro_sector" ColumnName="pro_sector" />
+          <ScalarProperty Name="distrito" ColumnName="distrito" />
+          <ScalarProperty Name="pro_distrito" ColumnName="pro_distrito" />
+          <ScalarProperty Name="provincia" ColumnName="provincia" />
+          <ScalarProperty Name="pro_provincia" ColumnName="pro_provincia" />
+          <ScalarProperty Name="departamento" ColumnName="departamento" />
+          <ScalarProperty Name="pro_departamento" ColumnName="pro_departamento" />
+          <ScalarProperty Name="pro_ruc" ColumnName="pro_ruc" />
+          <ScalarProperty Name="pro_titular" ColumnName="pro_titular" />
+          <ScalarProperty Name="pro_id" ColumnName="pro_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_titulares_aserrio">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_titulares_aserrio">
+        <MappingFragment StoreEntitySet="vmostrar_titulares_aserrio">
+          <ScalarProperty Name="periodo" ColumnName="periodo" />
+          <ScalarProperty Name="Rep_Legal" ColumnName="Rep_Legal" />
+          <ScalarProperty Name="TipoPm" ColumnName="TipoPm" />
+          <ScalarProperty Name="Resolucion" ColumnName="Resolucion" />
+          <ScalarProperty Name="OrigenRecurso" ColumnName="OrigenRecurso" />
+          <ScalarProperty Name="Zyp_Poa" ColumnName="Zyp_Poa" />
+          <ScalarProperty Name="Zyp_Zafra" ColumnName="Zyp_Zafra" />
+          <ScalarProperty Name="Zyp_id" ColumnName="Zyp_id" />
+          <ScalarProperty Name="GTF" ColumnName="GTF" />
+          <ScalarProperty Name="EsEmpresa" ColumnName="EsEmpresa" />
+          <ScalarProperty Name="distrito" ColumnName="distrito" />
+          <ScalarProperty Name="distritoID" ColumnName="distritoID" />
+          <ScalarProperty Name="provincia" ColumnName="provincia" />
+          <ScalarProperty Name="provinciaID" ColumnName="provinciaID" />
+          <ScalarProperty Name="departamento" ColumnName="departamento" />
+          <ScalarProperty Name="departamentoID" ColumnName="departamentoID" />
+          <ScalarProperty Name="contrato" ColumnName="contrato" />
+          <ScalarProperty Name="contratoID" ColumnName="contratoID" />
+          <ScalarProperty Name="ruc" ColumnName="ruc" />
+          <ScalarProperty Name="titular" ColumnName="titular" />
+          <ScalarProperty Name="titularID" ColumnName="titularID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_trozasrecepcionadas">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_trozasrecepcionadas">
+        <MappingFragment StoreEntitySet="vmostrar_trozasrecepcionadas">
+          <ScalarProperty Name="F01d_Vol_M3c" ColumnName="F01d_Vol_M3c" />
+          <ScalarProperty Name="F01d_D3c" ColumnName="F01d_D3c" />
+          <ScalarProperty Name="F01d_D2c" ColumnName="F01d_D2c" />
+          <ScalarProperty Name="F01d_D1c" ColumnName="F01d_D1c" />
+          <ScalarProperty Name="F01d_Especiec" ColumnName="F01d_Especiec" />
+          <ScalarProperty Name="F01d_Autogenerado" ColumnName="F01d_Autogenerado" />
+          <ScalarProperty Name="F01d_Id" ColumnName="F01d_Id" />
+          <ScalarProperty Name="F01_Nro" ColumnName="F01_Nro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vmostrar_zafrasypoas">
+      <EntityTypeMapping TypeName="samadModel.vmostrar_zafrasypoas">
+        <MappingFragment StoreEntitySet="vmostrar_zafrasypoas">
+          <ScalarProperty Name="Zyp_tipoPm" ColumnName="Zyp_tipoPm" />
+          <ScalarProperty Name="Zyp_Resolucion" ColumnName="Zyp_Resolucion" />
+          <ScalarProperty Name="Pro_Titular" ColumnName="Pro_Titular" />
+          <ScalarProperty Name="Zyp_Permiso_Id" ColumnName="Zyp_Permiso_Id" />
+          <ScalarProperty Name="Con_Descripcion" ColumnName="Con_Descripcion" />
+          <ScalarProperty Name="Zyp_Poa" ColumnName="Zyp_Poa" />
+          <ScalarProperty Name="Zyp_Zafra" ColumnName="Zyp_Zafra" />
+          <ScalarProperty Name="zyp_id" ColumnName="zyp_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_consulta_gtf_dbf_01">
+      <EntityTypeMapping TypeName="samadModel.vw_consulta_gtf_dbf_01">
+        <MappingFragment StoreEntitySet="vw_consulta_gtf_dbf_01">
+          <ScalarProperty Name="NRGUIA_REM" ColumnName="NRGUIA_REM" />
+          <ScalarProperty Name="CONDUCTOR_ID" ColumnName="CONDUCTOR_ID" />
+          <ScalarProperty Name="TRANSPORTE_ID" ColumnName="TRANSPORTE_ID" />
+          <ScalarProperty Name="DETINATARIO_ID" ColumnName="DETINATARIO_ID" />
+          <ScalarProperty Name="NRO_CV" ColumnName="NRO_CV" />
+          <ScalarProperty Name="TIPO_CV" ColumnName="TIPO_CV" />
+          <ScalarProperty Name="PROPIETARIO_ID" ColumnName="PROPIETARIO_ID" />
+          <ScalarProperty Name="POA_ID" ColumnName="POA_ID" />
+          <ScalarProperty Name="ZAFRA" ColumnName="ZAFRA" />
+          <ScalarProperty Name="CONTRATO_ID" ColumnName="CONTRATO_ID" />
+          <ScalarProperty Name="TITULAR_ID" ColumnName="TITULAR_ID" />
+          <ScalarProperty Name="FECHA_VENC" ColumnName="FECHA_VENC" />
+          <ScalarProperty Name="FECHA_ENV" ColumnName="FECHA_ENV" />
+          <ScalarProperty Name="NOM_ATFFS" ColumnName="NOM_ATFFS" />
+          <ScalarProperty Name="GUI_UBIGEO" ColumnName="GUI_UBIGEO" />
+          <ScalarProperty Name="NRO_GTFs" ColumnName="NRO_GTFs" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_detalle_troza">
+      <EntityTypeMapping TypeName="samadModel.vw_detalle_troza">
+        <MappingFragment StoreEntitySet="vw_detalle_troza">
+          <ScalarProperty Name="Lt_Contrato_Id" ColumnName="Lt_Contrato_Id" />
+          <ScalarProperty Name="Lt_Zafra" ColumnName="Lt_Zafra" />
+          <ScalarProperty Name="Lt_Nrogtf" ColumnName="Lt_Nrogtf" />
+          <ScalarProperty Name="especie" ColumnName="especie" />
+          <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+          <ScalarProperty Name="Veh_Placa" ColumnName="Veh_Placa" />
+          <ScalarProperty Name="Lt_Transporte_Id" ColumnName="Lt_Transporte_Id" />
+          <ScalarProperty Name="ConductorId" ColumnName="ConductorId" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="Nombre_propietario" ColumnName="Nombre_propietario" />
+          <ScalarProperty Name="PropietarioId" ColumnName="PropietarioId" />
+          <ScalarProperty Name="Lt_Poa_Id" ColumnName="Lt_Poa_Id" />
+          <ScalarProperty Name="Ltd_Autogenerado" ColumnName="Ltd_Autogenerado" />
+          <ScalarProperty Name="Ltd_Lt_Id" ColumnName="Ltd_Lt_Id" />
+          <ScalarProperty Name="Ltd_NroListaTrozas" ColumnName="Ltd_NroListaTrozas" />
+          <ScalarProperty Name="Lt_Titular_Id" ColumnName="Lt_Titular_Id" />
+          <ScalarProperty Name="Ltd_Vol_M3" ColumnName="Ltd_Vol_M3" />
+          <ScalarProperty Name="Ltd_D3" ColumnName="Ltd_D3" />
+          <ScalarProperty Name="Ltd_D2" ColumnName="Ltd_D2" />
+          <ScalarProperty Name="Ltd_D1" ColumnName="Ltd_D1" />
+          <ScalarProperty Name="Numtroza" ColumnName="Numtroza" />
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_empaquetado">
+      <EntityTypeMapping TypeName="samadModel.vw_empaquetado">
+        <MappingFragment StoreEntitySet="vw_empaquetado">
+          <ScalarProperty Name="Emp_Periodo" ColumnName="Emp_Periodo" />
+          <ScalarProperty Name="Emp_observacion" ColumnName="Emp_observacion" />
+          <ScalarProperty Name="Emp_Cubicador" ColumnName="Emp_Cubicador" />
+          <ScalarProperty Name="Emp_CubicadorId" ColumnName="Emp_CubicadorId" />
+          <ScalarProperty Name="Pro_Titular" ColumnName="Pro_Titular" />
+          <ScalarProperty Name="Emp_AserraderoId" ColumnName="Emp_AserraderoId" />
+          <ScalarProperty Name="Emp_Certificado" ColumnName="Emp_Certificado" />
+          <ScalarProperty Name="Emp_Fecha" ColumnName="Emp_Fecha" />
+          <ScalarProperty Name="Emp_NroDoc" ColumnName="Emp_NroDoc" />
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_empresas_aserrios">
+      <EntityTypeMapping TypeName="samadModel.vw_empresas_aserrios">
+        <MappingFragment StoreEntitySet="vw_empresas_aserrios">
+          <ScalarProperty Name="Pro_Titular" ColumnName="Pro_Titular" />
+          <ScalarProperty Name="Pro_Id" ColumnName="Pro_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_formato02a">
+      <EntityTypeMapping TypeName="samadModel.vw_formato02a">
+        <MappingFragment StoreEntitySet="vw_formato02a">
+          <ScalarProperty Name="F02d_D3" ColumnName="F02d_D3" />
+          <ScalarProperty Name="F02d_Volm3" ColumnName="F02d_Volm3" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="F02_NroDoc" ColumnName="F02_NroDoc" />
+          <ScalarProperty Name="Especie" ColumnName="Especie" />
+          <ScalarProperty Name="EspecieID" ColumnName="EspecieID" />
+          <ScalarProperty Name="F02_NroOpe" ColumnName="F02_NroOpe" />
+          <ScalarProperty Name="f02_periodo" ColumnName="f02_periodo" />
+          <ScalarProperty Name="F02d_Lote" ColumnName="F02d_Lote" />
+          <ScalarProperty Name="F02_Fecha" ColumnName="F02_Fecha" />
+          <ScalarProperty Name="F02_Id" ColumnName="F02_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_formato04">
+      <EntityTypeMapping TypeName="samadModel.vw_formato04">
+        <MappingFragment StoreEntitySet="vw_formato04">
+          <ScalarProperty Name="pro_id" ColumnName="pro_id" />
+          <ScalarProperty Name="pro_titular" ColumnName="pro_titular" />
+          <ScalarProperty Name="f04_periodo" ColumnName="f04_periodo" />
+          <ScalarProperty Name="f02_NroDoc" ColumnName="f02_NroDoc" />
+          <ScalarProperty Name="f04_f02_id" ColumnName="f04_f02_id" />
+          <ScalarProperty Name="f04_responsable_id" ColumnName="f04_responsable_id" />
+          <ScalarProperty Name="per_cargo" ColumnName="per_cargo" />
+          <ScalarProperty Name="per_nomape" ColumnName="per_nomape" />
+          <ScalarProperty Name="f04_ordenproduccion" ColumnName="f04_ordenproduccion" />
+          <ScalarProperty Name="f04_Observacion" ColumnName="f04_Observacion" />
+          <ScalarProperty Name="tur_horario" ColumnName="tur_horario" />
+          <ScalarProperty Name="tur_descrip" ColumnName="tur_descrip" />
+          <ScalarProperty Name="f04_turno_id" ColumnName="f04_turno_id" />
+          <ScalarProperty Name="f04_tipoconteo" ColumnName="f04_tipoconteo" />
+          <ScalarProperty Name="f04_fecha" ColumnName="f04_fecha" />
+          <ScalarProperty Name="f04_nro" ColumnName="f04_nro" />
+          <ScalarProperty Name="f04_id" ColumnName="f04_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_listadodespachocabecera">
+      <EntityTypeMapping TypeName="samadModel.vw_listadodespachocabecera">
+        <MappingFragment StoreEntitySet="vw_listadodespachocabecera">
+          <ScalarProperty Name="des_tipotransporte" ColumnName="des_tipotransporte" />
+          <ScalarProperty Name="des_tipopm" ColumnName="des_tipopm" />
+          <ScalarProperty Name="des_resolucion" ColumnName="des_resolucion" />
+          <ScalarProperty Name="des_recurso" ColumnName="des_recurso" />
+          <ScalarProperty Name="Nrocontrato" ColumnName="Nrocontrato" />
+          <ScalarProperty Name="Des_Contrato_Id" ColumnName="Des_Contrato_Id" />
+          <ScalarProperty Name="Veh_Emt_Id" ColumnName="Veh_Emt_Id" />
+          <ScalarProperty Name="Veh_Tipo_vehic" ColumnName="Veh_Tipo_vehic" />
+          <ScalarProperty Name="veh_tipo" ColumnName="veh_tipo" />
+          <ScalarProperty Name="veh_placa" ColumnName="veh_placa" />
+          <ScalarProperty Name="des_vehiculo_id" ColumnName="des_vehiculo_id" />
+          <ScalarProperty Name="con_dni" ColumnName="con_dni" />
+          <ScalarProperty Name="con_nrolicencia" ColumnName="con_nrolicencia" />
+          <ScalarProperty Name="des_conductor_nombre" ColumnName="des_conductor_nombre" />
+          <ScalarProperty Name="des_transportista_id" ColumnName="des_transportista_id" />
+          <ScalarProperty Name="des_dni" ColumnName="des_dni" />
+          <ScalarProperty Name="des_ruc" ColumnName="des_ruc" />
+          <ScalarProperty Name="des_direccion" ColumnName="des_direccion" />
+          <ScalarProperty Name="des_dist" ColumnName="des_dist" />
+          <ScalarProperty Name="des_prov" ColumnName="des_prov" />
+          <ScalarProperty Name="des_dpto" ColumnName="des_dpto" />
+          <ScalarProperty Name="des_destinatario_nombre" ColumnName="des_destinatario_nombre" />
+          <ScalarProperty Name="Des_Nro_Guia_rem" ColumnName="Des_Nro_Guia_rem" />
+          <ScalarProperty Name="des_nro_CV" ColumnName="des_nro_CV" />
+          <ScalarProperty Name="des_tipo_cv" ColumnName="des_tipo_cv" />
+          <ScalarProperty Name="distrito_p" ColumnName="distrito_p" />
+          <ScalarProperty Name="provincia_p" ColumnName="provincia_p" />
+          <ScalarProperty Name="departamento_p" ColumnName="departamento_p" />
+          <ScalarProperty Name="des_direccion_p" ColumnName="des_direccion_p" />
+          <ScalarProperty Name="des_destinatario_id" ColumnName="des_destinatario_id" />
+          <ScalarProperty Name="prop_dni" ColumnName="prop_dni" />
+          <ScalarProperty Name="prop_ruc" ColumnName="prop_ruc" />
+          <ScalarProperty Name="des_propietario_nombre" ColumnName="des_propietario_nombre" />
+          <ScalarProperty Name="des_propietario_id" ColumnName="des_propietario_id" />
+          <ScalarProperty Name="distrito" ColumnName="distrito" />
+          <ScalarProperty Name="provincia" ColumnName="provincia" />
+          <ScalarProperty Name="departamento" ColumnName="departamento" />
+          <ScalarProperty Name="pro_sector" ColumnName="pro_sector" />
+          <ScalarProperty Name="des_rep_legal" ColumnName="des_rep_legal" />
+          <ScalarProperty Name="pro_ruc" ColumnName="pro_ruc" />
+          <ScalarProperty Name="des_titular_nombre" ColumnName="des_titular_nombre" />
+          <ScalarProperty Name="Des_Periodo" ColumnName="Des_Periodo" />
+          <ScalarProperty Name="des_titular_id" ColumnName="des_titular_id" />
+          <ScalarProperty Name="des_nrodoc" ColumnName="des_nrodoc" />
+          <ScalarProperty Name="Des_Fecha_ven" ColumnName="Des_Fecha_ven" />
+          <ScalarProperty Name="des_fecha" ColumnName="des_fecha" />
+          <ScalarProperty Name="Des_Arffs" ColumnName="Des_Arffs" />
+          <ScalarProperty Name="des_Ubigeo" ColumnName="des_Ubigeo" />
+          <ScalarProperty Name="des_id" ColumnName="des_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_listadodespachodetalle">
+      <EntityTypeMapping TypeName="samadModel.vw_listadodespachodetalle">
+        <MappingFragment StoreEntitySet="vw_listadodespachodetalle">
+          <ScalarProperty Name="VolPt" ColumnName="VolPt" />
+          <ScalarProperty Name="Volm3" ColumnName="Volm3" />
+          <ScalarProperty Name="Tipo_Unidad" ColumnName="Tipo_Unidad" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Clase_Comercial" ColumnName="Clase_Comercial" />
+          <ScalarProperty Name="Producto" ColumnName="Producto" />
+          <ScalarProperty Name="Especie" ColumnName="Especie" />
+          <ScalarProperty Name="Nom_Cientifico" ColumnName="Nom_Cientifico" />
+          <ScalarProperty Name="LoteAser_Pqt" ColumnName="LoteAser_Pqt" />
+          <ScalarProperty Name="NroGtf" ColumnName="NroGtf" />
+          <ScalarProperty Name="DetID" ColumnName="DetID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_mostrar_aserrio_01">
+      <EntityTypeMapping TypeName="samadModel.vw_mostrar_aserrio_01">
+        <MappingFragment StoreEntitySet="vw_mostrar_aserrio_01">
+          <ScalarProperty Name="CodeUnico" ColumnName="CodeUnico" />
+          <ScalarProperty Name="Tur_Descrip" ColumnName="Tur_Descrip" />
+          <ScalarProperty Name="Pro_Titular" ColumnName="Pro_Titular" />
+          <ScalarProperty Name="periodo" ColumnName="periodo" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="Simbolo" ColumnName="Simbolo" />
+          <ScalarProperty Name="UbicaProducto" ColumnName="UbicaProducto" />
+          <ScalarProperty Name="CentroTransac" ColumnName="CentroTransac" />
+          <ScalarProperty Name="F04_TipoConteo" ColumnName="F04_TipoConteo" />
+          <ScalarProperty Name="F04_Fecha" ColumnName="F04_Fecha" />
+          <ScalarProperty Name="F04_Nro_doc" ColumnName="F04_Nro_doc" />
+          <ScalarProperty Name="F04_Nro" ColumnName="F04_Nro" />
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="ClasificaProducto" ColumnName="ClasificaProducto" />
+          <ScalarProperty Name="Objetivo_producto" ColumnName="Objetivo_producto" />
+          <ScalarProperty Name="VolPT" ColumnName="VolPT" />
+          <ScalarProperty Name="VolM3" ColumnName="VolM3" />
+          <ScalarProperty Name="TipUnidad" ColumnName="TipUnidad" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Prod_ClasificacionCom" ColumnName="Prod_ClasificacionCom" />
+          <ScalarProperty Name="Prod_ClasificacionId" ColumnName="Prod_ClasificacionId" />
+          <ScalarProperty Name="Nom_Producto" ColumnName="Nom_Producto" />
+          <ScalarProperty Name="Especie" ColumnName="Especie" />
+          <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+          <ScalarProperty Name="Nro_Lot_As" ColumnName="Nro_Lot_As" />
+          <ScalarProperty Name="Lote_troza" ColumnName="Lote_troza" />
+          <ScalarProperty Name="F04_Id" ColumnName="F04_Id" />
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_mostrar_aserrio_total_prod">
+      <EntityTypeMapping TypeName="samadModel.vw_mostrar_aserrio_total_prod">
+        <MappingFragment StoreEntitySet="vw_mostrar_aserrio_total_prod">
+          <ScalarProperty Name="Tur_Descrip" ColumnName="Tur_Descrip" />
+          <ScalarProperty Name="Nom_Aserradero" ColumnName="Nom_Aserradero" />
+          <ScalarProperty Name="periodo" ColumnName="periodo" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="UbicaProducto" ColumnName="UbicaProducto" />
+          <ScalarProperty Name="CentroTransac" ColumnName="CentroTransac" />
+          <ScalarProperty Name="F04_TipoConteo" ColumnName="F04_TipoConteo" />
+          <ScalarProperty Name="F04_Fecha" ColumnName="F04_Fecha" />
+          <ScalarProperty Name="F04_Nro_doc" ColumnName="F04_Nro_doc" />
+          <ScalarProperty Name="Pca" ColumnName="Pca" />
+          <ScalarProperty Name="Zafra" ColumnName="Zafra" />
+          <ScalarProperty Name="CodeUnico" ColumnName="CodeUnico" />
+          <ScalarProperty Name="Con_Descripcion" ColumnName="Con_Descripcion" />
+          <ScalarProperty Name="Titular" ColumnName="Titular" />
+          <ScalarProperty Name="F01d_Gtf" ColumnName="F01d_Gtf" />
+          <ScalarProperty Name="F04_Nro" ColumnName="F04_Nro" />
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="ClasificaProducto" ColumnName="ClasificaProducto" />
+          <ScalarProperty Name="Objetivo_producto" ColumnName="Objetivo_producto" />
+          <ScalarProperty Name="VolPT" ColumnName="VolPT" />
+          <ScalarProperty Name="VolM3" ColumnName="VolM3" />
+          <ScalarProperty Name="TipUnidad" ColumnName="TipUnidad" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Prod_ClasificacionCom" ColumnName="Prod_ClasificacionCom" />
+          <ScalarProperty Name="Prod_ClasificacionId" ColumnName="Prod_ClasificacionId" />
+          <ScalarProperty Name="Nom_Producto" ColumnName="Nom_Producto" />
+          <ScalarProperty Name="Especie" ColumnName="Especie" />
+          <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+          <ScalarProperty Name="Nro_Lot_As" ColumnName="Nro_Lot_As" />
+          <ScalarProperty Name="Lote_troza" ColumnName="Lote_troza" />
+          <ScalarProperty Name="F04_Id" ColumnName="F04_Id" />
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_mostrar_formato01_det_recep">
+      <EntityTypeMapping TypeName="samadModel.vw_mostrar_formato01_det_recep">
+        <MappingFragment StoreEntitySet="vw_mostrar_formato01_det_recep">
+          <ScalarProperty Name="Nro_contrato" ColumnName="Nro_contrato" />
+          <ScalarProperty Name="F01d_Vol_M3" ColumnName="F01d_Vol_M3" />
+          <ScalarProperty Name="F01d_Especie" ColumnName="F01d_Especie" />
+          <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+          <ScalarProperty Name="Lt_Nrogtf" ColumnName="Lt_Nrogtf" />
+          <ScalarProperty Name="F01d_Id" ColumnName="F01d_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_mostrar_formato02_det_aserrio">
+      <EntityTypeMapping TypeName="samadModel.vw_mostrar_formato02_det_aserrio">
+        <MappingFragment StoreEntitySet="vw_mostrar_formato02_det_aserrio">
+          <ScalarProperty Name="suma_volm3" ColumnName="suma_volm3" />
+          <ScalarProperty Name="F02d_GTF" ColumnName="F02d_GTF" />
+          <ScalarProperty Name="Con_Descripcion" ColumnName="Con_Descripcion" />
+          <ScalarProperty Name="F02d_Especie" ColumnName="F02d_Especie" />
+          <ScalarProperty Name="F02d_Id" ColumnName="F02d_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_mostrar_libro_operaciones">
+      <EntityTypeMapping TypeName="samadModel.vw_mostrar_libro_operaciones">
+        <MappingFragment StoreEntitySet="vw_mostrar_libro_operaciones">
+          <ScalarProperty Name="Des_Periodo" ColumnName="Des_Periodo" />
+          <ScalarProperty Name="Pro_Titular" ColumnName="Pro_Titular" />
+          <ScalarProperty Name="Saldo_80" ColumnName="Saldo_80" />
+          <ScalarProperty Name="Vol_Total" ColumnName="Vol_Total" />
+          <ScalarProperty Name="Desd_Ac_Volm3_RC" ColumnName="Desd_Ac_Volm3_RC" />
+          <ScalarProperty Name="Desd_Ac_Volm3_CM" ColumnName="Desd_Ac_Volm3_CM" />
+          <ScalarProperty Name="VolM3Rec" ColumnName="VolM3Rec" />
+          <ScalarProperty Name="VolM3Com" ColumnName="VolM3Com" />
+          <ScalarProperty Name="Desd_Cantidad" ColumnName="Desd_Cantidad" />
+          <ScalarProperty Name="Desd_Producto" ColumnName="Desd_Producto" />
+          <ScalarProperty Name="Des_Fecha" ColumnName="Des_Fecha" />
+          <ScalarProperty Name="Nro_contrato" ColumnName="Nro_contrato" />
+          <ScalarProperty Name="localidad" ColumnName="localidad" />
+          <ScalarProperty Name="fechaGtf" ColumnName="fechaGtf" />
+          <ScalarProperty Name="Nro_Gtf" ColumnName="Nro_Gtf" />
+          <ScalarProperty Name="T_Volm3" ColumnName="T_Volm3" />
+          <ScalarProperty Name="uind_med" ColumnName="uind_med" />
+          <ScalarProperty Name="T_Trozas" ColumnName="T_Trozas" />
+          <ScalarProperty Name="Nombre_Cientifico" ColumnName="Nombre_Cientifico" />
+          <ScalarProperty Name="Nombre_comun" ColumnName="Nombre_comun" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="Receptor" ColumnName="Receptor" />
+          <ScalarProperty Name="fecha_Ing" ColumnName="fecha_Ing" />
+          <ScalarProperty Name="Des_Id" ColumnName="Des_Id" />
+          <ScalarProperty Name="Desd_Id" ColumnName="Desd_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_mostrar_lista_lotes_trozas">
+      <EntityTypeMapping TypeName="samadModel.vw_mostrar_lista_lotes_trozas">
+        <MappingFragment StoreEntitySet="vw_mostrar_lista_lotes_trozas">
+          <ScalarProperty Name="codeUnico" ColumnName="codeUnico" />
+          <ScalarProperty Name="Pca" ColumnName="Pca" />
+          <ScalarProperty Name="Zafra" ColumnName="Zafra" />
+          <ScalarProperty Name="Con_Descripcion" ColumnName="Con_Descripcion" />
+          <ScalarProperty Name="Pro_Titular" ColumnName="Pro_Titular" />
+          <ScalarProperty Name="F01d_Especie" ColumnName="F01d_Especie" />
+          <ScalarProperty Name="F01d_TitularId" ColumnName="F01d_TitularId" />
+          <ScalarProperty Name="F01d_Gtf" ColumnName="F01d_Gtf" />
+          <ScalarProperty Name="F01d_Lote" ColumnName="F01d_Lote" />
+          <ScalarProperty Name="F01_id" ColumnName="F01_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_mostrar_listastrozasgtf">
+      <EntityTypeMapping TypeName="samadModel.vw_mostrar_listastrozasgtf">
+        <MappingFragment StoreEntitySet="vw_mostrar_listastrozasgtf">
+          <ScalarProperty Name="Pro_Dni" ColumnName="Pro_Dni" />
+          <ScalarProperty Name="Pro_Direccion" ColumnName="Pro_Direccion" />
+          <ScalarProperty Name="Pro_Distrito" ColumnName="Pro_Distrito" />
+          <ScalarProperty Name="Pro_Provincia" ColumnName="Pro_Provincia" />
+          <ScalarProperty Name="Pro_Departamento" ColumnName="Pro_Departamento" />
+          <ScalarProperty Name="Zyp_Poa" ColumnName="Zyp_Poa" />
+          <ScalarProperty Name="Zyp_Zafra" ColumnName="Zyp_Zafra" />
+          <ScalarProperty Name="Con_Descripcion" ColumnName="Con_Descripcion" />
+          <ScalarProperty Name="Pro_Titular" ColumnName="Pro_Titular" />
+          <ScalarProperty Name="Lt_Titular_Id" ColumnName="Lt_Titular_Id" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="Ltd_NroListaTrozas" ColumnName="Ltd_NroListaTrozas" />
+          <ScalarProperty Name="Ltd_Autogenerado" ColumnName="Ltd_Autogenerado" />
+          <ScalarProperty Name="Ltd_Lt_Id" ColumnName="Ltd_Lt_Id" />
+          <ScalarProperty Name="volm3gtf" ColumnName="volm3gtf" />
+          <ScalarProperty Name="Ltd_D3" ColumnName="Ltd_D3" />
+          <ScalarProperty Name="Ltd_D2" ColumnName="Ltd_D2" />
+          <ScalarProperty Name="Ltd_D1" ColumnName="Ltd_D1" />
+          <ScalarProperty Name="Ltd_Codificacion" ColumnName="Ltd_Codificacion" />
+          <ScalarProperty Name="Ltd_Especie" ColumnName="Ltd_Especie" />
+          <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+          <ScalarProperty Name="Ltd_Id" ColumnName="Ltd_Id" />
+          <ScalarProperty Name="Lt_unidad" ColumnName="Lt_unidad" />
+          <ScalarProperty Name="Lt_Propietario_Id" ColumnName="Lt_Propietario_Id" />
+          <ScalarProperty Name="Lt_Fecha" ColumnName="Lt_Fecha" />
+          <ScalarProperty Name="Lt_Nrogtf" ColumnName="Lt_Nrogtf" />
+          <ScalarProperty Name="Lt_id" ColumnName="Lt_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_mostrar_nro_lista_periodo">
+      <EntityTypeMapping TypeName="samadModel.vw_mostrar_nro_lista_periodo">
+        <MappingFragment StoreEntitySet="vw_mostrar_nro_lista_periodo">
+          <ScalarProperty Name="f02_periodo" ColumnName="f02_periodo" />
+          <ScalarProperty Name="F02_NroDoc" ColumnName="F02_NroDoc" />
+          <ScalarProperty Name="F02_Id" ColumnName="F02_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_mostrar_produccion">
+      <EntityTypeMapping TypeName="samadModel.vw_mostrar_produccion">
+        <MappingFragment StoreEntitySet="vw_mostrar_produccion">
+          <ScalarProperty Name="CodigoUnic" ColumnName="CodigoUnic" />
+          <ScalarProperty Name="Lote_troza" ColumnName="Lote_troza" />
+          <ScalarProperty Name="Prod_ClasificacionId" ColumnName="Prod_ClasificacionId" />
+          <ScalarProperty Name="Objetivo_producto" ColumnName="Objetivo_producto" />
+          <ScalarProperty Name="T_Vol_m3" ColumnName="T_Vol_m3" />
+          <ScalarProperty Name="T_Pzs" ColumnName="T_Pzs" />
+          <ScalarProperty Name="Prod_ClasificacionCom" ColumnName="Prod_ClasificacionCom" />
+          <ScalarProperty Name="Descripcion_ruma" ColumnName="Descripcion_ruma" />
+          <ScalarProperty Name="Especie" ColumnName="Especie" />
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_mostrar_producto_procesado">
+      <EntityTypeMapping TypeName="samadModel.vw_mostrar_producto_procesado">
+        <MappingFragment StoreEntitySet="vw_mostrar_producto_procesado">
+          <ScalarProperty Name="Pro_Titular" ColumnName="Pro_Titular" />
+          <ScalarProperty Name="Des_Periodo" ColumnName="Des_Periodo" />
+          <ScalarProperty Name="Code_Unico" ColumnName="Code_Unico" />
+          <ScalarProperty Name="Saldo_80" ColumnName="Saldo_80" />
+          <ScalarProperty Name="Desd_Ac_Volm3_RC" ColumnName="Desd_Ac_Volm3_RC" />
+          <ScalarProperty Name="Desd_Ac_Volm3_CM" ColumnName="Desd_Ac_Volm3_CM" />
+          <ScalarProperty Name="Desd_Volm3" ColumnName="Desd_Volm3" />
+          <ScalarProperty Name="Desd_Cantidad" ColumnName="Desd_Cantidad" />
+          <ScalarProperty Name="Desd_ClaseC" ColumnName="Desd_ClaseC" />
+          <ScalarProperty Name="CComercialID" ColumnName="CComercialID" />
+          <ScalarProperty Name="Desd_Producto" ColumnName="Desd_Producto" />
+          <ScalarProperty Name="Desd_Especie" ColumnName="Desd_Especie" />
+          <ScalarProperty Name="Desd_Codigo" ColumnName="Desd_Codigo" />
+          <ScalarProperty Name="Des_Fecha" ColumnName="Des_Fecha" />
+          <ScalarProperty Name="Des_Id" ColumnName="Des_Id" />
+          <ScalarProperty Name="Desd_Id" ColumnName="Desd_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_mostrar_res_trozas_recep">
+      <EntityTypeMapping TypeName="samadModel.vw_mostrar_res_trozas_recep">
+        <MappingFragment StoreEntitySet="vw_mostrar_res_trozas_recep">
+          <ScalarProperty Name="Cod_Unico" ColumnName="Cod_Unico" />
+          <ScalarProperty Name="localidad" ColumnName="localidad" />
+          <ScalarProperty Name="Nro_contrato" ColumnName="Nro_contrato" />
+          <ScalarProperty Name="fechaGtf" ColumnName="fechaGtf" />
+          <ScalarProperty Name="Nro_Gtf" ColumnName="Nro_Gtf" />
+          <ScalarProperty Name="T_Volm3" ColumnName="T_Volm3" />
+          <ScalarProperty Name="uind_med" ColumnName="uind_med" />
+          <ScalarProperty Name="T_Trozas" ColumnName="T_Trozas" />
+          <ScalarProperty Name="Nombre_Cientifico" ColumnName="Nombre_Cientifico" />
+          <ScalarProperty Name="Nombre_comun" ColumnName="Nombre_comun" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="Receptor" ColumnName="Receptor" />
+          <ScalarProperty Name="fecha_Ing" ColumnName="fecha_Ing" />
+          <ScalarProperty Name="F01d_Id" ColumnName="F01d_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_mostrar_resumen_trozas_aserradas">
+      <EntityTypeMapping TypeName="samadModel.vw_mostrar_resumen_trozas_aserradas">
+        <MappingFragment StoreEntitySet="vw_mostrar_resumen_trozas_aserradas">
+          <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+          <ScalarProperty Name="Proc_descripcion" ColumnName="Proc_descripcion" />
+          <ScalarProperty Name="F02d_GTF" ColumnName="F02d_GTF" />
+          <ScalarProperty Name="Zyp_Poa" ColumnName="Zyp_Poa" />
+          <ScalarProperty Name="Zyp_Zafra" ColumnName="Zyp_Zafra" />
+          <ScalarProperty Name="Con_Descripcion" ColumnName="Con_Descripcion" />
+          <ScalarProperty Name="Pro_Titular" ColumnName="Pro_Titular" />
+          <ScalarProperty Name="T_Volpt" ColumnName="T_Volpt" />
+          <ScalarProperty Name="T_Volm3CIn" ColumnName="T_Volm3CIn" />
+          <ScalarProperty Name="T_VolM3Gtf" ColumnName="T_VolM3Gtf" />
+          <ScalarProperty Name="T_trozas" ColumnName="T_trozas" />
+          <ScalarProperty Name="F02d_Especie" ColumnName="F02d_Especie" />
+          <ScalarProperty Name="F02_Fecha" ColumnName="F02_Fecha" />
+          <ScalarProperty Name="F02d_Lote" ColumnName="F02d_Lote" />
+          <ScalarProperty Name="f02_periodo" ColumnName="f02_periodo" />
+          <ScalarProperty Name="F02_NroDoc" ColumnName="F02_NroDoc" />
+          <ScalarProperty Name="Pro_Id" ColumnName="Pro_Id" />
+          <ScalarProperty Name="F02d_Id" ColumnName="F02d_Id" />
+          <ScalarProperty Name="F02_Id" ColumnName="F02_Id" />
+          <ScalarProperty Name="Lt_id" ColumnName="Lt_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_mostrar_trozas_aserrad_titulares">
+      <EntityTypeMapping TypeName="samadModel.vw_mostrar_trozas_aserrad_titulares">
+        <MappingFragment StoreEntitySet="vw_mostrar_trozas_aserrad_titulares">
+          <ScalarProperty Name="nom_aserrad" ColumnName="nom_aserrad" />
+          <ScalarProperty Name="Zyp_Poa" ColumnName="Zyp_Poa" />
+          <ScalarProperty Name="Zyp_Zafra" ColumnName="Zyp_Zafra" />
+          <ScalarProperty Name="contrato" ColumnName="contrato" />
+          <ScalarProperty Name="Pro_Titular" ColumnName="Pro_Titular" />
+          <ScalarProperty Name="F02_Fecha" ColumnName="F02_Fecha" />
+          <ScalarProperty Name="F02_Id" ColumnName="F02_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_mostrar_trozas_aserradas">
+      <EntityTypeMapping TypeName="samadModel.vw_mostrar_trozas_aserradas">
+        <MappingFragment StoreEntitySet="vw_mostrar_trozas_aserradas">
+          <ScalarProperty Name="Proc_descripcion" ColumnName="Proc_descripcion" />
+          <ScalarProperty Name="Aserradero" ColumnName="Aserradero" />
+          <ScalarProperty Name="f02_emp_id" ColumnName="f02_emp_id" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="F02d_GTF" ColumnName="F02d_GTF" />
+          <ScalarProperty Name="Zyp_Poa" ColumnName="Zyp_Poa" />
+          <ScalarProperty Name="Zyp_Zafra" ColumnName="Zyp_Zafra" />
+          <ScalarProperty Name="Con_Descripcion" ColumnName="Con_Descripcion" />
+          <ScalarProperty Name="Pro_Titular" ColumnName="Pro_Titular" />
+          <ScalarProperty Name="F02d_Volm3" ColumnName="F02d_Volm3" />
+          <ScalarProperty Name="f02d_vol_pt" ColumnName="f02d_vol_pt" />
+          <ScalarProperty Name="f02d_dpies" ColumnName="f02d_dpies" />
+          <ScalarProperty Name="f02d_d_pulgada" ColumnName="f02d_d_pulgada" />
+          <ScalarProperty Name="f02d_volm3c" ColumnName="f02d_volm3c" />
+          <ScalarProperty Name="f02d_d3c" ColumnName="f02d_d3c" />
+          <ScalarProperty Name="f02d_d2c" ColumnName="f02d_d2c" />
+          <ScalarProperty Name="f02d_d1c" ColumnName="f02d_d1c" />
+          <ScalarProperty Name="F02d_D3" ColumnName="F02d_D3" />
+          <ScalarProperty Name="F02d_D2" ColumnName="F02d_D2" />
+          <ScalarProperty Name="F02d_D1" ColumnName="F02d_D1" />
+          <ScalarProperty Name="F02d_CodIndustria" ColumnName="F02d_CodIndustria" />
+          <ScalarProperty Name="F02d_Codificacion" ColumnName="F02d_Codificacion" />
+          <ScalarProperty Name="F02d_Especie" ColumnName="F02d_Especie" />
+          <ScalarProperty Name="F02_Fecha" ColumnName="F02_Fecha" />
+          <ScalarProperty Name="F02d_Lote" ColumnName="F02d_Lote" />
+          <ScalarProperty Name="f02_periodo" ColumnName="f02_periodo" />
+          <ScalarProperty Name="F02_NroDoc" ColumnName="F02_NroDoc" />
+          <ScalarProperty Name="Pro_Id" ColumnName="Pro_Id" />
+          <ScalarProperty Name="F02d_Id" ColumnName="F02d_Id" />
+          <ScalarProperty Name="F02_Id" ColumnName="F02_Id" />
+          <ScalarProperty Name="Lt_id" ColumnName="Lt_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_mostrar_trozas_recepcionadas">
+      <EntityTypeMapping TypeName="samadModel.vw_mostrar_trozas_recepcionadas">
+        <MappingFragment StoreEntitySet="vw_mostrar_trozas_recepcionadas">
+          <ScalarProperty Name="Periodo" ColumnName="Periodo" />
+          <ScalarProperty Name="F01d_Abastecimiento" ColumnName="F01d_Abastecimiento" />
+          <ScalarProperty Name="F01d_Propietario" ColumnName="F01d_Propietario" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="F01d_Autogenerado" ColumnName="F01d_Autogenerado" />
+          <ScalarProperty Name="F01d_Procedencia" ColumnName="F01d_Procedencia" />
+          <ScalarProperty Name="F01d_Vol_pt" ColumnName="F01d_Vol_pt" />
+          <ScalarProperty Name="F01d_Long_pie" ColumnName="F01d_Long_pie" />
+          <ScalarProperty Name="F01d_Dm_pulgada" ColumnName="F01d_Dm_pulgada" />
+          <ScalarProperty Name="F01d_Vol_M3c" ColumnName="F01d_Vol_M3c" />
+          <ScalarProperty Name="F01d_D3c" ColumnName="F01d_D3c" />
+          <ScalarProperty Name="F01d_D2c" ColumnName="F01d_D2c" />
+          <ScalarProperty Name="F01d_D1c" ColumnName="F01d_D1c" />
+          <ScalarProperty Name="F01d_Vol_M3" ColumnName="F01d_Vol_M3" />
+          <ScalarProperty Name="F01d_D3" ColumnName="F01d_D3" />
+          <ScalarProperty Name="F01d_D2" ColumnName="F01d_D2" />
+          <ScalarProperty Name="F01d_D1" ColumnName="F01d_D1" />
+          <ScalarProperty Name="F01d_Especie" ColumnName="F01d_Especie" />
+          <ScalarProperty Name="F01d_CodIndustria" ColumnName="F01d_CodIndustria" />
+          <ScalarProperty Name="F01d_Correlativo" ColumnName="F01d_Correlativo" />
+          <ScalarProperty Name="F01d_Gtf" ColumnName="F01d_Gtf" />
+          <ScalarProperty Name="Zyp_Poa" ColumnName="Zyp_Poa" />
+          <ScalarProperty Name="Zyp_Zafra" ColumnName="Zyp_Zafra" />
+          <ScalarProperty Name="F01d_Titular" ColumnName="F01d_Titular" />
+          <ScalarProperty Name="Con_Descripcion" ColumnName="Con_Descripcion" />
+          <ScalarProperty Name="F01d_Lote" ColumnName="F01d_Lote" />
+          <ScalarProperty Name="F01_Fecha" ColumnName="F01_Fecha" />
+          <ScalarProperty Name="F01d_F01_Id" ColumnName="F01d_F01_Id" />
+          <ScalarProperty Name="F01d_Id" ColumnName="F01d_Id" />
+          <ScalarProperty Name="F01_id" ColumnName="F01_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_paquete">
+      <EntityTypeMapping TypeName="samadModel.vw_paquete">
+        <MappingFragment StoreEntitySet="vw_paquete">
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="Volpt" ColumnName="Volpt" />
+          <ScalarProperty Name="Volm3" ColumnName="Volm3" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Clasificacion" ColumnName="Clasificacion" />
+          <ScalarProperty Name="Humedad" ColumnName="Humedad" />
+          <ScalarProperty Name="Acabado" ColumnName="Acabado" />
+          <ScalarProperty Name="Especie" ColumnName="Especie" />
+          <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+          <ScalarProperty Name="Paquete" ColumnName="Paquete" />
+          <ScalarProperty Name="RumaId" ColumnName="RumaId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_paquete_despacho">
+      <EntityTypeMapping TypeName="samadModel.vw_paquete_despacho">
+        <MappingFragment StoreEntitySet="vw_paquete_despacho">
+          <ScalarProperty Name="Prod_ClasificacionId" ColumnName="Prod_ClasificacionId" />
+          <ScalarProperty Name="Prod_Rendimiento" ColumnName="Prod_Rendimiento" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="Canidad" ColumnName="Canidad" />
+          <ScalarProperty Name="VolM3" ColumnName="VolM3" />
+          <ScalarProperty Name="VolPT" ColumnName="VolPT" />
+          <ScalarProperty Name="Largo" ColumnName="Largo" />
+          <ScalarProperty Name="Ancho" ColumnName="Ancho" />
+          <ScalarProperty Name="Espesor" ColumnName="Espesor" />
+          <ScalarProperty Name="Periodo" ColumnName="Periodo" />
+          <ScalarProperty Name="TipoUnidad" ColumnName="TipoUnidad" />
+          <ScalarProperty Name="Prod_TipoProducto" ColumnName="Prod_TipoProducto" />
+          <ScalarProperty Name="Prod_ClasificacionCom" ColumnName="Prod_ClasificacionCom" />
+          <ScalarProperty Name="Prod_NomProducto" ColumnName="Prod_NomProducto" />
+          <ScalarProperty Name="ProductoId" ColumnName="ProductoId" />
+          <ScalarProperty Name="Espe_NombreComun" ColumnName="Espe_NombreComun" />
+          <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+          <ScalarProperty Name="Numpaquete" ColumnName="Numpaquete" />
+          <ScalarProperty Name="RumaId" ColumnName="RumaId" />
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_rumas">
+      <EntityTypeMapping TypeName="samadModel.vw_rumas">
+        <MappingFragment StoreEntitySet="vw_rumas">
+          <ScalarProperty Name="Prod_TipoProducto" ColumnName="Prod_TipoProducto" />
+          <ScalarProperty Name="Prod_Rendimiento" ColumnName="Prod_Rendimiento" />
+          <ScalarProperty Name="Descripcion_ruma" ColumnName="Descripcion_ruma" />
+          <ScalarProperty Name="F04_Periodo" ColumnName="F04_Periodo" />
+          <ScalarProperty Name="F04_Pro_id" ColumnName="F04_Pro_id" />
+          <ScalarProperty Name="VoLoTrozas" ColumnName="VoLoTrozas" />
+          <ScalarProperty Name="Sald_Vol_Trozas" ColumnName="Sald_Vol_Trozas" />
+          <ScalarProperty Name="ClasificaProducto" ColumnName="ClasificaProducto" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="VolPT" ColumnName="VolPT" />
+          <ScalarProperty Name="VolM3" ColumnName="VolM3" />
+          <ScalarProperty Name="SisCubicacion" ColumnName="SisCubicacion" />
+          <ScalarProperty Name="F04_Fecha" ColumnName="F04_Fecha" />
+          <ScalarProperty Name="F04_Id" ColumnName="F04_Id" />
+          <ScalarProperty Name="Objetivo_producto" ColumnName="Objetivo_producto" />
+          <ScalarProperty Name="MaderaCertificada" ColumnName="MaderaCertificada" />
+          <ScalarProperty Name="TipUnidad" ColumnName="TipUnidad" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="ProductoId" ColumnName="ProductoId" />
+          <ScalarProperty Name="Codigo_ruma" ColumnName="Codigo_ruma" />
+          <ScalarProperty Name="Orden_produccion" ColumnName="Orden_produccion" />
+          <ScalarProperty Name="Lote_troza" ColumnName="Lote_troza" />
+          <ScalarProperty Name="Nombre_especie" ColumnName="Nombre_especie" />
+          <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_rumas_despacho">
+      <EntityTypeMapping TypeName="samadModel.vw_rumas_despacho">
+        <MappingFragment StoreEntitySet="vw_rumas_despacho">
+          <ScalarProperty Name="Prod_ClasificacionId" ColumnName="Prod_ClasificacionId" />
+          <ScalarProperty Name="Prod_Rendimiento" ColumnName="Prod_Rendimiento" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="VolM3" ColumnName="VolM3" />
+          <ScalarProperty Name="VolPT" ColumnName="VolPT" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="F04_Periodo" ColumnName="F04_Periodo" />
+          <ScalarProperty Name="Objetivo_producto" ColumnName="Objetivo_producto" />
+          <ScalarProperty Name="TipUnidad" ColumnName="TipUnidad" />
+          <ScalarProperty Name="Prod_TipoProducto" ColumnName="Prod_TipoProducto" />
+          <ScalarProperty Name="Prod_ClasificacionCom" ColumnName="Prod_ClasificacionCom" />
+          <ScalarProperty Name="Prod_NomProducto" ColumnName="Prod_NomProducto" />
+          <ScalarProperty Name="ProductoId" ColumnName="ProductoId" />
+          <ScalarProperty Name="Especie" ColumnName="Especie" />
+          <ScalarProperty Name="EspecieId" ColumnName="EspecieId" />
+          <ScalarProperty Name="Codigo_ruma" ColumnName="Codigo_ruma" />
+          <ScalarProperty Name="RumaId" ColumnName="RumaId" />
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_rumas_detalle">
+      <EntityTypeMapping TypeName="samadModel.vw_rumas_detalle">
+        <MappingFragment StoreEntitySet="vw_rumas_detalle">
+          <ScalarProperty Name="Descripcion_ruma" ColumnName="Descripcion_ruma" />
+          <ScalarProperty Name="Vol_m3" ColumnName="Vol_m3" />
+          <ScalarProperty Name="Vol_pt" ColumnName="Vol_pt" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Largo" ColumnName="Largo" />
+          <ScalarProperty Name="Ancho" ColumnName="Ancho" />
+          <ScalarProperty Name="Espesor" ColumnName="Espesor" />
+          <ScalarProperty Name="RumaId" ColumnName="RumaId" />
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_titulares01">
+      <EntityTypeMapping TypeName="samadModel.vw_titulares01">
+        <MappingFragment StoreEntitySet="vw_titulares01">
+          <ScalarProperty Name="Num_contrato" ColumnName="Num_contrato" />
+          <ScalarProperty Name="ContratoId" ColumnName="ContratoId" />
+          <ScalarProperty Name="No_ruc" ColumnName="No_ruc" />
+          <ScalarProperty Name="Nombre_titular" ColumnName="Nombre_titular" />
+          <ScalarProperty Name="TitularId" ColumnName="TitularId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_verificaexistecodigocorrelativo">
+      <EntityTypeMapping TypeName="samadModel.vw_verificaexistecodigocorrelativo">
+        <MappingFragment StoreEntitySet="vw_verificaexistecodigocorrelativo">
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="CodCorrelativo" ColumnName="CodCorrelativo" />
+          <ScalarProperty Name="TitularF01" ColumnName="TitularF01" />
+          <ScalarProperty Name="PeriodoF01" ColumnName="PeriodoF01" />
+          <ScalarProperty Name="IdF01" ColumnName="IdF01" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_verificaexistecodigoindustria">
+      <EntityTypeMapping TypeName="samadModel.vw_verificaexistecodigoindustria">
+        <MappingFragment StoreEntitySet="vw_verificaexistecodigoindustria">
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="CodIndustria" ColumnName="CodIndustria" />
+          <ScalarProperty Name="TitularF01" ColumnName="TitularF01" />
+          <ScalarProperty Name="PeriodoF01" ColumnName="PeriodoF01" />
+          <ScalarProperty Name="IdF01" ColumnName="IdF01" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_verificapaquetedespacho">
+      <EntityTypeMapping TypeName="samadModel.vw_verificapaquetedespacho">
+        <MappingFragment StoreEntitySet="vw_verificapaquetedespacho">
+          <ScalarProperty Name="codigopaquete" ColumnName="codigopaquete" />
+          <ScalarProperty Name="especieid" ColumnName="especieid" />
+          <ScalarProperty Name="periodo" ColumnName="periodo" />
+          <ScalarProperty Name="cuantos" ColumnName="cuantos" />
+          <ScalarProperty Name="empid" ColumnName="empid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_verificarumadespacho">
+      <EntityTypeMapping TypeName="samadModel.vw_verificarumadespacho">
+        <MappingFragment StoreEntitySet="vw_verificarumadespacho">
+          <ScalarProperty Name="objetivo" ColumnName="objetivo" />
+          <ScalarProperty Name="especie" ColumnName="especie" />
+          <ScalarProperty Name="codigoruma" ColumnName="codigoruma" />
+          <ScalarProperty Name="periodo" ColumnName="periodo" />
+          <ScalarProperty Name="cuantos" ColumnName="cuantos" />
+          <ScalarProperty Name="idruma" ColumnName="idruma" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwlista_trozasc">
+      <EntityTypeMapping TypeName="samadModel.vwlista_trozasc">
+        <MappingFragment StoreEntitySet="vwlista_trozasc">
+          <ScalarProperty Name="Veh_Emt_Id" ColumnName="Veh_Emt_Id" />
+          <ScalarProperty Name="Con_NroLicencia" ColumnName="Con_NroLicencia" />
+          <ScalarProperty Name="Con_Dni" ColumnName="Con_Dni" />
+          <ScalarProperty Name="con_nomape" ColumnName="con_nomape" />
+          <ScalarProperty Name="Lt_Conductor_Id" ColumnName="Lt_Conductor_Id" />
+          <ScalarProperty Name="Lt_NroGuia_rem" ColumnName="Lt_NroGuia_rem" />
+          <ScalarProperty Name="Lt_Tipo_Vehic" ColumnName="Lt_Tipo_Vehic" />
+          <ScalarProperty Name="Veh_Tipo" ColumnName="Veh_Tipo" />
+          <ScalarProperty Name="Veh_Placa" ColumnName="Veh_Placa" />
+          <ScalarProperty Name="Lt_Transporte_Id" ColumnName="Lt_Transporte_Id" />
+          <ScalarProperty Name="Zyp_Poa" ColumnName="Zyp_Poa" />
+          <ScalarProperty Name="lt_TipoPm" ColumnName="lt_TipoPm" />
+          <ScalarProperty Name="lt_Resolucion" ColumnName="lt_Resolucion" />
+          <ScalarProperty Name="Lt_Zafra" ColumnName="Lt_Zafra" />
+          <ScalarProperty Name="Lt_Poa_Id" ColumnName="Lt_Poa_Id" />
+          <ScalarProperty Name="Lt_Origen_Rec" ColumnName="Lt_Origen_Rec" />
+          <ScalarProperty Name="Con_Descripcion" ColumnName="Con_Descripcion" />
+          <ScalarProperty Name="Lt_Contrato_Id" ColumnName="Lt_Contrato_Id" />
+          <ScalarProperty Name="des_distrito" ColumnName="des_distrito" />
+          <ScalarProperty Name="des_provincia" ColumnName="des_provincia" />
+          <ScalarProperty Name="des_departamento" ColumnName="des_departamento" />
+          <ScalarProperty Name="des_direccion" ColumnName="des_direccion" />
+          <ScalarProperty Name="des_ruc" ColumnName="des_ruc" />
+          <ScalarProperty Name="lt_dni_d" ColumnName="lt_dni_d" />
+          <ScalarProperty Name="des_nomraz" ColumnName="des_nomraz" />
+          <ScalarProperty Name="Lt_Destinatario_Id" ColumnName="Lt_Destinatario_Id" />
+          <ScalarProperty Name="Lt_Nro_Cv" ColumnName="Lt_Nro_Cv" />
+          <ScalarProperty Name="Lt_Tipo_Cv" ColumnName="Lt_Tipo_Cv" />
+          <ScalarProperty Name="pro_distrito" ColumnName="pro_distrito" />
+          <ScalarProperty Name="pro_provincia" ColumnName="pro_provincia" />
+          <ScalarProperty Name="pro_departament" ColumnName="pro_departament" />
+          <ScalarProperty Name="lt_direccion_p" ColumnName="lt_direccion_p" />
+          <ScalarProperty Name="prop_ruc" ColumnName="prop_ruc" />
+          <ScalarProperty Name="lt_dni_p" ColumnName="lt_dni_p" />
+          <ScalarProperty Name="prop_nomraz" ColumnName="prop_nomraz" />
+          <ScalarProperty Name="Lt_Propietario_Id" ColumnName="Lt_Propietario_Id" />
+          <ScalarProperty Name="Lt_Deffs" ColumnName="Lt_Deffs" />
+          <ScalarProperty Name="Pro_Sector" ColumnName="Pro_Sector" />
+          <ScalarProperty Name="distrito" ColumnName="distrito" />
+          <ScalarProperty Name="provincia" ColumnName="provincia" />
+          <ScalarProperty Name="departamento" ColumnName="departamento" />
+          <ScalarProperty Name="lt_rep_legal" ColumnName="lt_rep_legal" />
+          <ScalarProperty Name="titular_ruc" ColumnName="titular_ruc" />
+          <ScalarProperty Name="lt_titular" ColumnName="lt_titular" />
+          <ScalarProperty Name="Lt_Titular_Id" ColumnName="Lt_Titular_Id" />
+          <ScalarProperty Name="Lt_TipoDimension" ColumnName="Lt_TipoDimension" />
+          <ScalarProperty Name="Lt_fecha_ven" ColumnName="Lt_fecha_ven" />
+          <ScalarProperty Name="Lt_Fecha" ColumnName="Lt_Fecha" />
+          <ScalarProperty Name="Lt_Ubigeo" ColumnName="Lt_Ubigeo" />
+          <ScalarProperty Name="Lt_Nrogtf" ColumnName="Lt_Nrogtf" />
+          <ScalarProperty Name="Lt_id" ColumnName="Lt_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wmostrar_empaquetado">
+      <EntityTypeMapping TypeName="samadModel.wmostrar_empaquetado">
+        <MappingFragment StoreEntitySet="wmostrar_empaquetado">
+          <ScalarProperty Name="Ubicacion" ColumnName="Ubicacion" />
+          <ScalarProperty Name="Prod_TipoProducto" ColumnName="Prod_TipoProducto" />
+          <ScalarProperty Name="Prod_Rendimiento" ColumnName="Prod_Rendimiento" />
+          <ScalarProperty Name="Prod_ClasificacionCom" ColumnName="Prod_ClasificacionCom" />
+          <ScalarProperty Name="Prod_NomProducto" ColumnName="Prod_NomProducto" />
+          <ScalarProperty Name="Prod_Id" ColumnName="Prod_Id" />
+          <ScalarProperty Name="EmpaquetadoId" ColumnName="EmpaquetadoId" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="ProductoId" ColumnName="ProductoId" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="VolPT" ColumnName="VolPT" />
+          <ScalarProperty Name="VolM3" ColumnName="VolM3" />
+          <ScalarProperty Name="Largo" ColumnName="Largo" />
+          <ScalarProperty Name="Ancho" ColumnName="Ancho" />
+          <ScalarProperty Name="Espesor" ColumnName="Espesor" />
+          <ScalarProperty Name="VolptInicial" ColumnName="VolptInicial" />
+          <ScalarProperty Name="Volm3Inicial" ColumnName="Volm3Inicial" />
+          <ScalarProperty Name="CantidadInicial" ColumnName="CantidadInicial" />
+          <ScalarProperty Name="Periodo" ColumnName="Periodo" />
+          <ScalarProperty Name="Clasificacion" ColumnName="Clasificacion" />
+          <ScalarProperty Name="Humedad" ColumnName="Humedad" />
+          <ScalarProperty Name="Acabado" ColumnName="Acabado" />
+          <ScalarProperty Name="Numpaquete" ColumnName="Numpaquete" />
+          <ScalarProperty Name="Emp_Periodo" ColumnName="Emp_Periodo" />
+          <ScalarProperty Name="Emp_Fecha" ColumnName="Emp_Fecha" />
+          <ScalarProperty Name="Emp_NroDoc" ColumnName="Emp_NroDoc" />
+          <ScalarProperty Name="RowId" ColumnName="RowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
